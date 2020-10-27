@@ -1,0 +1,19 @@
+module  or_gate_3in( input_a,
+                     input_b,
+                     input_c,
+                     output_y);
+
+  //INPUTS
+    input     input_a;
+    input     input_b;
+    input     input_c;
+
+  //OUTPUT
+    output output_y;
+
+//Declaration of 3 input OR Gate
+
+
+  assign   output_y = (input_a) | (input_b) | (input_c);
+
+endmodule

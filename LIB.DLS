@@ -1,0 +1,10 @@
+DLSL
+1
+D_FF.VerilogView U3714608.DLS
+Decode_7Seg.VerilogView U4592786.DLS
+PROJECT_LOGIC.VerilogView U9542776.DLS
+T_FF.VerilogView U6465301.DLS
+counter.VerilogView U3813599.DLS
+counter_3bit.VerilogView U2771003.DLS
+dmux3to8.VerilogView U5100382.DLS
+freq_div.VerilogView U5417486.DLS
