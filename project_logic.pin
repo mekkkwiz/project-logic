@@ -50,7 +50,7 @@ led3                             : 18
 GND                              : 19
 led2                             : 20
 led1                             : 21
-RESERVED                         : 22
+button_out                       : 22
 TMS                              : 23
 RESERVED                         : 24
 RESERVED                         : 25

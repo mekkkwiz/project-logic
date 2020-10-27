@@ -6,5 +6,6 @@ PROJECT_LOGIC.VerilogView U9542776.DLS
 T_FF.VerilogView U6465301.DLS
 counter.VerilogView U3813599.DLS
 counter_3bit.VerilogView U2771003.DLS
+debounce_button.VerilogView U4741329.DLS
 dmux3to8.VerilogView U5100382.DLS
 freq_div.VerilogView U5417486.DLS

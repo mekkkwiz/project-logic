@@ -1,6 +1,6 @@
 -- MAX+plus II Compiler Fit File      
 -- Version 10.2 07/10/2002            
--- Compiled: 10/26/2020 13:50:18      
+-- Compiled: 10/27/2020 23:02:55      
 
 -- Copyright (C) 1988-2002 Altera Corporation
 -- Any megafunction design, and related net list (encrypted or decrypted),
@@ -30,6 +30,7 @@ BEGIN
     "button1"                      : INPUT_PIN  = 52     ; -- LC80
     "clk"                          : INPUT_PIN  = 83     ;
     "reset"                        : INPUT_PIN  = 54     ; -- LC83
+    "button_out"                   : OUTPUT_PIN = 22     ; -- LC17
     "leda"                         : OUTPUT_PIN = 33     ; -- LC64
     "ledb"                         : OUTPUT_PIN = 34     ; -- LC61
     "ledc"                         : OUTPUT_PIN = 35     ; -- LC59
@@ -44,37 +45,60 @@ BEGIN
     "led5"                         : OUTPUT_PIN = 16     ; -- LC27
     "led6"                         : OUTPUT_PIN = 15     ; -- LC29
     "led7"                         : OUTPUT_PIN = 12     ; -- LC3
-    "|counter_3bit:lightcouter|T_FF:t0|D_FF:d1|:6" : LOCATION   = LC17   ; -- PIN 22
-    "|counter_3bit:lightcouter|T_FF:t1|D_FF:d1|:6" : LOCATION   = LC18   ;
-    "|counter_3bit:lightcouter|T_FF:t2|D_FF:d1|:6" : LOCATION   = LC20   ;
-    "|counter_3bit:scorecouter|T_FF:t0|D_FF:d1|:6" : LOCATION   = LC22   ;
-    "|counter_3bit:scorecouter|T_FF:t1|D_FF:d1|:6" : LOCATION   = LC26   ;
-    "|counter_3bit:scorecouter|T_FF:t2|D_FF:d1|:6" : LOCATION   = LC28   ;
-    "|freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6" : LOCATION   = LC30   ;
-    "|freq_div:fd0|T_FF:t_ff02|D_FF:d1|:6" : LOCATION   = LC31   ;
-    "|freq_div:fd0|T_FF:t_ff03|D_FF:d1|:6" : LOCATION   = LC32   ; -- PIN 14
-    "|freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6" : LOCATION   = LC117  ; -- PIN 74
-    "|freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6" : LOCATION   = LC23   ;
-    "|freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6" : LOCATION   = LC119  ;
-    "|freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6" : LOCATION   = LC114  ;
-    "|freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6" : LOCATION   = LC118  ; -- PIN 75
-    "|freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6" : LOCATION   = LC121  ;
-    "|freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6" : LOCATION   = LC126  ; -- PIN 80
-    "|freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6" : LOCATION   = LC128  ; -- PIN 81
-    "|freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6" : LOCATION   = LC113  ;
-    "|freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6" : LOCATION   = LC115  ; -- PIN 73
-    "|freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6" : LOCATION   = LC127  ;
-    "|freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6" : LOCATION   = LC125  ; -- PIN 79
-    "|freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6" : LOCATION   = LC123  ; -- PIN 77
-    "|freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6" : LOCATION   = LC122  ;
-    "|freq_div:fd0|T_FF:t_ff018|D_FF:d1|:6" : LOCATION   = LC120  ; -- PIN 76
-    "|freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6" : LOCATION   = LC116  ;
+    "|counter_3bit:lightcouter|T_FF:t0|D_FF:d1|:6" : LOCATION   = LC26   ;
+    "|counter_3bit:lightcouter|T_FF:t1|D_FF:d1|:6" : LOCATION   = LC31   ;
+    "|counter_3bit:lightcouter|T_FF:t2|D_FF:d1|:6" : LOCATION   = LC22   ;
+    "|counter_3bit:scorecouter|T_FF:t0|D_FF:d1|:6" : LOCATION   = LC20   ;
+    "|counter_3bit:scorecouter|T_FF:t1|D_FF:d1|:6" : LOCATION   = LC18   ;
+    "|counter_3bit:scorecouter|T_FF:t2|D_FF:d1|:6" : LOCATION   = LC30   ;
+    "|debounce_button:db|D_FF:d0|:6" : LOCATION   = LC23   ;
+    "|debounce_button:db|D_FF:d1|:6" : LOCATION   = LC32   ; -- PIN 14
+    "|debounce_button:db|D_FF:d2|:6" : LOCATION   = LC28   ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff01|D_FF:d1|:6" : LOCATION   = LC113  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff02|D_FF:d1|:6" : LOCATION   = LC128  ; -- PIN 81
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff03|D_FF:d1|:6" : LOCATION   = LC127  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff04|D_FF:d1|:6" : LOCATION   = LC126  ; -- PIN 80
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff05|D_FF:d1|:6" : LOCATION   = LC125  ; -- PIN 79
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff06|D_FF:d1|:6" : LOCATION   = LC124  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff07|D_FF:d1|:6" : LOCATION   = LC123  ; -- PIN 77
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff08|D_FF:d1|:6" : LOCATION   = LC122  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff09|D_FF:d1|:6" : LOCATION   = LC121  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff010|D_FF:d1|:6" : LOCATION   = LC119  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff011|D_FF:d1|:6" : LOCATION   = LC118  ; -- PIN 75
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff012|D_FF:d1|:6" : LOCATION   = LC117  ; -- PIN 74
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff013|D_FF:d1|:6" : LOCATION   = LC115  ; -- PIN 73
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff014|D_FF:d1|:6" : LOCATION   = LC116  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff015|D_FF:d1|:6" : LOCATION   = LC104  ; -- PIN 67
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff016|D_FF:d1|:6" : LOCATION   = LC114  ;
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff017|D_FF:d1|:6" : LOCATION   = LC107  ; -- PIN 69
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff018|D_FF:d1|:6" : LOCATION   = LC105  ; -- PIN 68
+    "|debounce_button:db|freq_div:u1|T_FF:t_ff019|D_FF:d1|:6" : LOCATION   = LC103  ;
+    "|freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6" : LOCATION   = LC120  ; -- PIN 76
+    "|freq_div:fd0|T_FF:t_ff02|D_FF:d1|:6" : LOCATION   = LC102  ;
+    "|freq_div:fd0|T_FF:t_ff03|D_FF:d1|:6" : LOCATION   = LC101  ; -- PIN 65
+    "|freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6" : LOCATION   = LC112  ; -- PIN 71
+    "|freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6" : LOCATION   = LC111  ;
+    "|freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6" : LOCATION   = LC110  ;
+    "|freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6" : LOCATION   = LC108  ;
+    "|freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6" : LOCATION   = LC106  ;
+    "|freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6" : LOCATION   = LC100  ;
+    "|freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6" : LOCATION   = LC99   ; -- PIN 64
+    "|freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6" : LOCATION   = LC98   ;
+    "|freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6" : LOCATION   = LC97   ; -- PIN 63
+    "|freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6" : LOCATION   = LC83   ; -- PIN 54
+    "|freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6" : LOCATION   = LC109  ; -- PIN 70
+    "|freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6" : LOCATION   = LC82   ;
+    "|freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6" : LOCATION   = LC81   ;
+    "|freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6" : LOCATION   = LC93   ; -- PIN 60
+    "|freq_div:fd0|T_FF:t_ff018|D_FF:d1|:6" : LOCATION   = LC92   ;
+    "|freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6" : LOCATION   = LC87   ;
 
 END;
 
 INTERNAL_INFO "project_logic"
 BEGIN
 	DEVICE = EPM7128SLC84-15;
+	LC17    : LORAX = "G86R0";
 	LC64    : LORAX = "G129R0";
 	LC61    : LORAX = "G126R0";
 	LC59    : LORAX = "G185R0";
@@ -89,31 +113,53 @@ BEGIN
 	LC27    : LORAX = "G177R0";
 	LC29    : LORAX = "G118R0";
 	LC3     : LORAX = "G27R0";
-	LC22    : LORAX = "G30R0,PA0R0C1,PA0R0C3";
+	LC32    : LORAX = "G121R0,PA20R0C1";
+	LC23    : LORAX = "G31R0,PA1R0C1";
 	OH79R0P52 : LORAX = "G14R0,PA6R0C1";
-	LC17    : LORAX = "G86R0,PA11R0C0,PA11R0C1";
-	LC116   : LORAX = "G56R0,PA1R0C1";
-	LC120   : LORAX = "G113R0,PA11R0C7";
+	LC103   : LORAX = "G51R0,PA7R0C1";
+	LC105   : LORAX = "G195R0,PA33R0C6";
+	LC107   : LORAX = "G197R0,PA27R0C6";
+	LC114   : LORAX = "G54R0,PA5R0C6";
+	LC104   : LORAX = "G52R0,PA0R0C7";
+	LC116   : LORAX = "G56R0,PA1R0C6";
+	LC115   : LORAX = "G55R0,PA4R0C7";
+	LC117   : LORAX = "G110R0,PA16R0C7";
+	LC118   : LORAX = "G111R0,PA14R0C7";
+	LC119   : LORAX = "G112R0,PA12R0C7";
+	LC121   : LORAX = "G142R0,PA19R0C7";
 	LC122   : LORAX = "G143R0,PA26R0C7";
 	LC123   : LORAX = "G144R0,PA18R0C7";
+	LC124   : LORAX = "G145R0,PA22R0C7";
 	LC125   : LORAX = "G199R0,PA28R0C7";
+	LC126   : LORAX = "G200R0,PA32R0C7";
 	LC127   : LORAX = "G201R0,PA30R0C7";
-	LC115   : LORAX = "G55R0,PA4R0C7";
-	LC113   : LORAX = "G53R0,PA7R0C7";
 	LC128   : LORAX = "G202R0,PA31R0C7";
-	LC126   : LORAX = "G200R0,PA35R0C7";
-	LC121   : LORAX = "G142R0,PA19R0C7";
-	LC118   : LORAX = "G111R0,PA14R0C7";
-	LC114   : LORAX = "G54R0,PA5R0C7";
-	LC119   : LORAX = "G112R0,PA12R0C7";
-	LC23    : LORAX = "G31R0,PA1R0C7";
-	LC117   : LORAX = "G110R0,PA16R0C1";
-	LC32    : LORAX = "G121R0,PA20R0C7";
-	LC31    : LORAX = "G120R0,PA19R0C1";
-	LC30    : LORAX = "G119R0,PA21R0C1";
-	OH82R0P54 : LORAX = "G163R0,PA26R0C1";
-	LC18    : LORAX = "G87R0,PA13R0C0,PA13R0C1";
-	LC20    : LORAX = "G89R0,PA15R0C0,PA15R0C1";
-	LC26    : LORAX = "G176R0,PA30R0C3,PA30R0C1";
-	LC28    : LORAX = "G178R0,PA29R0C3";
+	LC113   : LORAX = "G53R0,PA7R0C7";
+	OH82R0P54 : LORAX = "G163R0,PA21R0C1";
+	LC28    : LORAX = "G178R0,PA29R0C1";
+	LC20    : LORAX = "G89R0,PA15R0C1,PA15R0C3";
+	LC26    : LORAX = "G176R0,PA30R0C0,PA30R0C1";
+	LC87    : LORAX = "G104R0,PA14R0C1";
+	LC92    : LORAX = "G137R0,PA19R0C5";
+	LC93    : LORAX = "G191R0,PA31R0C5";
+	LC81    : LORAX = "G45R0,PA4R0C5";
+	LC82    : LORAX = "G46R0,PA1R0C5";
+	LC109   : LORAX = "G138R0,PA25R0C5";
+	LC83    : LORAX = "G47R0,PA2R0C6";
+	LC97    : LORAX = "G106R0,PA11R0C5";
+	LC98    : LORAX = "G107R0,PA15R0C6";
+	LC99    : LORAX = "G108R0,PA12R0C6";
+	LC100   : LORAX = "G109R0,PA9R0C6";
+	LC106   : LORAX = "G196R0,PA28R0C6";
+	LC108   : LORAX = "G198R0,PA29R0C6";
+	LC110   : LORAX = "G139R0,PA19R0C6";
+	LC111   : LORAX = "G140R0,PA18R0C6";
+	LC112   : LORAX = "G141R0,PA20R0C6";
+	LC101   : LORAX = "G49R0,PA4R0C6";
+	LC102   : LORAX = "G50R0,PA6R0C6";
+	LC120   : LORAX = "G113R0,PA10R0C6";
+	LC31    : LORAX = "G120R0,PA19R0C0,PA19R0C1";
+	LC22    : LORAX = "G30R0,PA0R0C0,PA0R0C1";
+	LC18    : LORAX = "G87R0,PA13R0C3,PA13R0C1";
+	LC30    : LORAX = "G119R0,PA21R0C3";
 END;

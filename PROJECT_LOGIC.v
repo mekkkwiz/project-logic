@@ -1,5 +1,5 @@
 module PROJECT_LOGIC(
-button1, clk, reset,
+button1,button_out, clk, reset,
 leda, ledb, ledc, ledd, lede, ledf, ledg,
 led1, led2, led3, led4, led5, led6, led7
 );
@@ -8,6 +8,7 @@ led1, led2, led3, led4, led5, led6, led7
     input clk, reset, button1;
     output leda, ledb, ledc, ledd, lede, ledf, ledg; //for 7segment
     output led1, led2, led3, led4, led5, led6, led7;
+	output button_out;
     wire and1_out,clk_out,couter_out,notBT;
 
     wire [2:0]todmux;
@@ -20,7 +21,9 @@ led1, led2, led3, led4, led5, led6, led7
 
     counter_3bit lightcouter(todmux, clk_out, reset);
 
-    assign and1_out = ((todmux[0]) && (todmux[1]) && (todmux[2]) && !button1);
+	debounce_button db(button1,clk,reset,button_out);
+
+    assign and1_out = ((todmux[0]) && (todmux[1]) && (todmux[2]) && !button_out);
 
 	dmux3to8 demux(todmux, clk, reset, led1, led2, led3, led4, led5, led6, led7);
 
