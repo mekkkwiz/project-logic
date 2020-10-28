@@ -14,3 +14,4 @@ D_FF d2(Q2, Q1, slow_clk, reset );
 assign Q2_bar = ~Q2;
 assign pb_out = Q1 & Q2_bar;
 endmodule
+

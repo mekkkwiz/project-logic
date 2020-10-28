@@ -63,12 +63,12 @@ TCK                              : 32
 RESERVED                         : 33
 RESERVED                         : 34
 VCC                              : 35
-RESERVED                         : 36
+clk_out                          : 36
 RESERVED                         : 37
 TDO                              : 38
 RESERVED                         : 39
 RESERVED                         : 40
-clk_out                          : 41
+RESERVED                         : 41
 GND                              : 42
 clk                              : 43
 GND                              : 44

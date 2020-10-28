@@ -18,10 +18,10 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7128S - d:\work\logi\project\counter_3bit.pof Sun Oct 25 13:26:22 2020
+'Device #1: EPM7128S - d:\work\logi\project\counter_3bit.pof Wed Oct 28 13:09:48 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
-NOTE "DATE" "2020/10/25";
+NOTE "DATE" "2020/10/28";
 NOTE "DEVICE" "EPM7128S";
 NOTE "FILE" "counter_3bit.pof";
 NOTE "TARGET" "1";
@@ -1659,4 +1659,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC 5F2E;
+CRC 7F50;

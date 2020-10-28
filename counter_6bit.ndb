@@ -1,0 +1,64 @@
+NDB006
+The number of symbol table entries is: 13
+The length of the symbol table is: 181
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|T_FF:t0|
+8	|T_FF:t0|D_FF:d1|
+J	|T_FF:t1|
+T	|T_FF:t1|D_FF:d1|
+f	|T_FF:t2|
+p	|T_FF:t2|D_FF:d1|
+"$	|T_FF:t3|
+".	|T_FF:t3|D_FF:d1|
+"@	|T_FF:t4|
+"J	|T_FF:t4|D_FF:d1|
+"\	|T_FF:t5|
+"f	|T_FF:t5|D_FF:d1|
+
+The number of name info structs is : 40
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	14	0	:10	x
+#	IeEA	!	14	0	:11	y
+$	IeEA	!	18	0	:12	z
+%	IeEA	!	18	0	:13	{
+&	IeEA	!	22	0	:14	|
+'	IeEA	!	22	0	:15	}
+(	It0;	!	)	10	0	:9	w
+)	INu}	!	(	and0	w
+*	(@\6H	!	2	0	6	0	/	.	-	,	+	clk	o
++	"?%_o	!	3	0	6	,	-	.	/	0	+	q0	!	q0	v
+,	"?%_o	!	3	0	5	-	.	/	0	,	q1	!	q1	u
+-	"?%_o	!	3	0	4	.	/	0	-	q2	!	q2	t
+.	"?%_o	!	3	0	3	/	0	.	q3	!	q3	s
+/	"?%_o	!	3	0	2	0	/	q4	!	q4	r
+0	"?%_o	!	3	0	1	0	q5	!	q5	q
+1	L8ef	!	2	0	6	+	,	-	.	/	0	reset	p
+2	It0;	.	5	5	0	:5	"H
+3	IGdW	8	:5	"W
+4	IeE1	8	4	0	:6	"X
+5	INu}	.	2	x1	"H
+6	It0;	J	9	5	0	:5	"b
+7	IGdW	T	:5	"p
+8	IeE1	T	4	0	:6	"q
+9	INu}	J	6	x1	"b
+:	It0;	f	=	5	0	:5	"z
+;	IGdW	p	:5	#*
+<	IeE1	p	4	0	:6	#+
+=	INu}	f	:	x1	"z
+>	It0;	"$	A	5	0	:5	#4
+?	IGdW	".	:5	#B
+@	IeE1	".	4	0	:6	#C
+A	INu}	"$	>	x1	#4
+B	It0;	"@	E	5	0	:5	#L
+C	IGdW	"J	:5	#Z
+D	IeE1	"J	4	0	:6	#[
+E	INu}	"@	B	x1	#L
+F	It0;	"\	I	5	0	:5	#d
+G	IGdW	"f	:5	#r
+H	IeE1	"f	4	0	:6	#s
+I	INu}	"\	F	x1	#d

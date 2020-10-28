@@ -18,16 +18,16 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7128S - d:\work\logi\project\project_logic.pof Tue Oct 27 16:02:55 2020
+'Device #1: EPM7128S - d:\work\logi\project\project_logic.pof Wed Oct 28 12:28:21 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
-NOTE "DATE" "2020/10/27";
+NOTE "DATE" "2020/10/28";
 NOTE "DEVICE" "EPM7128S";
 NOTE "FILE" "project_logic.pof";
 NOTE "TARGET" "1";
 NOTE "IDCODE" "071280DD";
 NOTE "UES" "FFFF";
-NOTE "CHECKSUM" "001A4007";
+NOTE "CHECKSUM" "001A0A6B";
 NOTE "SAVE_DATA" "DEVICE_DATA";
 NOTE "SAVE_DATA_VARIABLES" "V0, A12, A13, A21, A22, A25, A43";
 NOTE "STAPL_VERSION" "JESD71";
@@ -53,52 +53,52 @@ INTEGER A13[1] = 5;
 INTEGER A25[1] = 10;
 INTEGER A43[1] = 0;
 BOOLEAN A21[104320] = @
-mB300u@@@t@@@l@@@T@xy_6@rVzz_lxt@@VrW84y@@@x@@roQjMBhrQj55Kn0rQz
-@_hr@z@N@x@Qj_C9y@@UR@t@r@NllrVz@GtGhrOTeEn@Mllt@z@WwKeK1MhrQubW
-@hruGvdWo9hnQjXNKX2e2AMIhrQysPGjr0@@7h1AB5hrQ5kFntw@UGkEQj6h1Klv
-Vkttp@_lFt@zmoAyFMh5QDVWNNYrw@36parQDM0wgYrw@3aFqOjMxgl4KZr@7wp3
-R@_l1yaG@l@j@@dVt@lM1yAoy@ll@VTV@@@xXq2q@@xfzV@7@@zyX8zuUd1X899G
-H2_j@@BMcWx@VV@@vz_F@x3CMa@@VV@t@xU@@@3RMXQD_@WWJURpW0Z@7Krcxi6i
-u9XGkUuz@Ts_Z@h@lURh@x@1VHoxl_hlt@zWlRGZrQTPf1XXJm@@@HOOCuz_l5yr
-W1oL4GU6xV_lXX9PfW1Xc3n@QjkN@rVVj_h_r@@BIdWz@FV@@y__@@x38Na@@@U@
-@@x_z@@f@x@7oLqxEC4G_@mrjx@@h9Ok3PiMh5MNfL5OGGVGsoY1hEcW6hrwG7zW
-px@U0ZK5_29BHQGmDUuVdrtvl_lht_zm9z8mILuz_hxtV@s_h@R8cLSd53X9Ef@r
-OjmEbm@@rOGaAUd531MAADMhrWD@FKq@3Kz@mO@F0q@3Vc4@xzyU@t@zz_Fxd@@F
-y0u3pEdOjL9KWPaIhrIQjMHhqATKt9mwt@tz@@dt@@UV@lIIfKA9bIfi0G1L0O0A
-bwV@Lg@_@h_zVbI5@z9X2aWl@Nhm3Go@@zl@l@@mnFn@@hKa16eKQbgey4OzxzeK
-ltpJzUFAbwVz_l@s@@Uzl@x5Ok4grwtrJhVRld_rzqQjtxzUUltxwzUlZ2eYu6mW
-rAjcMhrgW28PR16GfKl7KG2n3aWzKAbe0G9yW42U8XG1Omz_lNe0p8bIfaKAjcIf
-qAAbMfgqgt3AGY05E9UWPYHu4qAbIIfLQ9jMf4U031Fa0@tJfe5kAk1F2Z8guGAI
-bM@Ue0G5R2OQjIhfqQbgIhKoQbM9hU@lmIIm@t@Tm8FmQbMBwZ42A8j8NsRb@4Gh
-r@7A0K150QW2DgrAjUvV6qQjI7w3FqAjMLhLQ9jMhbrQjcIhrwWWMYIfrwg064E4
-L_@llYqmLAjMhnDO0hLQDbMfrnXmW@hrweKIm@AjMm@I45W4_@VjaMfroAjIJfLQ
-LX368jIhaL@tdI@_FVr@zgqg@r@zVxl@xtzV@Nh36OjIhaLQjcMhqAQbMhH1OW@@
-g@e0U8i4i3lAaIDI8yWp3ffNAbMhNNP0hqQjmIeAuV6Kfr@7fMH_llMZMWs8NI86
-632Bv1V@@@XyZHO9LOjIhCi43sRmWmIUG@t@VO99eIhrIQbM9hrQDjMfLncOW@Az
-R@zL@klMh2BP6hrQbiMhqqQbM7yW4nXKaIhrQ@@NfXw5YqQjsGLKVd332rZduL_F
-4aCLQjM7bI2i_z_qw@@xh@lNjM@k_@@@e0U8uG6Y2uXO5Duk83KfLQ5Ya1QjIhY_
-m0z@Vbiw@@T@t@x@_@Fm832V91rQbMIhrAPr@@frl@BAW4yt@zx@l@BucalSqWrI
-C8EaMKfr@7pnCHXoJOO9elM@FahOZ@PZ0e_FCMRYUxgOxu9Y4IklBXG7b8iaDMNp
-WmIO8Ya42CoW5FI8s43Kwt@7Mo30;
+mB300u@@@@3u@@@t@QjkN@jVVh@x_z_@NJmz@ll@@yU@d@z_NhrqQjMleWA9mw@@
+t@@@Fj_hLrVz@FcGeCurV@ttx@UeCO@@xtxl@l@@@@GVWnQjMeCm@@hHeQn@v@ld
+t@V@V@@156@@lK1L2@V@@_@zVz@@wxz@rAyC0hrQTzPWrQDsmRcUDX0jeGP3QDMh
+XS2Qj_Z3A8PjMhfrQiEGDf6hrwGx3qwl63U4UFP8CILmBgW2BrQiM7eyVOq@1t6u
+@@Vt@AjkNVzVNl@RUj_@3QBYMhlgV@zRxl_lXlOeMhr8Cl2j6@r1o4skRmgF3ODM
+h5e84Aj_g_z@hj@Q@6S39h@wh_zxzz_ht7MYMQDMhX8PW6hrQ8I3yFM@5G13hlwh
+_zxz32wahtVz05muFMhFmuXj5DeMQ2C_@@3Mo6CM@rmSYwxzVsFd@VeqAqQDM74S
+F@@lIXN9HhrQy2g423xX@LIz0jxHhrODqC9y@hrzwlM7ybjRM640ToRbC4Kz@GkX
+leb11u1vD6C4a6dLjaGWWMkWN217suj3F4Ev9_@Rz3Oy1z@_t_@V_3i49p@@__@r
+zz@@l7YP2BymGGaDURO2LLbGWbDUZs317ov2e94mu@Xdo3jMhn0B@Fip@3Az@GM@
+FWsgj_h@u@FdFyvVY20bG1cnAjIBfrA5jIhKHTdWhV@Vt@@VU@@xzz@A9bIfaKAb
+o205K1W1eKg@z@@@xVbwJfKVLSrd4AG2__Vj2F09@@t@_@_@37@4@@lIH6OWIfLg
+YoJWrlthxzUFArJfeUg@rx@_R@@xr@_lNWvI45W1sJhVqQzJxzUldtxzkUltxe0O
+mAjIRS325jW4eKgt3A8Xu1ImUAbIK0e4UG21FaGe0CuU@tBKWPaIfKIAbIJfLQ5b
+MhKLQzx158HW2d4FmCn8S2QbI9fqAjX7yGm39m@zKAQXhYRmZm8YAEaYKzrl7A0K
+nc0cMhqQAjMf1KO0hV@@mIIm@t@Tm8FmQbMBwZ42A8j8NsRv@4Ghr@7A0K150QW2
+DgrAjUvV6qQjI7w3FqQjILhrQ9jMhbrQbcMhrgWWMA833iMfrog@@F_YXZJwdkGI
+WrAjMX3647I2Qj_hz_@@xx@@FA03QOmWb@P8Y46QzF1fLQbiIhqM0e0bMhLqAjIL
+fL@h@x@sVQrdIh_A@t@z_@l@r@zVxFjIhX13KfLQPjIharQbcMhqwe0OmzV@tR06
+4oGxnz@Gf664UWwXqeh@LAjcICGjMfbrAjs8IK9_iGMGn0QjMhgqw@3Bv@mIOGjM
+hbqAjs8Is8s4F2BHYz6C8i49Y891bMfrqAjINknWTJC8i4UQF9X0yWHhrQLS8a8j
+Mhbr@@lx@@VQzNfXwLK059elMhFAANFv8XTEC8QmVwz8XeFE9eb@ZNPi_@DWrAbM
+mX9e@@@F_23yU@@x@@@t@t@VK06GhrADAW4KQjM75W1_hrwZ28X8hCWrQbcMhqgA
+0IWr@@lx@_FQrNhg_g@z@zVxl@xt@V@trB6iYa1AjMhYvm0@@@t_Jh@Y2uXmrCkX
+B3aMhL6NZAnUUogA94RN21WYa@@@U@@dMnsTRGGL4QX11GzVSIj4MYbBomGO9Cq@
+l1_@_@ZPpWjPUm@z@Vi9F49a1iIhqqQbML1G2iw@@3BHYcrCOja4Y2m0@@@t_Nh_
+YDX1@z@@;
 
 BOOLEAN A22[65920] = @
-m0200u@@jt@@@@DGp0@@@tkw@@BPed1_700000dhZ@@Vd4GDr@3Q3@@@@i_@@3D4
-@@@lXw4@x@@1rflhYmJ2@@l@_@l@3bb2Ady@@t7UE5eYAa5Lmp9lx@@5A32UMw@@
-@ESVY@x@@WST3K64a1f@@tTz@@@jXC4azV0QE3K64Wcf@@V@0qFFyC8GsI@@@_5y
-C8qN8_V@@p8bGTm4Str044aXDQ94mx4@Rtt9@UW@00GuG6yt@@7IBJzk@@@xO84P
-8s@t@zlTslka1@@@V1AU8m8CXCUm@s@VW29wBQGWnCFbaGWn@3gQZ@@z@@J64oLY
-WlFuxxbFuhJ_wx@33JY_V@@QY646s3@@@xRVO8WyCtZI8uRBl9J8CC9@cOm@ecg@
-@tEU300XbuXNN@VuQF2LrIGQvAXnG0v@3NlTIV64Wdb51bGGVPcOa112Qf@@@T@@
-@xXEMHuYL44vIxEnGuaRC4P21t4Ykr_@0BNo@@VteCL4Yv3zxaGGaMk2e13FOGWb
-ME6M21RcPiY64iv@XY_VWg@76x@1W_Veo5v@@tth@@Vu1m7cjA_@@Sjw@@pEh18S
-R6ylTM76v31Rc000vV@300IDb@z@@@33n100@@@dt6uV@_Fkx4I0WW80G00WahL1
-00W000p0a0Ze20000012OGN0F000000WWgK100fc20t081000Wm1aOJS6y@t_720
-4vYBXljoA_@lLi_@@v@@_74W4ZTlHOL64204110IW0Oux@@lWy4y@@@x@_wFIm7y
-F@tFN59xf@W@z_VM@l@_t@@v@@@xV@@d@@NdgwhALLLLgw_hyLNLhggggaSLo_4Z
-21WvtzAyFV@5du3_d@@VUzXPfhOB_7yF@@Z_@zt@U@VLx6m@@lIL@LbgggELTTr_
-gghKNLLzCV2wc@@dd@1tV@@F3SI66F4Y13x8ua@@dVtp@@90G0_l@V@p@zu@_hqr
-rVvgkkMNtzdxwwBTTLNboVY@zxRzt@@JUpGQ1Fu@@lt@zzVGzXuV@@FEX76a0cXC
-zm@zVVq16e@xzt@_VF_l@ATTLVkghhqrrzvxlkMNNr5;
+m0200u@@@@3q6aDmlz@l@jp_u4yFw@x@@@pr00000uV4z@@Xb0gfyl@@@@Wm8O3y
+z@@7A3_t_@3b1@@@V9W0@@V@Xw4@V@@1b1@@lTy6002r31z4@@l@_@@@vrr@7UC4
+QIu_@lVnC8y89LP8Kg8GX9K8n@@l@xPGGbfV@@@0Lc_@@tJ044yoiycG0DpWYFF8
+J8Gv@m8u3UDuYc1Vxu@1jBv@@lRZcX0PCojDmt@@VWib_@@@cIaGW2Fy@ttpy@@F
+usI_@hl3BDi@t@V@t@@y@@@3e4Yllw@WWEvVh@FSu9l9D8mebz5D8Ova_d@@3pzf
+N_@@Tb94gIkmhdu@@wFKm9H1C8GhShYD8uBC1e39CCIHsI8Wib5lJ8ew@XSnEnl4
+2mpoddI8elCBQ9X01jS0F32ECp6lI8SoGy@@z7Ef4kxQ02TyX0BRn@szT8cCu@@z
+d@00GWbFCmJ21HQft@V@01vizd42sCpqHJ8Wn@3FDdUDD8mo@3xy@WI@Far@3erU
+@c@@XPtYLJvV@RdrXRpW@@tka7VmVt@@St6uV00n@@300ID5@@@@_7WT100@x@r@
+FrR60000S0m0D0O000000008MD50008043G20WAh10000W@@FG0323G2ec2008rK
+g1GYQ1C8SW7U@_XyLV84W7k1t0MPj@_tAhz@@_xV@@ENGFoA@XngCOmA9220a01g
+mt@@@XY9u@@@t@ttl__@@TqPm@_VtE1gqBE3y_V@zlt@pl@@t@_@F@@lALLNLggg
+wKL@NvwkhILLLLg0mafE3X4CpGxOuV__BLT32pD1@t@tX7OZw@tV@x@@_@Vl3Fm0
+LzNLggggKrrLxlwgAyW4y@@Nhx@@VhT6y@@Vh@xlVD_7kWyXiwbm@@@dx@x_4xPm
+z@VVG2Bv@@vt@y@F_ldVtp@zu@U_zF@txxk_MtNrbhwwF@TtV_whhqr@@d0F9_@@
+_qj@@djF3_@@gh9_1@@@TbISIAfIycXA1RAHu1Fu_@l7@t@lxz@U@VV@kd@xTLNN
+fhhwoLTTj@_hBVtrLww@@1;
 
 ENDDATA;
 DATA TEMP_DATA;
@@ -1687,4 +1687,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC 8816;
+CRC 1804;

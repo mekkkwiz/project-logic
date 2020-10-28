@@ -18,16 +18,16 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7032S - d:\work\logi\wo5\freq_div.pof Tue Oct 20 09:45:44 2020
+'Device #1: EPM7032S - d:\work\logi\project\freq_div.pof Wed Oct 28 12:10:19 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
-NOTE "DATE" "2020/10/20";
+NOTE "DATE" "2020/10/28";
 NOTE "DEVICE" "EPM7032S";
 NOTE "FILE" "freq_div.pof";
 NOTE "TARGET" "1";
 NOTE "IDCODE" "070320DD";
 NOTE "UES" "FFFF";
-NOTE "CHECKSUM" "0006FE3D";
+NOTE "CHECKSUM" "000574A8";
 NOTE "SAVE_DATA" "DEVICE_DATA";
 NOTE "SAVE_DATA_VARIABLES" "V0, A12, A13, A21, A22, A25, A43";
 NOTE "STAPL_VERSION" "JESD71";
@@ -53,16 +53,22 @@ INTEGER A13[1] = 5;
 INTEGER A25[1] = 10;
 INTEGER A43[1] = 0;
 BOOLEAN A21[20320] = @
-id000u@@@@3q6aDmlM@VA5HH9Ke2gJC_@@3Vxv6tnj@ph@7uzVYv@9rmK1eGA05_
-@NfA3EXrlthxzUFltxzyKgth0CmzUQTTk4_LwtZ2ae2GXK0A25IWdM@UUGEyKg@h
-FaWq@@V7IBj9Um@@@d@@@V_Qz@L0Cm@_QLeWSo8KHGXA8zxzx_l@p@zVlFjwzA06
-u_FbAKGEHGKXrltVyW7S@dMb7GbA0AafC1@V@tH6Ce2W2XCin@@tVyWSyt@@x_Fj
-20;
+id000u@@@t@@hlrQzV@hrQQjMhfrQjgMh@Fz1ZrQjfU8Q5qQjM5hr@759XUYrQjc
+GvaMhruWk4iMhrSZdez1rQiMPf7MZr@zlMhXrQjELzW_hrO_g2j6hrKbGfFd2eIG
+hrQCQ9a@rViKQBQj6hphaOjMZDvwX@nVjKbbflkerQDc@HY@nQjamMmQjM7Mw1DM
+hrebsZbWFL6cHR3g0K8581rQjIMfKQPjIfeKAbYIfKAAbIhoWGonDOBm0frQbb1R
+8jMhjM8XV13g0K85WYGX7o3Q9PuX8Z7o8C8tuan4OeMhqoQjIR503erAjM1mWL1s
+eMfrgcX4aMfrwQaWqAjoe06GhqALbMfbqAjIMfqQQjMheLQbMkeYG1L4UG5jMfrR
+GCGQbMR5W4w6O0hqQDjMfLF4Ce6P2KAjMLfrQPjMharQbMP03UcmGaX4I6yGa13e
+rQbgMhqIQbMReW4gPeIy03s7OGFWAwk8XrAjou1COjIhbL@@F0;
 
 BOOLEAN A22[15328] = @
-yT000u@@@@3u@@@t@@@J4XKAYYIeG5qbyt@@dRiZxjJQ@7L@Fhx@mo@3fHAtE1@@
-F0000Wz@@@xN000000m2G100O0s0I000yl@@@tKy4y@@@xlt@pR@@VJU2_z@@J08
-m@@IbgegYGW4MqJm@@JbgeggKT3y@@yxV_@tLLTL8G2_@@@r@@@73aWh_@V0;
+yT000u@@@@3u@@@du00G4Xq7i@@YdwXeLu@l@FAIIkYuLXV@NyGja@@@lWwa@z@@
+mR9@@@VP990u@xT@@@7oauz@@Fk9n@@lVIZdy0FvmJy@x@7BNo@x@VAz4@_@@nNI
+y@t@7a9n@_@Vqwpq7dy@@ld@T2@@@@WHIy@@t7HIY@@l@ebsJayEYieKR6yF0Tu@
+@@t@@tF000W3W10000eZ@@F3810000_@@@r@@@tYdW@@xT@j_@Bv9u@V@t@@@B@@
+lQ@MLLyhY@31Cml@@VZk1__VwzFTLvhg_t@S@jw@@V@x@@_@@lKrTrbidW@vkR@@
+@@_d@@z@@Nfgxk3;
 
 ENDDATA;
 DATA TEMP_DATA;
@@ -1651,4 +1657,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC 11B0;
+CRC FF76;

@@ -16,7 +16,7 @@ The number of name info structs is : 19
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
-"	It0;	!	#	10	0	:6	t
+"	It0;	!	#	9	0	:6	t
 #	INu}	!	"	and0	t
 $	(@\6H	!	2	0	3	'	&	%	clk	o
 %	"?%_o	!	3	0	3	&	'	%	q0	!	q0	s

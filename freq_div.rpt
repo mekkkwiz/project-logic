@@ -1,8 +1,8 @@
-Project Information                              d:\work\logi\wo5\freq_div.rpt
+Project Information                          d:\work\logi\project\freq_div.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/20/2020 16:45:44
+Compiled: 10/28/2020 19:10:18
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -36,13 +36,13 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-freq_div  EPM7032SLC44-5   1        1        0      2       0           6  %
+freq_div  EPM7032SLC44-5   1        1        0      20      0           62 %
 
 User Pins:                 1        1        0  
 
 
 
-Project Information                              d:\work\logi\wo5\freq_div.rpt
+Project Information                          d:\work\logi\project\freq_div.rpt
 
 ** AUTO GLOBAL SIGNALS **
 
@@ -51,7 +51,7 @@ Project Information                              d:\work\logi\wo5\freq_div.rpt
 INFO: Signal 'clk' chosen for auto global Clock
 
 
-Project Information                              d:\work\logi\wo5\freq_div.rpt
+Project Information                          d:\work\logi\project\freq_div.rpt
 
 ** FILE HIERARCHY **
 
@@ -59,11 +59,47 @@ Project Information                              d:\work\logi\wo5\freq_div.rpt
 
 |t_ff:t_ff01|
 |t_ff:t_ff01|d_ff:d1|
+|t_ff:t_ff02|
+|t_ff:t_ff02|d_ff:d1|
+|t_ff:t_ff03|
+|t_ff:t_ff03|d_ff:d1|
+|t_ff:t_ff04|
+|t_ff:t_ff04|d_ff:d1|
+|t_ff:t_ff05|
+|t_ff:t_ff05|d_ff:d1|
+|t_ff:t_ff06|
+|t_ff:t_ff06|d_ff:d1|
+|t_ff:t_ff07|
+|t_ff:t_ff07|d_ff:d1|
+|t_ff:t_ff08|
+|t_ff:t_ff08|d_ff:d1|
+|t_ff:t_ff09|
+|t_ff:t_ff09|d_ff:d1|
+|t_ff:t_ff010|
+|t_ff:t_ff010|d_ff:d1|
+|t_ff:t_ff011|
+|t_ff:t_ff011|d_ff:d1|
+|t_ff:t_ff012|
+|t_ff:t_ff012|d_ff:d1|
+|t_ff:t_ff013|
+|t_ff:t_ff013|d_ff:d1|
+|t_ff:t_ff014|
+|t_ff:t_ff014|d_ff:d1|
+|t_ff:t_ff015|
+|t_ff:t_ff015|d_ff:d1|
+|t_ff:t_ff016|
+|t_ff:t_ff016|d_ff:d1|
+|t_ff:t_ff017|
+|t_ff:t_ff017|d_ff:d1|
 |t_ff:t_ff018|
 |t_ff:t_ff018|d_ff:d1|
+|t_ff:t_ff019|
+|t_ff:t_ff019|d_ff:d1|
+|t_ff:t_ff020|
+|t_ff:t_ff020|d_ff:d1|
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ***** Logic for device 'freq_div' compiled without errors.
@@ -79,20 +115,20 @@ Device Options:
     Enable JTAG Support                        = ON
     User Code                                  = ffff
 
-              R  R  R                       R  
-              E  E  E                    c  E  
-              S  S  S                    l  S  
-              E  E  E                    k  E  
-              R  R  R                    _  R  
-              V  V  V  V  G  G  G  c  G  o  V  
-              E  E  E  C  N  N  N  l  N  u  E  
-              D  D  D  C  D  D  D  k  D  t  D  
+              R  R  R                    R  R  
+              E  E  E                    E  E  
+              S  S  S                    S  S  
+              E  E  E                    E  E  
+              R  R  R                    R  R  
+              V  V  V  V  G  G  G  c  G  V  V  
+              E  E  E  C  N  N  N  l  N  E  E  
+              D  D  D  C  D  D  D  k  D  D  D  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
     #TDI |  7                                39 | RESERVED 
 RESERVED |  8                                38 | #TDO 
 RESERVED |  9                                37 | RESERVED 
-     GND | 10                                36 | RESERVED 
+     GND | 10                                36 | clk_out 
 RESERVED | 11                                35 | VCC 
 RESERVED | 12         EPM7032SLC44-5         34 | RESERVED 
     #TMS | 13                                33 | RESERVED 
@@ -126,7 +162,7 @@ PDn = Power Down pin.
 & = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ** RESOURCE USAGE **
@@ -134,27 +170,27 @@ freq_div
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     2/16( 12%)   3/16( 18%)   0/16(  0%)   1/36(  2%) 
+A:     LC1 - LC16     4/16( 25%)   2/16( 12%)   0/16(  0%)   4/36( 11%) 
+B:    LC17 - LC32    16/16(100%)   3/16( 18%)   0/16(  0%)  15/36( 41%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
 Total I/O pins used:                             5/32     ( 15%)
-Total logic cells used:                          2/32     (  6%)
+Total logic cells used:                         20/32     ( 62%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    2/32     (  6%)
+Total Turbo logic cells used:                   20/32     ( 62%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
 Average fan-in:                                  2.00
-Total fan-in:                                     4
+Total fan-in:                                    40
 
 Total input pins required:                       1
 Total fast input logic cells required:           0
 Total output pins required:                      1
 Total bidirectional pins required:               0
 Total reserved pins required                     4
-Total logic cells required:                      2
-Total flipflops required:                        2
-Total product terms required:                    3
+Total logic cells required:                     20
+Total flipflops required:                       20
+Total product terms required:                   39
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -162,7 +198,7 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ** INPUTS **
@@ -188,7 +224,7 @@ Sections of this Report File for information on which signals' fan-outs are used
 Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ** OUTPUTS **
@@ -196,7 +232,7 @@ freq_div
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B         FF      t        0      0   0    0    1    0    0  clk_out
+  36     22    B         FF      t        0      0   0    0    1    0    0  clk_out
 
 
 Code:
@@ -209,7 +245,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ** BURIED LOGIC **
@@ -217,7 +253,25 @@ freq_div
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (40)    18    B       TFFE   +  t        0      0   0    0    0    1    0  |T_FF:t_ff01|D_FF:d1|:6
+ (34)    23    B       TFFE   +  t        0      0   0    0    0    0    1  |T_FF:t_ff01|D_FF:d1|:6
+ (26)    30    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff02|D_FF:d1|:6
+ (25)    31    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff03|D_FF:d1|:6
+ (24)    32    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff04|D_FF:d1|:6
+ (37)    21    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff05|D_FF:d1|:6
+ (38)    20    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff06|D_FF:d1|:6
+ (39)    19    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff07|D_FF:d1|:6
+ (40)    18    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff08|D_FF:d1|:6
+ (41)    17    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff09|D_FF:d1|:6
+ (33)    24    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff010|D_FF:d1|:6
+ (27)    29    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff011|D_FF:d1|:6
+ (28)    28    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff012|D_FF:d1|:6
+ (29)    27    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff013|D_FF:d1|:6
+ (31)    26    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff014|D_FF:d1|:6
+ (12)     8    A       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff015|D_FF:d1|:6
+ (32)    25    B       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff016|D_FF:d1|:6
+  (9)     6    A       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff017|D_FF:d1|:6
+  (8)     5    A       TFFE      t        0      0   0    0    1    0    1  |T_FF:t_ff018|D_FF:d1|:6
+  (7)     4    A       TFFE      t        0      0   0    0    1    1    0  |T_FF:t_ff019|D_FF:d1|:6
 
 
 Code:
@@ -230,44 +284,173 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ** LOGIC CELL INTERCONNECTIONS **
 
-Logic Array Block 'B':
+Logic Array Block 'A':
 
-             Logic cells placed in LAB 'B'
-        +--- LC17 clk_out
-        | +- LC18 |T_FF:t_ff01|D_FF:d1|:6
-        | | 
-        | |   Other LABs fed by signals
-        | |   that feed LAB 'B'
-LC      | | | A B |     Logic cells that feed LAB 'B':
-LC18 -> * * | - * | <-- |T_FF:t_ff01|D_FF:d1|:6
+                 Logic cells placed in LAB 'A'
+        +------- LC8 |T_FF:t_ff015|D_FF:d1|:6
+        | +----- LC6 |T_FF:t_ff017|D_FF:d1|:6
+        | | +--- LC5 |T_FF:t_ff018|D_FF:d1|:6
+        | | | +- LC4 |T_FF:t_ff019|D_FF:d1|:6
+        | | | | 
+        | | | |   Other LABs fed by signals
+        | | | |   that feed LAB 'A'
+LC      | | | | | A B |     Logic cells that feed LAB 'A':
+LC6  -> - * * - | * - | <-- |T_FF:t_ff017|D_FF:d1|:6
+LC5  -> - - * * | * - | <-- |T_FF:t_ff018|D_FF:d1|:6
 
 Pin
-43   -> - - | - - | <-- clk
+43   -> - - - - | - - | <-- clk
+LC26 -> * - - - | * - | <-- |T_FF:t_ff014|D_FF:d1|:6
+LC25 -> - * - - | * - | <-- |T_FF:t_ff016|D_FF:d1|:6
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:                     d:\work\logi\wo5\freq_div.rpt
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
+freq_div
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC22 clk_out
+        | +----------------------------- LC23 |T_FF:t_ff01|D_FF:d1|:6
+        | | +--------------------------- LC30 |T_FF:t_ff02|D_FF:d1|:6
+        | | | +------------------------- LC31 |T_FF:t_ff03|D_FF:d1|:6
+        | | | | +----------------------- LC32 |T_FF:t_ff04|D_FF:d1|:6
+        | | | | | +--------------------- LC21 |T_FF:t_ff05|D_FF:d1|:6
+        | | | | | | +------------------- LC20 |T_FF:t_ff06|D_FF:d1|:6
+        | | | | | | | +----------------- LC19 |T_FF:t_ff07|D_FF:d1|:6
+        | | | | | | | | +--------------- LC18 |T_FF:t_ff08|D_FF:d1|:6
+        | | | | | | | | | +------------- LC17 |T_FF:t_ff09|D_FF:d1|:6
+        | | | | | | | | | | +----------- LC24 |T_FF:t_ff010|D_FF:d1|:6
+        | | | | | | | | | | | +--------- LC29 |T_FF:t_ff011|D_FF:d1|:6
+        | | | | | | | | | | | | +------- LC28 |T_FF:t_ff012|D_FF:d1|:6
+        | | | | | | | | | | | | | +----- LC27 |T_FF:t_ff013|D_FF:d1|:6
+        | | | | | | | | | | | | | | +--- LC26 |T_FF:t_ff014|D_FF:d1|:6
+        | | | | | | | | | | | | | | | +- LC25 |T_FF:t_ff016|D_FF:d1|:6
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC23 -> - * * - - - - - - - - - - - - - | - * | <-- |T_FF:t_ff01|D_FF:d1|:6
+LC30 -> - - * * - - - - - - - - - - - - | - * | <-- |T_FF:t_ff02|D_FF:d1|:6
+LC31 -> - - - * * - - - - - - - - - - - | - * | <-- |T_FF:t_ff03|D_FF:d1|:6
+LC32 -> - - - - * * - - - - - - - - - - | - * | <-- |T_FF:t_ff04|D_FF:d1|:6
+LC21 -> - - - - - * * - - - - - - - - - | - * | <-- |T_FF:t_ff05|D_FF:d1|:6
+LC20 -> - - - - - - * * - - - - - - - - | - * | <-- |T_FF:t_ff06|D_FF:d1|:6
+LC19 -> - - - - - - - * * - - - - - - - | - * | <-- |T_FF:t_ff07|D_FF:d1|:6
+LC18 -> - - - - - - - - * * - - - - - - | - * | <-- |T_FF:t_ff08|D_FF:d1|:6
+LC17 -> - - - - - - - - - * * - - - - - | - * | <-- |T_FF:t_ff09|D_FF:d1|:6
+LC24 -> - - - - - - - - - - * * - - - - | - * | <-- |T_FF:t_ff010|D_FF:d1|:6
+LC29 -> - - - - - - - - - - - * * - - - | - * | <-- |T_FF:t_ff011|D_FF:d1|:6
+LC28 -> - - - - - - - - - - - - * * - - | - * | <-- |T_FF:t_ff012|D_FF:d1|:6
+LC27 -> - - - - - - - - - - - - - * * - | - * | <-- |T_FF:t_ff013|D_FF:d1|:6
+
+Pin
+43   -> - - - - - - - - - - - - - - - - | - - | <-- clk
+LC8  -> - - - - - - - - - - - - - - - * | - * | <-- |T_FF:t_ff015|D_FF:d1|:6
+LC4  -> * - - - - - - - - - - - - - - - | - * | <-- |T_FF:t_ff019|D_FF:d1|:6
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                 d:\work\logi\project\freq_div.rpt
 freq_div
 
 ** EQUATIONS **
 
 clk      : INPUT;
 
--- Node name is 'clk_out' = '|T_FF:t_ff018|D_FF:d1|:6' 
+-- Node name is 'clk_out' = '|T_FF:t_ff020|D_FF:d1|:6' 
 -- Equation name is 'clk_out', type is output 
- clk_out = TFFE( VCC, !_LC018,  VCC,  VCC,  VCC);
+ clk_out = TFFE( VCC, !_LC004,  VCC,  VCC,  VCC);
 
 -- Node name is '|T_FF:t_ff01|D_FF:d1|:6' 
+-- Equation name is '_LC023', type is buried 
+_LC023   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff02|D_FF:d1|:6' 
+-- Equation name is '_LC030', type is buried 
+_LC030   = TFFE( VCC, !_LC023,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff03|D_FF:d1|:6' 
+-- Equation name is '_LC031', type is buried 
+_LC031   = TFFE( VCC, !_LC030,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff04|D_FF:d1|:6' 
+-- Equation name is '_LC032', type is buried 
+_LC032   = TFFE( VCC, !_LC031,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff05|D_FF:d1|:6' 
+-- Equation name is '_LC021', type is buried 
+_LC021   = TFFE( VCC, !_LC032,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff06|D_FF:d1|:6' 
+-- Equation name is '_LC020', type is buried 
+_LC020   = TFFE( VCC, !_LC021,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff07|D_FF:d1|:6' 
+-- Equation name is '_LC019', type is buried 
+_LC019   = TFFE( VCC, !_LC020,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff08|D_FF:d1|:6' 
 -- Equation name is '_LC018', type is buried 
-_LC018   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
+_LC018   = TFFE( VCC, !_LC019,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff09|D_FF:d1|:6' 
+-- Equation name is '_LC017', type is buried 
+_LC017   = TFFE( VCC, !_LC018,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff010|D_FF:d1|:6' 
+-- Equation name is '_LC024', type is buried 
+_LC024   = TFFE( VCC, !_LC017,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff011|D_FF:d1|:6' 
+-- Equation name is '_LC029', type is buried 
+_LC029   = TFFE( VCC, !_LC024,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff012|D_FF:d1|:6' 
+-- Equation name is '_LC028', type is buried 
+_LC028   = TFFE( VCC, !_LC029,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff013|D_FF:d1|:6' 
+-- Equation name is '_LC027', type is buried 
+_LC027   = TFFE( VCC, !_LC028,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff014|D_FF:d1|:6' 
+-- Equation name is '_LC026', type is buried 
+_LC026   = TFFE( VCC, !_LC027,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff015|D_FF:d1|:6' 
+-- Equation name is '_LC008', type is buried 
+_LC008   = TFFE( VCC, !_LC026,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff016|D_FF:d1|:6' 
+-- Equation name is '_LC025', type is buried 
+_LC025   = TFFE( VCC, !_LC008,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff017|D_FF:d1|:6' 
+-- Equation name is '_LC006', type is buried 
+_LC006   = TFFE( VCC, !_LC025,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff018|D_FF:d1|:6' 
+-- Equation name is '_LC005', type is buried 
+_LC005   = TFFE( VCC, !_LC006,  VCC,  VCC,  VCC);
+
+-- Node name is '|T_FF:t_ff019|D_FF:d1|:6' 
+-- Equation name is '_LC004', type is buried 
+_LC004   = TFFE( VCC, !_LC005,  VCC,  VCC,  VCC);
 
 
 
@@ -277,7 +460,7 @@ _LC018   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
 
 
 
-Project Information                              d:\work\logi\wo5\freq_div.rpt
+Project Information                          d:\work\logi\project\freq_div.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -352,18 +535,18 @@ VHDL Netlist Writer                       = off
 Compilation Times
 -----------------
 
-   Compiler Netlist Extractor             00:00:00
+   Compiler Netlist Extractor             00:00:01
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
    Fitter                                 00:00:00
-   Timing SNF Extractor                   00:00:00
-   Assembler                              00:00:01
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:02
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 4,406K
+Peak memory allocated during compilation  = 3,707K
