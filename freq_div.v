@@ -3,7 +3,6 @@ module freq_div(clk_out,clk);
 	output clk_out;
 	wire [18:0]q;
 	
-
 	T_FF t_ff01( q[0], 1'b1, clk, 1'b0);
 	T_FF t_ff02( q[1], 1'b1, q[0], 1'b0);
 	T_FF t_ff03( q[2], 1'b1, q[1], 1'b0);
@@ -21,10 +20,7 @@ module freq_div(clk_out,clk);
 	T_FF t_ff015( q[14], 1'b1, q[13], 1'b0);
 	T_FF t_ff016( q[15], 1'b1, q[14], 1'b0);
 	T_FF t_ff017( q[16], 1'b1, q[15], 1'b0);
-	T_FF t_ff018( q[17], 1'b1, q[16], 1'b0);
-	T_FF t_ff019( q[18], 1'b1, q[17], 1'b0);
-
-	T_FF t_ff020( clk_out, 1'b1, q[18], 1'b0);
+	T_FF t_ff019( clk_out, 1'b1, q[16], 1'b0);
 	
 endmodule
 

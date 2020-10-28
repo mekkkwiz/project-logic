@@ -1,6 +1,6 @@
 NDB006
-The number of symbol table entries is: 41
-The length of the symbol table is: 755
+The number of symbol table entries is: 37
+The length of the symbol table is: 679
 
 Index Hierarchy Path
 ----- --------------
@@ -39,96 +39,84 @@ $~	|T_FF:t_ff011|
 '1	|T_FF:t_ff016|D_FF:d1|
 'H	|T_FF:t_ff017|
 'W	|T_FF:t_ff017|D_FF:d1|
-'n	|T_FF:t_ff018|
-'}	|T_FF:t_ff018|D_FF:d1|
-(6	|T_FF:t_ff019|
-(E	|T_FF:t_ff019|D_FF:d1|
-(\	|T_FF:t_ff020|
-(k	|T_FF:t_ff020|D_FF:d1|
+'n	|T_FF:t_ff019|
+'}	|T_FF:t_ff019|D_FF:d1|
 
-The number of name info structs is : 82
+The number of name info structs is : 74
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
-"	(@\6H	!	2	0	1	N	clk	o
+"	(@\6H	!	2	0	1	J	clk	o
 #	L8eg	!	3	0	1	#	clk_out	p
-$	It0;	$X	'	5	0	:5	%@
-%	IGdW	$g	:5	%N
-&	L8e}	$g	4	0	2	*	&	:6	%O
-'	INu}	$X	$	x1	%@
-(	It0;	$~	+	5	0	:5	%X
-)	IGdW	%/	:5	%f
-*	L8e}	%/	4	0	2	.	*	:6	%g
-+	INu}	$~	(	x1	%X
-,	It0;	%F	/	5	0	:5	%p
--	IGdW	%U	:5	%~
-.	L8e}	%U	4	0	2	2	.	:6	&!
-/	INu}	%F	,	x1	%p
-0	It0;	%l	3	5	0	:5	&*
-1	IGdW	%{	:5	&8
-2	L8e}	%{	4	0	2	6	2	:6	&9
-3	INu}	%l	0	x1	&*
-4	It0;	&4	7	5	0	:5	&B
-5	IGdW	&C	:5	&P
-6	L8e}	&C	4	0	2	:	6	:6	&Q
-7	INu}	&4	4	x1	&B
-8	It0;	&Z	;	5	0	:5	&Z
-9	IGdW	&i	:5	&h
-:	L8e}	&i	4	0	2	>	:	:6	&i
-;	INu}	&Z	8	x1	&Z
-<	It0;	'"	?	5	0	:5	&r
-=	IGdW	'1	:5	'"
->	L8e}	'1	4	0	2	B	>	:6	'#
-?	INu}	'"	<	x1	&r
-@	It0;	'H	C	5	0	:5	',
-A	IGdW	'W	:5	':
-B	L8e}	'W	4	0	2	F	B	:6	';
-C	INu}	'H	@	x1	',
-D	It0;	'n	G	5	0	:5	'D
-E	IGdW	'}	:5	'R
-F	L8e}	'}	4	0	2	J	F	:6	'S
-G	INu}	'n	D	x1	'D
-H	It0;	(6	K	5	0	:5	'\
-I	IGdW	(E	:5	'j
-J	L8e}	(E	4	0	2	#	J	:6	'k
-K	INu}	(6	H	x1	'\
-L	It0;	.	O	5	0	:5	#"
-M	IGdW	<	:5	#1
-N	L8e}	<	4	0	2	V	N	:6	#2
-O	INu}	.	L	x1	#"
-P	It0;	(\	S	5	0	:5	't
-Q	IGdW	(k	:5	($
-R	IeE1	(k	4	0	:6	(%
-S	INu}	(\	P	x1	't
-T	It0;	R	W	5	0	:5	#<
-U	IGdW	`	:5	#J
-V	L8e}	`	4	0	2	Z	V	:6	#K
-W	INu}	R	T	x1	#<
-X	It0;	v	[	5	0	:5	#T
-Y	IGdW	"&	:5	#b
-Z	L8e}	"&	4	0	2	^	Z	:6	#c
-[	INu}	v	X	x1	#T
-\	It0;	"<	_	5	0	:5	#l
-]	IGdW	"J	:5	#z
-^	L8e}	"J	4	0	2	b	^	:6	#{
-_	INu}	"<	\	x1	#l
-`	It0;	"`	c	5	0	:5	$&
-a	IGdW	"n	:5	$4
-b	L8e}	"n	4	0	2	f	b	:6	$5
-c	INu}	"`	`	x1	$&
-d	It0;	#&	g	5	0	:5	$>
-e	IGdW	#4	:5	$L
-f	L8e}	#4	4	0	2	j	f	:6	$M
-g	INu}	#&	d	x1	$>
-h	It0;	#J	k	5	0	:5	$V
-i	IGdW	#X	:5	$d
-j	L8e}	#X	4	0	2	n	j	:6	$e
-k	INu}	#J	h	x1	$V
-l	It0;	#n	o	5	0	:5	$n
-m	IGdW	#|	:5	$|
-n	L8e}	#|	4	0	2	r	n	:6	$}
-o	INu}	#n	l	x1	$n
-p	It0;	$4	s	5	0	:5	%(
-q	IGdW	$B	:5	%6
-r	L8e}	$B	4	0	2	&	r	:6	%7
-s	INu}	$4	p	x1	%(
+$	It0;	$X	'	5	0	:5	%6
+%	IGdW	$g	:5	%D
+&	L8e}	$g	4	0	2	*	&	:6	%E
+'	INu}	$X	$	x1	%6
+(	It0;	$~	+	5	0	:5	%N
+)	IGdW	%/	:5	%\
+*	L8e}	%/	4	0	2	.	*	:6	%]
++	INu}	$~	(	x1	%N
+,	It0;	%F	/	5	0	:5	%f
+-	IGdW	%U	:5	%t
+.	L8e}	%U	4	0	2	2	.	:6	%u
+/	INu}	%F	,	x1	%f
+0	It0;	%l	3	5	0	:5	%~
+1	IGdW	%{	:5	&.
+2	L8e}	%{	4	0	2	6	2	:6	&/
+3	INu}	%l	0	x1	%~
+4	It0;	&4	7	5	0	:5	&8
+5	IGdW	&C	:5	&F
+6	L8e}	&C	4	0	2	:	6	:6	&G
+7	INu}	&4	4	x1	&8
+8	It0;	&Z	;	5	0	:5	&P
+9	IGdW	&i	:5	&^
+:	L8e}	&i	4	0	2	>	:	:6	&_
+;	INu}	&Z	8	x1	&P
+<	It0;	'"	?	5	0	:5	&h
+=	IGdW	'1	:5	&v
+>	L8e}	'1	4	0	2	B	>	:6	&w
+?	INu}	'"	<	x1	&h
+@	It0;	'H	C	5	0	:5	'"
+A	IGdW	'W	:5	'0
+B	L8e}	'W	4	0	2	#	B	:6	'1
+C	INu}	'H	@	x1	'"
+D	It0;	'n	G	5	0	:5	':
+E	IGdW	'}	:5	'H
+F	IeE1	'}	4	0	:6	'I
+G	INu}	'n	D	x1	':
+H	It0;	.	K	5	0	:5	"v
+I	IGdW	<	:5	#'
+J	L8e}	<	4	0	2	N	J	:6	#(
+K	INu}	.	H	x1	"v
+L	It0;	R	O	5	0	:5	#2
+M	IGdW	`	:5	#@
+N	L8e}	`	4	0	2	R	N	:6	#A
+O	INu}	R	L	x1	#2
+P	It0;	v	S	5	0	:5	#J
+Q	IGdW	"&	:5	#X
+R	L8e}	"&	4	0	2	V	R	:6	#Y
+S	INu}	v	P	x1	#J
+T	It0;	"<	W	5	0	:5	#b
+U	IGdW	"J	:5	#p
+V	L8e}	"J	4	0	2	Z	V	:6	#q
+W	INu}	"<	T	x1	#b
+X	It0;	"`	[	5	0	:5	#z
+Y	IGdW	"n	:5	$*
+Z	L8e}	"n	4	0	2	^	Z	:6	$+
+[	INu}	"`	X	x1	#z
+\	It0;	#&	_	5	0	:5	$4
+]	IGdW	#4	:5	$B
+^	L8e}	#4	4	0	2	b	^	:6	$C
+_	INu}	#&	\	x1	$4
+`	It0;	#J	c	5	0	:5	$L
+a	IGdW	#X	:5	$Z
+b	L8e}	#X	4	0	2	f	b	:6	$[
+c	INu}	#J	`	x1	$L
+d	It0;	#n	g	5	0	:5	$d
+e	IGdW	#|	:5	$r
+f	L8e}	#|	4	0	2	j	f	:6	$s
+g	INu}	#n	d	x1	$d
+h	It0;	$4	k	5	0	:5	$|
+i	IGdW	$B	:5	%,
+j	L8e}	$B	4	0	2	&	j	:6	%-
+k	INu}	$4	h	x1	$|

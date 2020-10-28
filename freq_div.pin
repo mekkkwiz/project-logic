@@ -63,8 +63,8 @@ TCK                              : 32
 RESERVED                         : 33
 RESERVED                         : 34
 VCC                              : 35
-clk_out                          : 36
-RESERVED                         : 37
+RESERVED                         : 36
+clk_out                          : 37
 TDO                              : 38
 RESERVED                         : 39
 RESERVED                         : 40
