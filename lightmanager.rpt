@@ -2,7 +2,7 @@ Project Information                      d:\work\logi\project\lightmanager.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/29/2020 16:51:46
+Compiled: 10/29/2020 19:47:29
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,9 +37,9 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 lightmanager
-      EPM7128SLC84-15      6        1        0      2       0           1  %
+      EPM7128SLC84-15      6        3        0      63      51          49 %
 
-User Pins:                 6        1        0  
+User Pins:                 6        3        0  
 
 
 
@@ -71,7 +71,7 @@ Device Options:
             -----------------------------------------------------------------_ 
           /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
     sel5 | 12                                                              74 | RESERVED 
-   VCCIO | 13                                                              73 | line1 
+   VCCIO | 13                                                              73 | RESERVED 
     #TDI | 14                                                              72 | GND 
 RESERVED | 15                                                              71 | #TDO 
 RESERVED | 16                                                              70 | RESERVED 
@@ -81,10 +81,10 @@ RESERVED | 18                                                              68 | 
 RESERVED | 20                                                              66 | VCCIO 
 RESERVED | 21                                                              65 | RESERVED 
 RESERVED | 22                       EPM7128SLC84-15                        64 | RESERVED 
-    #TMS | 23                                                              63 | RESERVED 
+    #TMS | 23                                                              63 | line3 
 RESERVED | 24                                                              62 | #TCK 
 RESERVED | 25                                                              61 | RESERVED 
-   VCCIO | 26                                                              60 | RESERVED 
+   VCCIO | 26                                                              60 | line1 
 RESERVED | 27                                                              59 | GND 
 RESERVED | 28                                                              58 | RESERVED 
 RESERVED | 29                                                              57 | RESERVED 
@@ -93,14 +93,14 @@ RESERVED | 31                                                              55 | 
      GND | 32                                                              54 | RESERVED 
          |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
            ------------------------------------------------------------------ 
-              R  R  R  R  R  V  R  R  R  G  V  R  R  R  G  R  R  R  R  R  V  
-              E  E  E  E  E  C  E  E  E  N  C  E  E  E  N  E  E  E  E  E  C  
-              S  S  S  S  S  C  S  S  S  D  C  S  S  S  D  S  S  S  S  S  C  
-              E  E  E  E  E  I  E  E  E     I  E  E  E     E  E  E  E  E  I  
-              R  R  R  R  R  O  R  R  R     N  R  R  R     R  R  R  R  R  O  
-              V  V  V  V  V     V  V  V     T  V  V  V     V  V  V  V  V     
-              E  E  E  E  E     E  E  E        E  E  E     E  E  E  E  E     
-              D  D  D  D  D     D  D  D        D  D  D     D  D  D  D  D     
+              R  R  R  R  R  V  R  R  R  G  V  l  R  R  G  R  R  R  R  R  V  
+              E  E  E  E  E  C  E  E  E  N  C  i  E  E  N  E  E  E  E  E  C  
+              S  S  S  S  S  C  S  S  S  D  C  n  S  S  D  S  S  S  S  S  C  
+              E  E  E  E  E  I  E  E  E     I  e  E  E     E  E  E  E  E  I  
+              R  R  R  R  R  O  R  R  R     N  2  R  R     R  R  R  R  R  O  
+              V  V  V  V  V     V  V  V     T     V  V     V  V  V  V  V     
+              E  E  E  E  E     E  E  E           E  E     E  E  E  E  E     
+              D  D  D  D  D     D  D  D           D  D     D  D  D  D  D     
 
 
 N.C. = No Connect. This pin has no internal connection to the device.
@@ -128,35 +128,35 @@ Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   6/ 8( 75%)   0/16(  0%)   0/36(  0%) 
 B:    LC17 - LC32     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-C:    LC33 - LC48     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-D:    LC49 - LC64     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
-E:    LC65 - LC80     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
-F:    LC81 - LC96     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-G:   LC97 - LC112     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-H:  LC113 - LC128     2/16( 12%)   1/ 8( 12%)   1/16(  6%)   8/36( 22%) 
+C:    LC33 - LC48     1/16(  6%)   1/ 8( 12%)   0/16(  0%)  33/36( 91%) 
+D:    LC49 - LC64    13/16( 81%)   0/ 8(  0%)  11/16( 68%)   7/36( 19%) 
+E:    LC65 - LC80    16/16(100%)   1/ 8( 12%)  13/16( 81%)  19/36( 52%) 
+F:    LC81 - LC96    16/16(100%)   2/ 8( 25%)  13/16( 81%)  19/36( 52%) 
+G:   LC97 - LC112    16/16(100%)   2/ 8( 25%)  14/16( 87%)  21/36( 58%) 
+H:  LC113 - LC128     1/16(  6%)   0/ 8(  0%)   0/16(  0%)   2/36(  5%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
-Total I/O pins used:                            11/64     ( 17%)
-Total logic cells used:                          2/128    (  1%)
-Total shareable expanders used:                  0/128    (  0%)
-Total Turbo logic cells used:                    2/128    (  1%)
-Total shareable expanders not available (n/a):   1/128    (  0%)
-Average fan-in:                                  7.50
-Total fan-in:                                    15
+Total I/O pins used:                            13/64     ( 20%)
+Total logic cells used:                         63/128    ( 49%)
+Total shareable expanders used:                 51/128    ( 39%)
+Total Turbo logic cells used:                   63/128    ( 49%)
+Total shareable expanders not available (n/a):   0/128    (  0%)
+Average fan-in:                                  7.03
+Total fan-in:                                   443
 
 Total input pins required:                       6
 Total fast input logic cells required:           0
-Total output pins required:                      1
+Total output pins required:                      3
 Total bidirectional pins required:               0
 Total reserved pins required                     4
-Total logic cells required:                      2
+Total logic cells required:                     63
 Total flipflops required:                        0
-Total product terms required:                    8
+Total product terms required:                  122
 Total logic cells lending parallel expanders:    0
-Total shareable expanders in database:           0
+Total shareable expanders in database:          19
 
-Synthesized logic cells:                         2/ 128   (  1%)
+Synthesized logic cells:                        63/ 128   ( 49%)
 
 
 
@@ -168,12 +168,12 @@ lightmanager
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   6   (13)  (A)      INPUT               0      0   0    0    0    1    1  sel0
-   8   (11)  (A)      INPUT               0      0   0    0    0    1    1  sel1
-   9    (8)  (A)      INPUT               0      0   0    0    0    1    1  sel2
-  10    (6)  (A)      INPUT               0      0   0    0    0    1    1  sel3
-  11    (5)  (A)      INPUT               0      0   0    0    0    1    1  sel4
-  12    (3)  (A)      INPUT               0      0   0    0    0    1    1  sel5
+   6   (13)  (A)      INPUT               0      0   0    0    0    3   58  sel0
+   8   (11)  (A)      INPUT               0      0   0    0    0    3   58  sel1
+   9    (8)  (A)      INPUT               0      0   0    0    0    3   58  sel2
+  10    (6)  (A)      INPUT               0      0   0    0    0    3   58  sel3
+  11    (5)  (A)      INPUT               0      0   0    0    0    3   58  sel4
+  12    (3)  (A)      INPUT               0      0   0    0    0    3   58  sel5
 
 
 Code:
@@ -194,7 +194,9 @@ lightmanager
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  73    115    H     OUTPUT    s t        1      0   1    6    2    1    1  line1
+  60     93    F     OUTPUT    s t       13     12   0    6   13    0    1  line1
+  44     65    E     OUTPUT    s t       13     12   0    6   13    0    1  line2
+  63     97    G     OUTPUT    s t       14     12   0    6   15    1    1  line3
 
 
 Code:
@@ -215,7 +217,66 @@ lightmanager
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   -    113    H      LCELL    s t        0      0   0    6    1    1    0  ~99~1~2
+   -     98    G       SOFT    s t        0      0   0    6    0    1    0  ~42~1
+ (64)    99    G       SOFT    s t        0      0   0    6    0    1    0  ~50~1
+ (65)   101    G       SOFT    s t        0      0   0    6    0    1    0  ~58~1
+   -    102    G       SOFT    s t        0      0   0    6    0    1    0  ~66~1
+   -    103    G       SOFT    s t        0      0   0    6    0    1    0  ~106~1
+ (67)   104    G       SOFT    s t        0      0   0    6    0    1    0  ~114~1
+ (68)   105    G       SOFT    s t        0      0   0    6    0    1    0  ~122~1
+ (70)   109    G       SOFT    s t        0      0   0    6    0    1    0  ~130~1
+   -    100    G       SOFT    s t        0      0   0    6    0    1    0  ~138~1
+ (71)   112    G       SOFT    s t        0      0   0    6    0    1    0  ~146~1
+   -    111    G       SOFT    s t        0      0   0    6    0    1    0  ~154~1
+   -    110    G       SOFT    s t        0      0   0    6    0    1    0  ~162~1
+ (37)    56    D       SOFT    s t       10      9   0    6    1    1    0  ~298~1
+   -    108    G       SOFT    s t        0      0   0    6    0    0    1  ~304~1
+ (69)   107    G       SOFT    s t        0      0   0    6    0    0    1  ~312~1
+   -    106    G       SOFT    s t        0      0   0    6    0    0    1  ~320~1
+ (54)    83    F       SOFT    s t        0      0   0    6    0    0    1  ~328~1
+ (55)    85    F       SOFT    s t        0      0   0    6    0    1    1  ~336~1
+   -     81    F       SOFT    s t        0      0   0    6    0    1    1  ~344~1
+   -     82    F       SOFT    s t        0      0   0    6    0    1    1  ~352~1
+   -     84    F       SOFT    s t        0      0   0    6    0    1    1  ~360~1
+   -     95    F       SOFT    s t        0      0   0    6    0    0    1  ~368~1
+ (57)    88    F       SOFT    s t        0      0   0    6    0    0    1  ~376~1
+   -     87    F       SOFT    s t        0      0   0    6    0    0    1  ~384~1
+ (62)    96    F       SOFT    s t        0      0   0    6    0    0    1  ~392~1
+ (56)    86    F       SOFT    s t        0      0   0    6    0    1    1  ~400~1
+ (61)    94    F       SOFT    s t        0      0   0    6    0    1    1  ~408~1
+   -     92    F       SOFT    s t        0      0   0    6    0    1    1  ~416~1
+ (58)    91    F       SOFT    s t        0      0   0    6    0    1    1  ~424~1
+   -     90    F       SOFT    s t        0      0   0    6    0    1    1  ~432~1
+   -     89    F       SOFT    s t        0      0   0    6    0    1    1  ~440~1
+ (48)    72    E       SOFT    s t        0      0   0    6    0    1    1  ~448~1
+   -     68    E       SOFT    s t        0      0   0    6    0    1    1  ~456~1
+ (51)    77    E       SOFT    s t        0      0   0    6    0    0    1  ~464~1
+   -     79    E       SOFT    s t        0      0   0    6    0    0    1  ~472~1
+ (52)    80    E       SOFT    s t        0      0   0    6    0    0    1  ~480~1
+   -     66    E       SOFT    s t        0      0   0    6    0    0    1  ~488~1
+ (45)    67    E       SOFT    s t        0      0   0    6    0    0    1  ~496~1
+   -     70    E       SOFT    s t        0      0   0    6    0    0    1  ~504~1
+   -     71    E       SOFT    s t        0      0   0    6    0    0    1  ~512~1
+ (49)    73    E       SOFT    s t        0      0   0    6    0    0    1  ~520~1
+ (50)    75    E       SOFT    s t        0      0   0    6    0    0    1  ~528~1
+   -     78    E       SOFT    s t        0      0   0    6    0    0    1  ~536~1
+ (46)    69    E       SOFT    s t        0      0   0    6    0    0    1  ~544~1
+   -     76    E       SOFT    s t        0      0   0    6    0    0    1  ~552~1
+   -     33    C       SOFT    s t        0      0   0    0   33    1    0  ~592~1
+   -     74    E       SOFT    s t        0      0   0    6    0    1    0  ~630~1
+   -     60    D       SOFT    s t        0      0   0    6    0    1    0  ~638~1
+   -     63    D       SOFT    s t        0      0   0    6    0    1    0  ~646~1
+ (33)    64    D       SOFT    s t        0      0   0    6    0    1    0  ~654~1
+ (41)    49    D       SOFT    s t        0      0   0    6    0    1    0  ~694~1
+   -     50    D       SOFT    s t        0      0   0    6    0    1    0  ~702~1
+   -     52    D       SOFT    s t        0      0   0    6    0    1    0  ~710~1
+   -     54    D       SOFT    s t        0      0   0    6    0    1    0  ~718~1
+   -     55    D       SOFT    s t        0      0   0    6    0    1    0  ~726~1
+ (36)    57    D       SOFT    s t        0      0   0    6    0    1    0  ~734~1
+   -     58    D       SOFT    s t        0      0   0    6    0    1    0  ~742~1
+ (35)    59    D       SOFT    s t        0      0   0    6    0    1    0  ~750~1
+ (40)    51    D       SOFT    s t        6      5   0    6    0    1    1  ~885~1
+   -    113    H       SOFT    s t        0      0   0    0    2    1    0  ~886~1
 
 
 Code:
@@ -233,25 +294,279 @@ lightmanager
 
 ** LOGIC CELL INTERCONNECTIONS **
 
-Logic Array Block 'H':
+Logic Array Block 'C':
 
-             Logic cells placed in LAB 'H'
-        +--- LC115 line1
-        | +- LC113 ~99~1~2
-        | | 
-        | |   Other LABs fed by signals
-        | |   that feed LAB 'H'
-LC      | | | A B C D E F G H |     Logic cells that feed LAB 'H':
-LC115-> * * | - - - - - - - * | <-- line1
-LC113-> * - | - - - - - - - * | <-- ~99~1~2
+           Logic cells placed in LAB 'C'
+        +- LC33 ~592~1
+        | 
+        |   Other LABs fed by signals
+        |   that feed LAB 'C'
+LC      | | A B C D E F G H |     Logic cells that feed LAB 'C':
 
 Pin
-6    -> * * | - - - - - - - * | <-- sel0
-8    -> * * | - - - - - - - * | <-- sel1
-9    -> * * | - - - - - - - * | <-- sel2
-10   -> * * | - - - - - - - * | <-- sel3
-11   -> * * | - - - - - - - * | <-- sel4
-12   -> * * | - - - - - - - * | <-- sel5
+LC65 -> * | - - * - - - - - | <-- line2
+LC108-> * | - - * - - - - - | <-- ~304~1
+LC107-> * | - - * - - - - - | <-- ~312~1
+LC106-> * | - - * - - - - - | <-- ~320~1
+LC83 -> * | - - * - - - - - | <-- ~328~1
+LC85 -> * | - - * - * - - - | <-- ~336~1
+LC81 -> * | - - * - * - - - | <-- ~344~1
+LC82 -> * | - - * - * - - - | <-- ~352~1
+LC84 -> * | - - * - * - - - | <-- ~360~1
+LC95 -> * | - - * - - - - - | <-- ~368~1
+LC88 -> * | - - * - - - - - | <-- ~376~1
+LC87 -> * | - - * - - - - - | <-- ~384~1
+LC96 -> * | - - * - - - - - | <-- ~392~1
+LC86 -> * | - - * - * - - - | <-- ~400~1
+LC94 -> * | - - * - * - - - | <-- ~408~1
+LC92 -> * | - - * - * - - - | <-- ~416~1
+LC91 -> * | - - * - * - - - | <-- ~424~1
+LC90 -> * | - - * - * - - - | <-- ~432~1
+LC89 -> * | - - * - * - - - | <-- ~440~1
+LC72 -> * | - - * - * - - - | <-- ~448~1
+LC68 -> * | - - * - * - - - | <-- ~456~1
+LC77 -> * | - - * - - - - - | <-- ~464~1
+LC79 -> * | - - * - - - - - | <-- ~472~1
+LC80 -> * | - - * - - - - - | <-- ~480~1
+LC66 -> * | - - * - - - - - | <-- ~488~1
+LC67 -> * | - - * - - - - - | <-- ~496~1
+LC70 -> * | - - * - - - - - | <-- ~504~1
+LC71 -> * | - - * - - - - - | <-- ~512~1
+LC73 -> * | - - * - - - - - | <-- ~520~1
+LC75 -> * | - - * - - - - - | <-- ~528~1
+LC78 -> * | - - * - - - - - | <-- ~536~1
+LC69 -> * | - - * - - - - - | <-- ~544~1
+LC76 -> * | - - * - - - - - | <-- ~552~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:             d:\work\logi\project\lightmanager.rpt
+lightmanager
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                   Logic cells placed in LAB 'D'
+        +------------------------- LC56 ~298~1
+        | +----------------------- LC60 ~638~1
+        | | +--------------------- LC63 ~646~1
+        | | | +------------------- LC64 ~654~1
+        | | | | +----------------- LC49 ~694~1
+        | | | | | +--------------- LC50 ~702~1
+        | | | | | | +------------- LC52 ~710~1
+        | | | | | | | +----------- LC54 ~718~1
+        | | | | | | | | +--------- LC55 ~726~1
+        | | | | | | | | | +------- LC57 ~734~1
+        | | | | | | | | | | +----- LC58 ~742~1
+        | | | | | | | | | | | +--- LC59 ~750~1
+        | | | | | | | | | | | | +- LC51 ~885~1
+        | | | | | | | | | | | | | 
+        | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'D':
+
+Pin
+6    -> * * * * * * * * * * * * * | - - - * * * * - | <-- sel0
+8    -> * * * * * * * * * * * * * | - - - * * * * - | <-- sel1
+9    -> * * * * * * * * * * * * * | - - - * * * * - | <-- sel2
+10   -> * * * * * * * * * * * * * | - - - * * * * - | <-- sel3
+11   -> * * * * * * * * * * * * * | - - - * * * * - | <-- sel4
+12   -> * * * * * * * * * * * * * | - - - * * * * - | <-- sel5
+LC93 -> * - - - - - - - - - - - - | - - - * - - - - | <-- line1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:             d:\work\logi\project\lightmanager.rpt
+lightmanager
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                         Logic cells placed in LAB 'E'
+        +------------------------------- LC65 line2
+        | +----------------------------- LC72 ~448~1
+        | | +--------------------------- LC68 ~456~1
+        | | | +------------------------- LC77 ~464~1
+        | | | | +----------------------- LC79 ~472~1
+        | | | | | +--------------------- LC80 ~480~1
+        | | | | | | +------------------- LC66 ~488~1
+        | | | | | | | +----------------- LC67 ~496~1
+        | | | | | | | | +--------------- LC70 ~504~1
+        | | | | | | | | | +------------- LC71 ~512~1
+        | | | | | | | | | | +----------- LC73 ~520~1
+        | | | | | | | | | | | +--------- LC75 ~528~1
+        | | | | | | | | | | | | +------- LC78 ~536~1
+        | | | | | | | | | | | | | +----- LC69 ~544~1
+        | | | | | | | | | | | | | | +--- LC76 ~552~1
+        | | | | | | | | | | | | | | | +- LC74 ~630~1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
+LC72 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~448~1
+LC68 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~456~1
+
+Pin
+6    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel0
+8    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel1
+9    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel2
+10   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel3
+11   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel4
+12   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel5
+LC85 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~336~1
+LC81 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~344~1
+LC82 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~352~1
+LC84 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~360~1
+LC86 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~400~1
+LC94 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~408~1
+LC92 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~416~1
+LC91 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~424~1
+LC90 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~432~1
+LC89 -> * - - - - - - - - - - - - - - - | - - * - * - - - | <-- ~440~1
+LC33 -> * - - - - - - - - - - - - - - - | - - - - * - - - | <-- ~592~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:             d:\work\logi\project\lightmanager.rpt
+lightmanager
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                         Logic cells placed in LAB 'F'
+        +------------------------------- LC93 line1
+        | +----------------------------- LC83 ~328~1
+        | | +--------------------------- LC85 ~336~1
+        | | | +------------------------- LC81 ~344~1
+        | | | | +----------------------- LC82 ~352~1
+        | | | | | +--------------------- LC84 ~360~1
+        | | | | | | +------------------- LC95 ~368~1
+        | | | | | | | +----------------- LC88 ~376~1
+        | | | | | | | | +--------------- LC87 ~384~1
+        | | | | | | | | | +------------- LC96 ~392~1
+        | | | | | | | | | | +----------- LC86 ~400~1
+        | | | | | | | | | | | +--------- LC94 ~408~1
+        | | | | | | | | | | | | +------- LC92 ~416~1
+        | | | | | | | | | | | | | +----- LC91 ~424~1
+        | | | | | | | | | | | | | | +--- LC90 ~432~1
+        | | | | | | | | | | | | | | | +- LC89 ~440~1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
+
+Pin
+6    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel0
+8    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel1
+9    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel2
+10   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel3
+11   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel4
+12   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel5
+LC98 -> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~42~1
+LC99 -> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~50~1
+LC101-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~58~1
+LC102-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~66~1
+LC103-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~106~1
+LC104-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~114~1
+LC105-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~122~1
+LC109-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~130~1
+LC100-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~138~1
+LC112-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~146~1
+LC111-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~154~1
+LC110-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~162~1
+LC56 -> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- ~298~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:             d:\work\logi\project\lightmanager.rpt
+lightmanager
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'G':
+
+                                         Logic cells placed in LAB 'G'
+        +------------------------------- LC97 line3
+        | +----------------------------- LC98 ~42~1
+        | | +--------------------------- LC99 ~50~1
+        | | | +------------------------- LC101 ~58~1
+        | | | | +----------------------- LC102 ~66~1
+        | | | | | +--------------------- LC103 ~106~1
+        | | | | | | +------------------- LC104 ~114~1
+        | | | | | | | +----------------- LC105 ~122~1
+        | | | | | | | | +--------------- LC109 ~130~1
+        | | | | | | | | | +------------- LC100 ~138~1
+        | | | | | | | | | | +----------- LC112 ~146~1
+        | | | | | | | | | | | +--------- LC111 ~154~1
+        | | | | | | | | | | | | +------- LC110 ~162~1
+        | | | | | | | | | | | | | +----- LC108 ~304~1
+        | | | | | | | | | | | | | | +--- LC107 ~312~1
+        | | | | | | | | | | | | | | | +- LC106 ~320~1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'G'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
+LC97 -> * - - - - - - - - - - - - - - - | - - - - - - * * | <-- line3
+
+Pin
+6    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel0
+8    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel1
+9    -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel2
+10   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel3
+11   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel4
+12   -> * * * * * * * * * * * * * * * * | - - - * * * * - | <-- sel5
+LC74 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~630~1
+LC60 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~638~1
+LC63 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~646~1
+LC64 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~654~1
+LC49 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~694~1
+LC50 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~702~1
+LC52 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~710~1
+LC54 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~718~1
+LC55 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~726~1
+LC57 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~734~1
+LC58 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~742~1
+LC59 -> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~750~1
+LC51 -> * - - - - - - - - - - - - - - - | - - - - - - * * | <-- ~885~1
+LC113-> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- ~886~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:             d:\work\logi\project\lightmanager.rpt
+lightmanager
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'H':
+
+           Logic cells placed in LAB 'H'
+        +- LC113 ~886~1
+        | 
+        |   Other LABs fed by signals
+        |   that feed LAB 'H'
+LC      | | A B C D E F G H |     Logic cells that feed LAB 'H':
+
+Pin
+LC97 -> * | - - - - - - * * | <-- line3
+LC51 -> * | - - - - - - * * | <-- ~885~1
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -270,27 +585,502 @@ sel3     : INPUT;
 sel4     : INPUT;
 sel5     : INPUT;
 
--- Node name is 'line1' = '~99~1' 
--- Equation name is 'line1', location is LC115, type is output.
- line1   = LCELL( _EQ001 $  GND);
-  _EQ001 = !sel0 & !sel1 & !sel2 & !sel3 & !sel4 & !sel5
-         #  line1 &  sel2 &  sel3
-         #  line1 &  sel1 &  sel3
-         #  line1 &  sel5
-         #  _LC113;
+-- Node name is 'line1' = '~299~1' 
+-- Equation name is 'line1', location is LC093, type is output.
+ line1   = LCELL( _EQ001 $  _EQ002);
+  _EQ001 = !_LC056 &  sel1 & !sel2 & !sel3 & !sel4 & !sel5 &  _X001 &  _X002 & 
+              _X003 &  _X004 &  _X005 &  _X006 &  _X007 &  _X008 &  _X009 & 
+              _X010 &  _X011 &  _X012
+         # !_LC056 & !_LC098 & !_LC099 & !_LC100 & !_LC101 & !_LC102 & 
+             !_LC103 & !_LC104 & !_LC105 & !_LC109 & !_LC110 & !_LC111 & 
+             !_LC112 & !sel1 & !sel2 & !sel3 & !sel4 & !sel5;
+  _X001  = EXP(!sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X002  = EXP(!sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X003  = EXP( sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X004  = EXP(!sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X005  = EXP( sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X009  = EXP( sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X010  = EXP(!sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X011  = EXP( sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _EQ002 =  _X013;
+  _X013  = EXP(!_LC056 & !_LC098 & !_LC099 & !_LC100 & !_LC101 & !_LC102 & 
+             !_LC103 & !_LC104 & !_LC105 & !_LC109 & !_LC110 & !_LC111 & 
+             !_LC112);
 
--- Node name is '~99~1~2' 
--- Equation name is '~99~1~2', location is LC113, type is buried.
+-- Node name is 'line2' = '~593~1' 
+-- Equation name is 'line2', location is LC065, type is output.
+ line2   = LCELL( _EQ003 $  _EQ004);
+  _EQ003 = !_LC033 &  sel1 & !sel2 & !sel3 & !sel4 & !sel5 &  _X001 &  _X002 & 
+              _X003 &  _X004 &  _X005 &  _X006 &  _X007 &  _X008 &  _X009 & 
+              _X010 &  _X011 &  _X012
+         # !_LC033 & !_LC068 & !_LC072 & !_LC081 & !_LC082 & !_LC084 & 
+             !_LC085 & !_LC086 & !_LC089 & !_LC090 & !_LC091 & !_LC092 & 
+             !_LC094 & !sel1 & !sel2 & !sel3 & !sel4 & !sel5;
+  _X001  = EXP(!sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X002  = EXP(!sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X003  = EXP( sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X004  = EXP(!sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X005  = EXP( sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X009  = EXP( sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X010  = EXP(!sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X011  = EXP( sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _EQ004 =  _X014;
+  _X014  = EXP(!_LC033 & !_LC068 & !_LC072 & !_LC081 & !_LC082 & !_LC084 & 
+             !_LC085 & !_LC086 & !_LC089 & !_LC090 & !_LC091 & !_LC092 & 
+             !_LC094);
+
+-- Node name is 'line3' = '~887~1' 
+-- Equation name is 'line3', location is LC097, type is output.
+ line3   = LCELL( _EQ005 $  _EQ006);
+  _EQ005 =  sel1 & !sel2 & !sel3 & !sel4 & !sel5 &  _X001 &  _X002 &  _X003 & 
+              _X004 &  _X005 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010 & 
+              _X011 &  _X012 &  _X015
+         # !_LC049 & !_LC050 & !_LC052 & !_LC054 & !_LC055 & !_LC057 & 
+             !_LC058 & !_LC059 & !_LC060 & !_LC063 & !_LC064 & !_LC074 & 
+             !sel1 & !sel2 & !sel3 & !sel4 & !sel5 &  _X015;
+  _X001  = EXP(!sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X002  = EXP(!sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X003  = EXP( sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X004  = EXP(!sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X005  = EXP( sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X009  = EXP( sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X010  = EXP(!sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X011  = EXP( sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X015  = EXP( _LC051 &  line3);
+  _EQ006 =  _X016;
+  _X016  = EXP(!_LC049 & !_LC050 & !_LC052 & !_LC054 & !_LC055 & !_LC057 & 
+             !_LC058 & !_LC059 & !_LC060 & !_LC063 & !_LC064 & !_LC074 & 
+             !_LC113);
+
+-- Node name is '~42~1' 
+-- Equation name is '~42~1', location is LC098, type is buried.
 -- synthesized logic cell 
-_LC113   = LCELL( _EQ002 $  GND);
-  _EQ002 =  line1 & !sel0 & !sel1 & !sel2 & !sel3 & !sel4
-         #  line1 & !sel0 & !sel1 & !sel2 & !sel3 & !sel5
-         #  line1 &  sel4;
+_LC098   = LCELL( _EQ007 $  GND);
+  _EQ007 = !sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~50~1' 
+-- Equation name is '~50~1', location is LC099, type is buried.
+-- synthesized logic cell 
+_LC099   = LCELL( _EQ008 $  GND);
+  _EQ008 =  sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~58~1' 
+-- Equation name is '~58~1', location is LC101, type is buried.
+-- synthesized logic cell 
+_LC101   = LCELL( _EQ009 $  GND);
+  _EQ009 = !sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~66~1' 
+-- Equation name is '~66~1', location is LC102, type is buried.
+-- synthesized logic cell 
+_LC102   = LCELL( _EQ010 $  GND);
+  _EQ010 =  sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~106~1' 
+-- Equation name is '~106~1', location is LC103, type is buried.
+-- synthesized logic cell 
+_LC103   = LCELL( _EQ011 $  GND);
+  _EQ011 = !sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~114~1' 
+-- Equation name is '~114~1', location is LC104, type is buried.
+-- synthesized logic cell 
+_LC104   = LCELL( _EQ012 $  GND);
+  _EQ012 =  sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~122~1' 
+-- Equation name is '~122~1', location is LC105, type is buried.
+-- synthesized logic cell 
+_LC105   = LCELL( _EQ013 $  GND);
+  _EQ013 = !sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~130~1' 
+-- Equation name is '~130~1', location is LC109, type is buried.
+-- synthesized logic cell 
+_LC109   = LCELL( _EQ014 $  GND);
+  _EQ014 =  sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~138~1' 
+-- Equation name is '~138~1', location is LC100, type is buried.
+-- synthesized logic cell 
+_LC100   = LCELL( _EQ015 $  GND);
+  _EQ015 = !sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~146~1' 
+-- Equation name is '~146~1', location is LC112, type is buried.
+-- synthesized logic cell 
+_LC112   = LCELL( _EQ016 $  GND);
+  _EQ016 =  sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~154~1' 
+-- Equation name is '~154~1', location is LC111, type is buried.
+-- synthesized logic cell 
+_LC111   = LCELL( _EQ017 $  GND);
+  _EQ017 = !sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~162~1' 
+-- Equation name is '~162~1', location is LC110, type is buried.
+-- synthesized logic cell 
+_LC110   = LCELL( _EQ018 $  GND);
+  _EQ018 =  sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~298~1' 
+-- Equation name is '~298~1', location is LC056, type is buried.
+-- synthesized logic cell 
+_LC056   = LCELL( _EQ019 $  _EQ020);
+  _EQ019 =  line1 & !sel2 & !sel3 & !sel4 & !sel5 &  _X001 &  _X003 &  _X004 & 
+              _X005 &  _X006 &  _X007 &  _X008 &  _X012 &  _X017 &  _X018;
+  _X001  = EXP(!sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X003  = EXP( sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X004  = EXP(!sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X005  = EXP( sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X017  = EXP( sel3 & !sel5);
+  _X018  = EXP( sel2 &  sel4 & !sel5);
+  _EQ020 =  line1 &  _X001 &  _X003 &  _X004 &  _X005 &  _X006 &  _X007 & 
+              _X008 &  _X012 &  _X017 &  _X018;
+  _X001  = EXP(!sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X003  = EXP( sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X004  = EXP(!sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X005  = EXP( sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5);
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X017  = EXP( sel3 & !sel5);
+  _X018  = EXP( sel2 &  sel4 & !sel5);
+
+-- Node name is '~304~1' 
+-- Equation name is '~304~1', location is LC108, type is buried.
+-- synthesized logic cell 
+_LC108   = LCELL( _EQ021 $  GND);
+  _EQ021 = !sel0 & !sel1 & !sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~312~1' 
+-- Equation name is '~312~1', location is LC107, type is buried.
+-- synthesized logic cell 
+_LC107   = LCELL( _EQ022 $  GND);
+  _EQ022 =  sel0 & !sel1 & !sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~320~1' 
+-- Equation name is '~320~1', location is LC106, type is buried.
+-- synthesized logic cell 
+_LC106   = LCELL( _EQ023 $  GND);
+  _EQ023 = !sel0 &  sel1 & !sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~328~1' 
+-- Equation name is '~328~1', location is LC083, type is buried.
+-- synthesized logic cell 
+_LC083   = LCELL( _EQ024 $  GND);
+  _EQ024 =  sel0 &  sel1 & !sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~336~1' 
+-- Equation name is '~336~1', location is LC085, type is buried.
+-- synthesized logic cell 
+_LC085   = LCELL( _EQ025 $  GND);
+  _EQ025 = !sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~344~1' 
+-- Equation name is '~344~1', location is LC081, type is buried.
+-- synthesized logic cell 
+_LC081   = LCELL( _EQ026 $  GND);
+  _EQ026 =  sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~352~1' 
+-- Equation name is '~352~1', location is LC082, type is buried.
+-- synthesized logic cell 
+_LC082   = LCELL( _EQ027 $  GND);
+  _EQ027 = !sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~360~1' 
+-- Equation name is '~360~1', location is LC084, type is buried.
+-- synthesized logic cell 
+_LC084   = LCELL( _EQ028 $  GND);
+  _EQ028 =  sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~368~1' 
+-- Equation name is '~368~1', location is LC095, type is buried.
+-- synthesized logic cell 
+_LC095   = LCELL( _EQ029 $  GND);
+  _EQ029 = !sel0 & !sel1 & !sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~376~1' 
+-- Equation name is '~376~1', location is LC088, type is buried.
+-- synthesized logic cell 
+_LC088   = LCELL( _EQ030 $  GND);
+  _EQ030 =  sel0 & !sel1 & !sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~384~1' 
+-- Equation name is '~384~1', location is LC087, type is buried.
+-- synthesized logic cell 
+_LC087   = LCELL( _EQ031 $  GND);
+  _EQ031 = !sel0 &  sel1 & !sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~392~1' 
+-- Equation name is '~392~1', location is LC096, type is buried.
+-- synthesized logic cell 
+_LC096   = LCELL( _EQ032 $  GND);
+  _EQ032 =  sel0 &  sel1 & !sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~400~1' 
+-- Equation name is '~400~1', location is LC086, type is buried.
+-- synthesized logic cell 
+_LC086   = LCELL( _EQ033 $  GND);
+  _EQ033 = !sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~408~1' 
+-- Equation name is '~408~1', location is LC094, type is buried.
+-- synthesized logic cell 
+_LC094   = LCELL( _EQ034 $  GND);
+  _EQ034 =  sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~416~1' 
+-- Equation name is '~416~1', location is LC092, type is buried.
+-- synthesized logic cell 
+_LC092   = LCELL( _EQ035 $  GND);
+  _EQ035 = !sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~424~1' 
+-- Equation name is '~424~1', location is LC091, type is buried.
+-- synthesized logic cell 
+_LC091   = LCELL( _EQ036 $  GND);
+  _EQ036 =  sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~432~1' 
+-- Equation name is '~432~1', location is LC090, type is buried.
+-- synthesized logic cell 
+_LC090   = LCELL( _EQ037 $  GND);
+  _EQ037 = !sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~440~1' 
+-- Equation name is '~440~1', location is LC089, type is buried.
+-- synthesized logic cell 
+_LC089   = LCELL( _EQ038 $  GND);
+  _EQ038 =  sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~448~1' 
+-- Equation name is '~448~1', location is LC072, type is buried.
+-- synthesized logic cell 
+_LC072   = LCELL( _EQ039 $  GND);
+  _EQ039 = !sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~456~1' 
+-- Equation name is '~456~1', location is LC068, type is buried.
+-- synthesized logic cell 
+_LC068   = LCELL( _EQ040 $  GND);
+  _EQ040 =  sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~464~1' 
+-- Equation name is '~464~1', location is LC077, type is buried.
+-- synthesized logic cell 
+_LC077   = LCELL( _EQ041 $  GND);
+  _EQ041 = !sel0 & !sel1 &  sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~472~1' 
+-- Equation name is '~472~1', location is LC079, type is buried.
+-- synthesized logic cell 
+_LC079   = LCELL( _EQ042 $  GND);
+  _EQ042 =  sel0 & !sel1 &  sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~480~1' 
+-- Equation name is '~480~1', location is LC080, type is buried.
+-- synthesized logic cell 
+_LC080   = LCELL( _EQ043 $  GND);
+  _EQ043 = !sel0 &  sel1 &  sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~488~1' 
+-- Equation name is '~488~1', location is LC066, type is buried.
+-- synthesized logic cell 
+_LC066   = LCELL( _EQ044 $  GND);
+  _EQ044 =  sel0 &  sel1 &  sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~496~1' 
+-- Equation name is '~496~1', location is LC067, type is buried.
+-- synthesized logic cell 
+_LC067   = LCELL( _EQ045 $  GND);
+  _EQ045 = !sel0 & !sel1 & !sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~504~1' 
+-- Equation name is '~504~1', location is LC070, type is buried.
+-- synthesized logic cell 
+_LC070   = LCELL( _EQ046 $  GND);
+  _EQ046 =  sel0 & !sel1 & !sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~512~1' 
+-- Equation name is '~512~1', location is LC071, type is buried.
+-- synthesized logic cell 
+_LC071   = LCELL( _EQ047 $  GND);
+  _EQ047 = !sel0 &  sel1 & !sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~520~1' 
+-- Equation name is '~520~1', location is LC073, type is buried.
+-- synthesized logic cell 
+_LC073   = LCELL( _EQ048 $  GND);
+  _EQ048 =  sel0 &  sel1 & !sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~528~1' 
+-- Equation name is '~528~1', location is LC075, type is buried.
+-- synthesized logic cell 
+_LC075   = LCELL( _EQ049 $  GND);
+  _EQ049 = !sel0 & !sel1 &  sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~536~1' 
+-- Equation name is '~536~1', location is LC078, type is buried.
+-- synthesized logic cell 
+_LC078   = LCELL( _EQ050 $  GND);
+  _EQ050 =  sel0 & !sel1 &  sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~544~1' 
+-- Equation name is '~544~1', location is LC069, type is buried.
+-- synthesized logic cell 
+_LC069   = LCELL( _EQ051 $  GND);
+  _EQ051 = !sel0 &  sel1 &  sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~552~1' 
+-- Equation name is '~552~1', location is LC076, type is buried.
+-- synthesized logic cell 
+_LC076   = LCELL( _EQ052 $  GND);
+  _EQ052 =  sel0 &  sel1 &  sel2 &  sel3 &  sel4 & !sel5;
+
+-- Node name is '~592~1' 
+-- Equation name is '~592~1', location is LC033, type is buried.
+-- synthesized logic cell 
+_LC033   = LCELL( _EQ053 $  GND);
+  _EQ053 = !_LC066 & !_LC067 & !_LC068 & !_LC069 & !_LC070 & !_LC071 & 
+             !_LC072 & !_LC073 & !_LC075 & !_LC076 & !_LC077 & !_LC078 & 
+             !_LC079 & !_LC080 & !_LC081 & !_LC082 & !_LC083 & !_LC084 & 
+             !_LC085 & !_LC086 & !_LC087 & !_LC088 & !_LC089 & !_LC090 & 
+             !_LC091 & !_LC092 & !_LC094 & !_LC095 & !_LC096 & !_LC106 & 
+             !_LC107 & !_LC108 &  line2;
+
+-- Node name is '~630~1' 
+-- Equation name is '~630~1', location is LC074, type is buried.
+-- synthesized logic cell 
+_LC074   = LCELL( _EQ054 $  GND);
+  _EQ054 = !sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~638~1' 
+-- Equation name is '~638~1', location is LC060, type is buried.
+-- synthesized logic cell 
+_LC060   = LCELL( _EQ055 $  GND);
+  _EQ055 =  sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~646~1' 
+-- Equation name is '~646~1', location is LC063, type is buried.
+-- synthesized logic cell 
+_LC063   = LCELL( _EQ056 $  GND);
+  _EQ056 = !sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~654~1' 
+-- Equation name is '~654~1', location is LC064, type is buried.
+-- synthesized logic cell 
+_LC064   = LCELL( _EQ057 $  GND);
+  _EQ057 =  sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5;
+
+-- Node name is '~694~1' 
+-- Equation name is '~694~1', location is LC049, type is buried.
+-- synthesized logic cell 
+_LC049   = LCELL( _EQ058 $  GND);
+  _EQ058 = !sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~702~1' 
+-- Equation name is '~702~1', location is LC050, type is buried.
+-- synthesized logic cell 
+_LC050   = LCELL( _EQ059 $  GND);
+  _EQ059 =  sel0 & !sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~710~1' 
+-- Equation name is '~710~1', location is LC052, type is buried.
+-- synthesized logic cell 
+_LC052   = LCELL( _EQ060 $  GND);
+  _EQ060 = !sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~718~1' 
+-- Equation name is '~718~1', location is LC054, type is buried.
+-- synthesized logic cell 
+_LC054   = LCELL( _EQ061 $  GND);
+  _EQ061 =  sel0 &  sel1 &  sel2 &  sel3 & !sel4 & !sel5;
+
+-- Node name is '~726~1' 
+-- Equation name is '~726~1', location is LC055, type is buried.
+-- synthesized logic cell 
+_LC055   = LCELL( _EQ062 $  GND);
+  _EQ062 = !sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~734~1' 
+-- Equation name is '~734~1', location is LC057, type is buried.
+-- synthesized logic cell 
+_LC057   = LCELL( _EQ063 $  GND);
+  _EQ063 =  sel0 & !sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~742~1' 
+-- Equation name is '~742~1', location is LC058, type is buried.
+-- synthesized logic cell 
+_LC058   = LCELL( _EQ064 $  GND);
+  _EQ064 = !sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~750~1' 
+-- Equation name is '~750~1', location is LC059, type is buried.
+-- synthesized logic cell 
+_LC059   = LCELL( _EQ065 $  GND);
+  _EQ065 =  sel0 &  sel1 & !sel2 & !sel3 &  sel4 & !sel5;
+
+-- Node name is '~885~1' 
+-- Equation name is '~885~1', location is LC051, type is buried.
+-- synthesized logic cell 
+_LC051   = LCELL( _EQ066 $  _EQ067);
+  _EQ066 = !sel2 & !sel3 & !sel4 & !sel5 &  _X006 &  _X007 &  _X008 &  _X012 & 
+              _X017 &  _X019;
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X017  = EXP( sel3 & !sel5);
+  _X019  = EXP( sel4 & !sel5);
+  _EQ067 =  _X006 &  _X007 &  _X008 &  _X012 &  _X017 &  _X019;
+  _X006  = EXP(!sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X007  = EXP( sel0 & !sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X008  = EXP(!sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X012  = EXP( sel0 &  sel1 &  sel2 & !sel3 & !sel4 & !sel5);
+  _X017  = EXP( sel3 & !sel5);
+  _X019  = EXP( sel4 & !sel5);
+
+-- Node name is '~886~1' 
+-- Equation name is '~886~1', location is LC113, type is buried.
+-- synthesized logic cell 
+_LC113   = LCELL( _EQ068 $  GND);
+  _EQ068 =  _LC051 &  line3;
 
 
 
 --     Shareable expanders that are duplicated in multiple LABs:
---     (none)
+--    _X001 occurs in LABs D, E, F, G
+--    _X002 occurs in LABs E, F, G
+--    _X003 occurs in LABs D, E, F, G
+--    _X004 occurs in LABs D, E, F, G
+--    _X005 occurs in LABs D, E, F, G
+--    _X006 occurs in LABs D, E, F, G
+--    _X007 occurs in LABs D, E, F, G
+--    _X008 occurs in LABs D, E, F, G
+--    _X009 occurs in LABs E, F, G
+--    _X010 occurs in LABs E, F, G
+--    _X011 occurs in LABs E, F, G
+--    _X012 occurs in LABs D, E, F, G
 
 
 
@@ -374,14 +1164,14 @@ Compilation Times
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
-   Fitter                                 00:00:00
+   Fitter                                 00:00:01
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:00
+   Total Time                             00:00:01
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 6,787K
+Peak memory allocated during compilation  = 12,323K

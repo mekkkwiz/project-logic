@@ -1,7 +1,7 @@
  module counter_6bit(q, clk, reset);
  	input clk, reset;
  	output [5:0]q;
- 	//output q0,q1,q2;
+
  	wire and_out1, and_out2, and_out3, and_out4;
 
  	T_FF t0(q[0], 1'b1, clk, reset);

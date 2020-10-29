@@ -43,7 +43,7 @@ TREE
 {
 	debouncing::(0,0):(0): debouncing.v
 	{
-		d_ff:1:(6,0):(8,d1): D_FF.v;
 		d_ff:1:(7,0):(9,d2): D_FF.v;
+		d_ff:1:(6,0):(8,d1): D_FF.v;
 	}
 }

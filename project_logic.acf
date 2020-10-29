@@ -21,6 +21,12 @@
 --
 CHIP project_logic
 BEGIN
+	|button1 :	INPUT_PIN = 51;
+	|led8 :	OUTPUT_PIN = 11;
+	|o_diff4 :	OUTPUT_PIN = 48;
+	|o_diff3 :	OUTPUT_PIN = 46;
+	|o_diff2 :	OUTPUT_PIN = 45;
+	|o_diff1 :	OUTPUT_PIN = 44;
 	|led7 :	OUTPUT_PIN = 12;
 	|led6 :	OUTPUT_PIN = 15;
 	|led5 :	OUTPUT_PIN = 16;
@@ -43,7 +49,6 @@ BEGIN
 	|diff3 :	INPUT_PIN = 60;
 	|diff2 :	INPUT_PIN = 61;
 	|diff1 :	INPUT_PIN = 63;
-	|button1 :	INPUT_PIN = 52;
 	|clk :	INPUT_PIN = 83;
 	DEVICE = EPM7128SLC84-15;
 END;

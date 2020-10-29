@@ -72,7 +72,7 @@ RESERVED                         : 40
 RESERVED                         : 41
 GND                              : 42
 VCCINT                           : 43
-RESERVED                         : 44
+line2                            : 44
 RESERVED                         : 45
 RESERVED                         : 46
 GND                              : 47
@@ -88,10 +88,10 @@ RESERVED                         : 56
 RESERVED                         : 57
 RESERVED                         : 58
 GND                              : 59
-RESERVED                         : 60
+line1                            : 60
 RESERVED                         : 61
 TCK                              : 62
-RESERVED                         : 63
+line3                            : 63
 RESERVED                         : 64
 RESERVED                         : 65
 VCCIO                            : 66
@@ -101,7 +101,7 @@ RESERVED                         : 69
 RESERVED                         : 70
 TDO                              : 71
 GND                              : 72
-line1                            : 73
+RESERVED                         : 73
 RESERVED                         : 74
 RESERVED                         : 75
 RESERVED                         : 76
