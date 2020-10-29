@@ -1,6 +1,6 @@
 NDB006
-The number of symbol table entries is: 42
-The length of the symbol table is: 1203
+The number of symbol table entries is: 40
+The length of the symbol table is: 1141
 
 Index Hierarchy Path
 ----- --------------
@@ -39,15 +39,13 @@ $|	|freq_div:u1|T_FF:t_ff07|
 +-	|freq_div:u1|T_FF:t_ff016|D_FF:d1|
 +P	|freq_div:u1|T_FF:t_ff017|
 +k	|freq_div:u1|T_FF:t_ff017|D_FF:d1|
-,0	|freq_div:u1|T_FF:t_ff018|
-,K	|freq_div:u1|T_FF:t_ff018|D_FF:d1|
-,n	|freq_div:u1|T_FF:t_ff019|
--+	|freq_div:u1|T_FF:t_ff019|D_FF:d1|
--N	|D_FF:d0|
--X	|D_FF:d1|
--b	|D_FF:d2|
+,0	|freq_div:u1|T_FF:t_ff019|
+,K	|freq_div:u1|T_FF:t_ff019|D_FF:d1|
+,n	|D_FF:d0|
+,x	|D_FF:d1|
+-$	|D_FF:d2|
 
-The number of name info structs is : 90
+The number of name info structs is : 86
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
@@ -55,89 +53,85 @@ InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainP
 #	IeEA	!	14	0	:6	t
 $	IeEA	!	15	0	:7	u
 %	IeEA	!	15	0	:8	v
-&	(@\6H	!	5	0	1	Z	clk	p
+&	(@\6H	!	5	0	1	V	clk	p
 '	L8ef	!	5	0	1	+	pb_1	o
 (	IeE[	!	6	0	pb_out	r
 )	L8ef	!	5	0	3	+	-	/	reset	q
-*	IGdW	-N	:5	(0
-+	L8e}	-N	4	0	1	-	:6	(1
-,	IGdW	-X	:5	(:
--	L8e}	-X	4	0	2	/	(	:6	(;
-.	IGdW	-b	:5	(D
-/	L8e}	-b	4	0	1	(	:6	(E
-0	It0;	&t	3	5	0	:5	%Z
-1	IGdW	'1	:5	%h
-2	L8e}	'1	4	0	2	6	2	:6	%i
-3	INu}	&t	0	x1	%Z
-4	It0;	'T	7	5	0	:5	%r
-5	IGdW	'o	:5	&"
-6	L8e}	'o	4	0	2	:	6	:6	&#
-7	INu}	'T	4	x1	%r
-8	It0;	(4	;	5	0	:5	&,
-9	IGdW	(O	:5	&:
-:	L8e}	(O	4	0	2	>	:	:6	&;
-;	INu}	(4	8	x1	&,
-<	It0;	(r	?	5	0	:5	&D
-=	IGdW	)/	:5	&R
->	L8e}	)/	4	0	2	B	>	:6	&S
-?	INu}	(r	<	x1	&D
-@	It0;	)R	C	5	0	:5	&\
-A	IGdW	)m	:5	&j
-B	L8e}	)m	4	0	2	F	B	:6	&k
-C	INu}	)R	@	x1	&\
-D	It0;	*2	G	5	0	:5	&t
-E	IGdW	*M	:5	'$
-F	L8e}	*M	4	0	2	J	F	:6	'%
-G	INu}	*2	D	x1	&t
-H	It0;	*p	K	5	0	:5	'.
-I	IGdW	+-	:5	'<
-J	L8e}	+-	4	0	2	N	J	:6	'=
-K	INu}	*p	H	x1	'.
-L	It0;	+P	O	5	0	:5	'F
-M	IGdW	+k	:5	'T
-N	L8e}	+k	4	0	2	R	N	:6	'U
-O	INu}	+P	L	x1	'F
-P	It0;	,0	S	5	0	:5	'^
-Q	IGdW	,K	:5	'l
-R	L8e}	,K	4	0	2	V	R	:6	'm
-S	INu}	,0	P	x1	'^
-T	It0;	,n	W	5	0	:5	'v
-U	IGdW	-+	:5	(&
-V	L8e}	-+	4	0	4	+	-	/	V	:6	('
-W	INu}	,n	T	x1	'v
-X	It0;	.	[	5	0	:5	#<
-Y	IGdW	H	:5	#K
-Z	L8e}	H	4	0	2	^	Z	:6	#L
-[	INu}	.	X	x1	#<
-\	It0;	j	_	5	0	:5	#V
-]	IGdW	"&	:5	#d
-^	L8e}	"&	4	0	2	b	^	:6	#e
-_	INu}	j	\	x1	#V
-`	It0;	"H	c	5	0	:5	#n
-a	IGdW	"b	:5	#|
-b	L8e}	"b	4	0	2	f	b	:6	#}
-c	INu}	"H	`	x1	#n
-d	It0;	#&	g	5	0	:5	$(
-e	IGdW	#@	:5	$6
-f	L8e}	#@	4	0	2	j	f	:6	$7
-g	INu}	#&	d	x1	$(
-h	It0;	#b	k	5	0	:5	$@
-i	IGdW	#|	:5	$N
-j	L8e}	#|	4	0	2	n	j	:6	$O
-k	INu}	#b	h	x1	$@
-l	It0;	$@	o	5	0	:5	$X
-m	IGdW	$Z	:5	$f
-n	L8e}	$Z	4	0	2	r	n	:6	$g
-o	INu}	$@	l	x1	$X
-p	It0;	$|	s	5	0	:5	$p
-q	IGdW	%8	:5	$~
-r	L8e}	%8	4	0	2	v	r	:6	%!
-s	INu}	$|	p	x1	$p
-t	It0;	%Z	w	5	0	:5	%*
-u	IGdW	%t	:5	%8
-v	L8e}	%t	4	0	2	z	v	:6	%9
-w	INu}	%Z	t	x1	%*
-x	It0;	&8	{	5	0	:5	%B
-y	IGdW	&R	:5	%P
-z	L8e}	&R	4	0	2	2	z	:6	%Q
-{	INu}	&8	x	x1	%B
+*	IGdW	,n	:5	'q
++	L8e}	,n	4	0	1	-	:6	'r
+,	IGdW	,x	:5	'{
+-	L8e}	,x	4	0	2	/	(	:6	'|
+.	IGdW	-$	:5	('
+/	L8e}	-$	4	0	1	(	:6	((
+0	It0;	&t	3	5	0	:5	%U
+1	IGdW	'1	:5	%c
+2	L8e}	'1	4	0	2	6	2	:6	%d
+3	INu}	&t	0	x1	%U
+4	It0;	'T	7	5	0	:5	%m
+5	IGdW	'o	:5	%{
+6	L8e}	'o	4	0	2	:	6	:6	%|
+7	INu}	'T	4	x1	%m
+8	It0;	(4	;	5	0	:5	&'
+9	IGdW	(O	:5	&5
+:	L8e}	(O	4	0	2	>	:	:6	&6
+;	INu}	(4	8	x1	&'
+<	It0;	(r	?	5	0	:5	&?
+=	IGdW	)/	:5	&M
+>	L8e}	)/	4	0	2	B	>	:6	&N
+?	INu}	(r	<	x1	&?
+@	It0;	)R	C	5	0	:5	&W
+A	IGdW	)m	:5	&e
+B	L8e}	)m	4	0	2	F	B	:6	&f
+C	INu}	)R	@	x1	&W
+D	It0;	*2	G	5	0	:5	&o
+E	IGdW	*M	:5	&}
+F	L8e}	*M	4	0	2	J	F	:6	&~
+G	INu}	*2	D	x1	&o
+H	It0;	*p	K	5	0	:5	')
+I	IGdW	+-	:5	'7
+J	L8e}	+-	4	0	2	N	J	:6	'8
+K	INu}	*p	H	x1	')
+L	It0;	+P	O	5	0	:5	'A
+M	IGdW	+k	:5	'O
+N	L8e}	+k	4	0	2	R	N	:6	'P
+O	INu}	+P	L	x1	'A
+P	It0;	,0	S	5	0	:5	'Y
+Q	IGdW	,K	:5	'g
+R	L8e}	,K	4	0	4	+	-	/	R	:6	'h
+S	INu}	,0	P	x1	'Y
+T	It0;	.	W	5	0	:5	#7
+U	IGdW	H	:5	#F
+V	L8e}	H	4	0	2	Z	V	:6	#G
+W	INu}	.	T	x1	#7
+X	It0;	j	[	5	0	:5	#Q
+Y	IGdW	"&	:5	#_
+Z	L8e}	"&	4	0	2	^	Z	:6	#`
+[	INu}	j	X	x1	#Q
+\	It0;	"H	_	5	0	:5	#i
+]	IGdW	"b	:5	#w
+^	L8e}	"b	4	0	2	b	^	:6	#x
+_	INu}	"H	\	x1	#i
+`	It0;	#&	c	5	0	:5	$#
+a	IGdW	#@	:5	$1
+b	L8e}	#@	4	0	2	f	b	:6	$2
+c	INu}	#&	`	x1	$#
+d	It0;	#b	g	5	0	:5	$;
+e	IGdW	#|	:5	$I
+f	L8e}	#|	4	0	2	j	f	:6	$J
+g	INu}	#b	d	x1	$;
+h	It0;	$@	k	5	0	:5	$S
+i	IGdW	$Z	:5	$a
+j	L8e}	$Z	4	0	2	n	j	:6	$b
+k	INu}	$@	h	x1	$S
+l	It0;	$|	o	5	0	:5	$k
+m	IGdW	%8	:5	$y
+n	L8e}	%8	4	0	2	r	n	:6	$z
+o	INu}	$|	l	x1	$k
+p	It0;	%Z	s	5	0	:5	%%
+q	IGdW	%t	:5	%3
+r	L8e}	%t	4	0	2	v	r	:6	%4
+s	INu}	%Z	p	x1	%%
+t	It0;	&8	w	5	0	:5	%=
+u	IGdW	&R	:5	%K
+v	L8e}	&R	4	0	2	2	v	:6	%L
+w	INu}	&8	t	x1	%=

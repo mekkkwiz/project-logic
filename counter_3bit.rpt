@@ -2,7 +2,7 @@ Project Information                      d:\work\logi\project\counter_3bit.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/28/2020 20:09:48
+Compiled: 10/29/2020 16:54:57
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,7 +37,7 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 counter_3bit
-      EPM7128SLC84-15      2        3        0      3       0           2  %
+      EPM7032SLC44-5       2        3        0      3       0           9  %
 
 User Pins:                 2        3        0  
 
@@ -50,21 +50,6 @@ Project Information                      d:\work\logi\project\counter_3bit.rpt
 
 
 INFO: Signal 'clk' chosen for auto global Clock
-
-
-Project Information                      d:\work\logi\project\counter_3bit.rpt
-
-** PIN/LOCATION/CHIP ASSIGNMENTS **
-
-                  Actual                  
-    User       Assignments                
-Assignments   (if different)     Node Name
-
-counter_3bit@83                   clk
-counter_3bit@20                   q0
-counter_3bit@21                   q1
-counter_3bit@18                   q2
-counter_3bit@63                   reset
 
 
 Project Information                      d:\work\logi\project\counter_3bit.rpt
@@ -89,61 +74,49 @@ counter_3bit
 
 
 
-Device: EPM7128SLC84-15
+Device: EPM7032SLC44-5
 
 Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
     Enable JTAG Support                        = ON
     User Code                                  = ffff
-    MultiVolt I/O                              = OFF
 
-              R  R  R  R     R  R  R                    R  R  R     R  R  R  
-              E  E  E  E     E  E  E                    E  E  E     E  E  E  
-              S  S  S  S     S  S  S  V                 S  S  S     S  S  S  
-              E  E  E  E     E  E  E  C                 E  E  E  V  E  E  E  
-              R  R  R  R     R  R  R  C                 R  R  R  C  R  R  R  
-              V  V  V  V  G  V  V  V  I  G  G  G  c  G  V  V  V  C  V  V  V  
-              E  E  E  E  N  E  E  E  N  N  N  N  l  N  E  E  E  I  E  E  E  
-              D  D  D  D  D  D  D  D  T  D  D  D  k  D  D  D  D  O  D  D  D  
-            -----------------------------------------------------------------_ 
-          /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
-RESERVED | 12                                                              74 | RESERVED 
-   VCCIO | 13                                                              73 | RESERVED 
-    #TDI | 14                                                              72 | GND 
-RESERVED | 15                                                              71 | #TDO 
-RESERVED | 16                                                              70 | RESERVED 
-RESERVED | 17                                                              69 | RESERVED 
-      q2 | 18                                                              68 | RESERVED 
-     GND | 19                                                              67 | RESERVED 
-      q0 | 20                                                              66 | VCCIO 
-      q1 | 21                                                              65 | RESERVED 
-RESERVED | 22                       EPM7128SLC84-15                        64 | RESERVED 
-    #TMS | 23                                                              63 | reset 
-RESERVED | 24                                                              62 | #TCK 
-RESERVED | 25                                                              61 | RESERVED 
-   VCCIO | 26                                                              60 | RESERVED 
-RESERVED | 27                                                              59 | GND 
-RESERVED | 28                                                              58 | RESERVED 
-RESERVED | 29                                                              57 | RESERVED 
-RESERVED | 30                                                              56 | RESERVED 
-RESERVED | 31                                                              55 | RESERVED 
-     GND | 32                                                              54 | RESERVED 
-         |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
-           ------------------------------------------------------------------ 
-              R  R  R  R  R  V  R  R  R  G  V  R  R  R  G  R  R  R  R  R  V  
-              E  E  E  E  E  C  E  E  E  N  C  E  E  E  N  E  E  E  E  E  C  
-              S  S  S  S  S  C  S  S  S  D  C  S  S  S  D  S  S  S  S  S  C  
-              E  E  E  E  E  I  E  E  E     I  E  E  E     E  E  E  E  E  I  
-              R  R  R  R  R  O  R  R  R     N  R  R  R     R  R  R  R  R  O  
-              V  V  V  V  V     V  V  V     T  V  V  V     V  V  V  V  V     
-              E  E  E  E  E     E  E  E        E  E  E     E  E  E  E  E     
-              D  D  D  D  D     D  D  D        D  D  D     D  D  D  D  D     
+              R  R                             
+              E  E                             
+              S  S                             
+              E  E  r                          
+              R  R  e                          
+              V  V  s  V  G  G  G  c  G        
+              E  E  e  C  N  N  N  l  N  q  q  
+              D  D  t  C  D  D  D  k  D  1  0  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+    #TDI |  7                                39 | q2 
+RESERVED |  8                                38 | #TDO 
+RESERVED |  9                                37 | RESERVED 
+     GND | 10                                36 | RESERVED 
+RESERVED | 11                                35 | VCC 
+RESERVED | 12         EPM7032SLC44-5         34 | RESERVED 
+    #TMS | 13                                33 | RESERVED 
+RESERVED | 14                                32 | #TCK 
+     VCC | 15                                31 | RESERVED 
+RESERVED | 16                                30 | GND 
+RESERVED | 17                                29 | RESERVED 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              R  R  R  R  G  V  R  R  R  R  R  
+              E  E  E  E  N  C  E  E  E  E  E  
+              S  S  S  S  D  C  S  S  S  S  S  
+              E  E  E  E        E  E  E  E  E  
+              R  R  R  R        R  R  R  R  R  
+              V  V  V  V        V  V  V  V  V  
+              E  E  E  E        E  E  E  E  E  
+              D  D  D  D        D  D  D  D  D  
 
 
 N.C. = No Connect. This pin has no internal connection to the device.
-VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
-VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCC = Dedicated power pin, which MUST be connected to VCC.
 GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
 RESERVED = Unused I/O pin, which MUST be left unconnected.
 
@@ -164,22 +137,16 @@ counter_3bit
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     3/16( 18%)   4/ 8( 50%)   0/16(  0%)   3/36(  8%) 
-C:    LC33 - LC48     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-D:    LC49 - LC64     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
-E:    LC65 - LC80     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
-F:    LC81 - LC96     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-G:   LC97 - LC112     0/16(  0%)   2/ 8( 25%)   0/16(  0%)   0/36(  0%) 
-H:  LC113 - LC128     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
+A:     LC1 - LC16     0/16(  0%)   3/16( 18%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     3/16( 18%)   5/16( 31%)   0/16(  0%)   3/36(  8%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
-Total I/O pins used:                             8/64     ( 12%)
-Total logic cells used:                          3/128    (  2%)
-Total shareable expanders used:                  0/128    (  0%)
-Total Turbo logic cells used:                    3/128    (  2%)
-Total shareable expanders not available (n/a):   0/128    (  0%)
+Total I/O pins used:                             8/32     ( 25%)
+Total logic cells used:                          3/32     (  9%)
+Total shareable expanders used:                  0/32     (  0%)
+Total Turbo logic cells used:                    3/32     (  9%)
+Total shareable expanders not available (n/a):   0/32     (  0%)
 Average fan-in:                                  4.00
 Total fan-in:                                    12
 
@@ -194,7 +161,7 @@ Total product terms required:                    6
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         0/ 128   (  0%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -206,8 +173,8 @@ counter_3bit
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  83      -   -       INPUT  G            0      0   0    0    0    0    0  clk
-  63   (97)  (G)      INPUT               0      0   0    0    0    3    0  reset
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   4    (1)  (A)      INPUT               0      0   0    0    0    3    0  reset
 
 
 Code:
@@ -233,9 +200,9 @@ counter_3bit
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  20     21    B         FF   +  t        0      0   0    1    0    2    0  q0
-  21     19    B         FF   +  t        0      0   0    1    1    1    0  q1
-  18     24    B         FF   +  t        0      0   0    1    2    0    0  q2
+  40     18    B         FF   +  t        0      0   0    1    0    2    0  q0
+  41     17    B         FF   +  t        0      0   0    1    1    1    0  q1
+  39     19    B         FF   +  t        0      0   0    1    2    0    0  q2
 
 
 Code:
@@ -256,19 +223,19 @@ counter_3bit
 Logic Array Block 'B':
 
                Logic cells placed in LAB 'B'
-        +----- LC21 q0
-        | +--- LC19 q1
-        | | +- LC24 q2
+        +----- LC18 q0
+        | +--- LC17 q1
+        | | +- LC19 q2
         | | | 
         | | |   Other LABs fed by signals
         | | |   that feed LAB 'B'
-LC      | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
-LC21 -> * * * | - * - - - - - - | <-- q0
-LC19 -> - * * | - * - - - - - - | <-- q1
+LC      | | | | A B |     Logic cells that feed LAB 'B':
+LC18 -> * * * | - * | <-- q0
+LC17 -> - * * | - * | <-- q1
 
 Pin
-83   -> - - - | - - - - - - - - | <-- clk
-63   -> * * * | - * - - - - - - | <-- reset
+43   -> - - - | - - | <-- clk
+4    -> * * * | - * | <-- reset
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -383,14 +350,14 @@ Compilation Times
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
-   Fitter                                 00:00:01
+   Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 5,748K
+Peak memory allocated during compilation  = 6,626K

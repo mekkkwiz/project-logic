@@ -1,4 +1,4 @@
- module counter_6bit(q, clk, reset);
+ module counter_4bit(q, clk, reset);
  	input clk, reset;
  	output [5:0]q;
  	//output q0,q1,q2;

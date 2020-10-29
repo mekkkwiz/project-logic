@@ -2,7 +2,7 @@ Project Information                      d:\work\logi\project\counter_4bit.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/28/2020 19:47:18
+Compiled: 10/29/2020 16:57:06
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,9 +37,9 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 counter_4bit
-      EPM7032SLC44-5       2        4        0      4       0           12 %
+      EPM7032SLC44-5       2        6        0      6       0           18 %
 
-User Pins:                 2        4        0  
+User Pins:                 2        6        0  
 
 
 
@@ -66,6 +66,10 @@ Project Information                      d:\work\logi\project\counter_4bit.rpt
 |t_ff:t2|d_ff:d1|
 |t_ff:t3|
 |t_ff:t3|d_ff:d1|
+|t_ff:t4|
+|t_ff:t4|d_ff:d1|
+|t_ff:t5|
+|t_ff:t5|d_ff:d1|
 
 
 Device-Specific Information:             d:\work\logi\project\counter_4bit.rpt
@@ -91,15 +95,15 @@ Device Options:
               R  R  e                          
               V  V  s  V  G  G  G  c  G        
               E  E  e  C  N  N  N  l  N  q  q  
-              D  D  t  C  D  D  D  k  D  2  1  
+              D  D  t  C  D  D  D  k  D  2  3  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
     #TDI |  7                                39 | q0 
 RESERVED |  8                                38 | #TDO 
-RESERVED |  9                                37 | q3 
-     GND | 10                                36 | RESERVED 
+RESERVED |  9                                37 | q4 
+     GND | 10                                36 | q1 
 RESERVED | 11                                35 | VCC 
-RESERVED | 12         EPM7032SLC44-5         34 | RESERVED 
+RESERVED | 12         EPM7032SLC44-5         34 | q5 
     #TMS | 13                                33 | RESERVED 
 RESERVED | 14                                32 | #TCK 
      VCC | 15                                31 | RESERVED 
@@ -140,26 +144,26 @@ counter_4bit
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   3/16( 18%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     4/16( 25%)   6/16( 37%)   0/16(  0%)   4/36( 11%) 
+B:    LC17 - LC32     6/16( 37%)   8/16( 50%)   0/16(  0%)   6/36( 16%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
-Total I/O pins used:                             9/32     ( 28%)
-Total logic cells used:                          4/32     ( 12%)
+Total I/O pins used:                            11/32     ( 34%)
+Total logic cells used:                          6/32     ( 18%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    4/32     ( 12%)
+Total Turbo logic cells used:                    6/32     ( 18%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  4.50
-Total fan-in:                                    18
+Average fan-in:                                  5.50
+Total fan-in:                                    33
 
 Total input pins required:                       2
 Total fast input logic cells required:           0
-Total output pins required:                      4
+Total output pins required:                      6
 Total bidirectional pins required:               0
 Total reserved pins required                     4
-Total logic cells required:                      4
-Total flipflops required:                        4
-Total product terms required:                    8
+Total logic cells required:                      6
+Total flipflops required:                        6
+Total product terms required:                   12
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -176,7 +180,7 @@ counter_4bit
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
   43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
-   4    (1)  (A)      INPUT               0      0   0    0    0    4    0  reset
+   4    (1)  (A)      INPUT               0      0   0    0    0    6    0  reset
 
 
 Code:
@@ -202,10 +206,12 @@ counter_4bit
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  39     19    B         FF   +  t        0      0   0    1    0    3    0  q0
-  40     18    B         FF   +  t        0      0   0    1    1    2    0  q1
-  41     17    B         FF   +  t        0      0   0    1    2    1    0  q2
-  37     21    B         FF   +  t        0      0   0    1    3    0    0  q3
+  39     19    B         FF   +  t        0      0   0    1    0    5    0  q0
+  36     22    B         FF   +  t        0      0   0    1    1    4    0  q1
+  41     17    B         FF   +  t        0      0   0    1    2    3    0  q2
+  40     18    B         FF   +  t        0      0   0    1    3    2    0  q3
+  37     21    B         FF   +  t        0      0   0    1    4    1    0  q4
+  34     23    B         FF   +  t        0      0   0    1    5    0    0  q5
 
 
 Code:
@@ -225,22 +231,26 @@ counter_4bit
 
 Logic Array Block 'B':
 
-                 Logic cells placed in LAB 'B'
-        +------- LC19 q0
-        | +----- LC18 q1
-        | | +--- LC17 q2
-        | | | +- LC21 q3
-        | | | | 
-        | | | |   Other LABs fed by signals
-        | | | |   that feed LAB 'B'
-LC      | | | | | A B |     Logic cells that feed LAB 'B':
-LC19 -> * * * * | - * | <-- q0
-LC18 -> - * * * | - * | <-- q1
-LC17 -> - - * * | - * | <-- q2
+                     Logic cells placed in LAB 'B'
+        +----------- LC19 q0
+        | +--------- LC22 q1
+        | | +------- LC17 q2
+        | | | +----- LC18 q3
+        | | | | +--- LC21 q4
+        | | | | | +- LC23 q5
+        | | | | | | 
+        | | | | | |   Other LABs fed by signals
+        | | | | | |   that feed LAB 'B'
+LC      | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC19 -> * * * * * * | - * | <-- q0
+LC22 -> - * * * * * | - * | <-- q1
+LC17 -> - - * * * * | - * | <-- q2
+LC18 -> - - - * * * | - * | <-- q3
+LC21 -> - - - - * * | - * | <-- q4
 
 Pin
-43   -> - - - - | - - | <-- clk
-4    -> * * * * | - * | <-- reset
+43   -> - - - - - - | - - | <-- clk
+4    -> * * * * * * | - * | <-- reset
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -272,6 +282,16 @@ reset    : INPUT;
 -- Equation name is 'q3', type is output 
  q3      = TFFE( _EQ002, GLOBAL(!clk), !reset,  VCC,  VCC);
   _EQ002 =  q0 &  q1 &  q2;
+
+-- Node name is 'q4' = '|T_FF:t4|D_FF:d1|:6' 
+-- Equation name is 'q4', type is output 
+ q4      = TFFE( _EQ003, GLOBAL(!clk), !reset,  VCC,  VCC);
+  _EQ003 =  q0 &  q1 &  q2 &  q3;
+
+-- Node name is 'q5' = '|T_FF:t5|D_FF:d1|:6' 
+-- Equation name is 'q5', type is output 
+ q5      = TFFE( _EQ004, GLOBAL(!clk), !reset,  VCC,  VCC);
+  _EQ004 =  q0 &  q1 &  q2 &  q3 &  q4;
 
 
 
@@ -360,14 +380,14 @@ Compilation Times
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
-   Fitter                                 00:00:01
+   Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 5,311K
+Peak memory allocated during compilation  = 3,848K

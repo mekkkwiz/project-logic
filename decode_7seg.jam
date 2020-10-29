@@ -18,10 +18,10 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7032S - d:\work\logi\project\decode_7seg.pof Mon Oct 26 04:54:55 2020
+'Device #1: EPM7032S - d:\work\logi\project\decode_7seg.pof Thu Oct 29 09:57:52 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
-NOTE "DATE" "2020/10/26";
+NOTE "DATE" "2020/10/29";
 NOTE "DEVICE" "EPM7032S";
 NOTE "FILE" "decode_7seg.pof";
 NOTE "TARGET" "1";
@@ -1655,4 +1655,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC E2C2;
+CRC EB70;

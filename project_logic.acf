@@ -21,17 +21,6 @@
 --
 CHIP project_logic
 BEGIN
-	|o_diff4 :	OUTPUT_PIN = 48;
-	|o_diff3 :	OUTPUT_PIN = 46;
-	|o_diff2 :	OUTPUT_PIN = 45;
-	|o_diff1 :	OUTPUT_PIN = 44;
-	|diff7 :	INPUT_PIN = 55;
-	|diff6 :	INPUT_PIN = 56;
-	|diff5 :	INPUT_PIN = 57;
-	|diff4 :	INPUT_PIN = 58;
-	|diff3 :	INPUT_PIN = 60;
-	|diff2 :	INPUT_PIN = 61;
-	|diff1 :	INPUT_PIN = 63;
 	|led7 :	OUTPUT_PIN = 12;
 	|led6 :	OUTPUT_PIN = 15;
 	|led5 :	OUTPUT_PIN = 16;
@@ -39,9 +28,6 @@ BEGIN
 	|led3 :	OUTPUT_PIN = 18;
 	|led2 :	OUTPUT_PIN = 20;
 	|led1 :	OUTPUT_PIN = 21;
-	|button1 :	INPUT_PIN = 52;
-	|reset :	INPUT_PIN = 54;
-	|led7sg3 :	OUTPUT_PIN = 11;
 	|ledg :	OUTPUT_PIN = 40;
 	|ledf :	OUTPUT_PIN = 39;
 	|lede :	OUTPUT_PIN = 37;
@@ -49,6 +35,15 @@ BEGIN
 	|ledc :	OUTPUT_PIN = 35;
 	|ledb :	OUTPUT_PIN = 34;
 	|leda :	OUTPUT_PIN = 33;
+	|reset :	INPUT_PIN = 54;
+	|diff7 :	INPUT_PIN = 55;
+	|diff6 :	INPUT_PIN = 56;
+	|diff5 :	INPUT_PIN = 57;
+	|diff4 :	INPUT_PIN = 58;
+	|diff3 :	INPUT_PIN = 60;
+	|diff2 :	INPUT_PIN = 61;
+	|diff1 :	INPUT_PIN = 63;
+	|button1 :	INPUT_PIN = 52;
 	|clk :	INPUT_PIN = 83;
 	DEVICE = EPM7128SLC84-15;
 END;
@@ -248,7 +243,7 @@ END;
 
 SIMULATOR_CONFIGURATION
 BEGIN
-	END_TIME = 3.0us;
+	END_TIME = 0.0ns;
 	BIDIR_PIN = STRONG;
 	START_TIME = 0.0ns;
 	GLITCH_TIME = 0.0ns;
@@ -281,7 +276,7 @@ END;
 
 OTHER_CONFIGURATION
 BEGIN
-	EXPLICIT_FAMILY = 1;
+	EXPLICIT_FAMILY = OFF;
 	LAST_MAXPLUS2_VERSION = 10.2;
 	FLEX_10K_52_COLUMNS = 40;
 	DEFAULT_9K_EXP_PER_LCELL = 1/2;

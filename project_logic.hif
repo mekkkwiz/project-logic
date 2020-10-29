@@ -24,46 +24,11 @@ HIF003
 --
 FILES
 {
-	Decode_7Seg.v
+	counter_6bit.v
 	{
-		decode_7seg [] []
+		counter_6bit [] [T_FF.v]
 		{
-			5 [] [];
-		}
-	}
-	counter_3bit.v
-	{
-		counter_3bit [] [T_FF.v]
-		{
-			4 [] [];
-		}
-	}
-	dmux3to8.v
-	{
-		dmux3to8 [] []
-		{
-			6 [] [];
-		}
-	}
-	freq_div.v
-	{
-		freq_div [] [T_FF.v]
-		{
-			1 [] [];
-		}
-	}
-	debounce_button.v
-	{
-		debounce_button [] [D_FF.v,freq_div.v]
-		{
-			7 [] [];
-		}
-	}
-	D_FF.v
-	{
-		d_ff [] []
-		{
-			3 [] [];
+			8 [] [];
 		}
 	}
 	Debouncing.v
@@ -73,6 +38,34 @@ FILES
 			9 [] [];
 		}
 	}
+	D_FF.v
+	{
+		d_ff [] []
+		{
+			3 [] [];
+		}
+	}
+	debounce_button.v
+	{
+		debounce_button [] [freq_div.v,D_FF.v]
+		{
+			7 [] [];
+		}
+	}
+	freq_div.v
+	{
+		freq_div [] [T_FF.v]
+		{
+			1 [] [];
+		}
+	}
+	dmux3to8.v
+	{
+		dmux3to8 [] []
+		{
+			6 [] [];
+		}
+	}
 	T_FF.v
 	{
 		t_ff [] [D_FF.v]
@@ -80,16 +73,30 @@ FILES
 			2 [] [];
 		}
 	}
-	counter_6bit.v
+	counter_3bit.v
 	{
-		counter_6bit [] [T_FF.v]
+		counter_3bit [] [T_FF.v]
 		{
-			8 [] [];
+			4 [] [];
+		}
+	}
+	Decode_7Seg.v
+	{
+		decode_7seg [] []
+		{
+			5 [] [];
+		}
+	}
+	LightManager.v
+	{
+		lightmanager [] []
+		{
+			10 [] [];
 		}
 	}
 	project_logic.v
 	{
-		project_logic [] [Decode_7Seg.v,counter_6bit.v,dmux3to8.v,Debouncing.v,counter_3bit.v,freq_div.v]
+		project_logic [] [Decode_7Seg.v,dmux3to8.v,Debouncing.v,counter_3bit.v,LightManager.v,counter_6bit.v,freq_div.v]
 		{
 			0 [] [];
 		}
@@ -99,7 +106,7 @@ TREE
 {
 	project_logic::(0,0):(0): project_logic.v
 	{
-		freq_div:1:(26,0):(51,fd0): freq_div.v
+		freq_div:1:(28,0):(51,fd0): freq_div.v
 		{
 			t_ff:2:(6,0):(3,t_ff01): T_FF.v
 			{
@@ -174,7 +181,7 @@ TREE
 				d_ff:3:(6,0):(6,d1): D_FF.v;
 			}
 		}
-		counter_3bit:4:(40,0):(52,lightcouter1): counter_3bit.v
+		counter_3bit:4:(43,0):(52,lightline1): counter_3bit.v
 		{
 			t_ff:2:(6,0):(7,t0): T_FF.v
 			{
@@ -189,7 +196,7 @@ TREE
 				d_ff:3:(6,0):(6,d1): D_FF.v;
 			}
 		}
-		freq_div:1:(27,0):(53,fd1): freq_div.v
+		freq_div:1:(29,0):(53,fd1): freq_div.v
 		{
 			t_ff:2:(6,0):(3,t_ff01): T_FF.v
 			{
@@ -264,12 +271,12 @@ TREE
 				d_ff:3:(6,0):(6,d1): D_FF.v;
 			}
 		}
-		debouncing:9:(43,0):(54,db): Debouncing.v
+		debouncing:9:(45,0):(54,db): Debouncing.v
 		{
 			d_ff:3:(6,0):(8,d1): D_FF.v;
 			d_ff:3:(7,0):(9,d2): D_FF.v;
 		}
-		counter_6bit:8:(50,0):(55,scorecouter): counter_6bit.v
+		counter_6bit:8:(52,0):(55,scorecouter): counter_6bit.v
 		{
 			t_ff:2:(7,0):(16,t0): T_FF.v
 			{
@@ -297,6 +304,6 @@ TREE
 			}
 		}
 		decode_7seg:5:(61,0):(56,decoder1): Decode_7Seg.v;
-		dmux3to8:6:(48,0):(57,demux): dmux3to8.v;
+		dmux3to8:6:(50,0):(57,demux1): dmux3to8.v;
 	}
 }

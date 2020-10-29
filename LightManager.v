@@ -1,38 +1,40 @@
 module LightManager (
-line1,line2,line3,   //tell line to perfrom light
-clk,reset
+line1,//line2,line3,  //tell line to perfrom light
+sel				//selector
 );
 
-output line1,line2,line3;
-wire w_1,w_2,w_3;
-input clk,reset;
+	output line1;//line2,line3;
 
-reg idx;
-assign idx = 0;
+	input [5:0]sel;
 
-reg [10:0]noteIndex1;
-reg [10:0]noteIndex2;
-reg [10:0]noteIndex3;
+	reg data_out1;
+	reg data_out2;
+	reg data_out3;
 
-always @(clk)
-begin
-    w_1 <= noteIndex1[idx];
-    w_2 <= noteIndex2[idx];
-    w_3 <= noteIndex3[idx];
-	idx <= idx+1'b1;
-end
-    
-noteIndex1[0] <=  0;
-noteIndex1[1] <=  0;
-noteIndex1[2] <=  1;
-noteIndex1[3] <=  1;
-noteIndex1[4] <=  0;
-noteIndex1[5] <=  0;
-noteIndex1[6] <=  1;
-noteIndex1[7] <=  1;
-noteIndex1[8] <=  0;
-noteIndex1[9] <=  0;
-noteIndex1[10] <= 1;
+
+
+	always @(sel)
+		begin
+			case (sel)
+				6'b000000 : data_out1 = 1'b1;
+				6'b000001 : data_out1 = 1'b0;
+				6'b000010 : data_out1 = 1'b0;
+				6'b000011 : data_out1 = 1'b0;
+				6'b000100 : data_out1 = 1'b0;
+				6'b000101 : data_out1 = 1'b0;
+				6'b000110 : data_out1 = 1'b0;
+				6'b000111 : data_out1 = 1'b0;
+				6'b001000 : data_out1 = 1'b0;
+				6'b001001 : data_out1 = 1'b0;
+			endcase
+
+		end
+
+
+	assign line1 = data_out1;
+	// assign line2 = data_out2;
+	// assign line3 = data_out3;
+
 
 
 endmodule

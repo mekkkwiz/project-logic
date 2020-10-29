@@ -19,6 +19,11 @@
 --  their respective licensors.  No other licenses, including any licenses
 --  needed under any third party's intellectual property, are provided herein.
 --
+CHIP lightmanager
+BEGIN
+	DEVICE = EPM7128SLC84-15;
+END;
+
 DEFAULT_DEVICES
 BEGIN
 	AUTO_DEVICE = EPM7256SQC208-7;
@@ -42,7 +47,7 @@ END;
 
 TIMING_POINT
 BEGIN
-	DEVICE_FOR_TIMING_SYNTHESIS = MAX7000S;
+	DEVICE_FOR_TIMING_SYNTHESIS = EPM7128SLC84-15;
 	MAINTAIN_STABLE_SYNTHESIS = OFF;
 	CUT_ALL_CLEAR_PRESET = ON;
 	CUT_ALL_BIDIR = ON;

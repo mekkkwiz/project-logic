@@ -3,9 +3,9 @@ DLSL
 D_FF.VerilogView U3714608.DLS
 Debouncing.VerilogView U9292765.DLS
 Decode_7Seg.VerilogView U4592786.DLS
+LightManager.VerilogView U3376142.DLS
 PROJECT_LOGIC.VerilogView U9542776.DLS
 T_FF.VerilogView U6465301.DLS
-counter.VerilogView U3813599.DLS
 counter_3bit.VerilogView U2771003.DLS
 counter_4bit.VerilogView U6658531.DLS
 counter_6bit.VerilogView U5387795.DLS

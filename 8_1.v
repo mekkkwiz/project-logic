@@ -22,6 +22,6 @@ module T_FF(q, d, clk, reset);
 	input t,clk, reset;
 	wire d;
 	xor xor1(d, q, t);
-	D_FF d1(q, d, clk, reset)
+	D_FF d1(q, d, clk, reset);
 endmodule
 	

@@ -18,16 +18,16 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7032S - d:\work\logi\project\debounce_button.pof Tue Oct 27 15:58:05 2020
+'Device #1: EPM7032S - d:\work\logi\project\debounce_button.pof Thu Oct 29 09:57:35 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
-NOTE "DATE" "2020/10/27";
+NOTE "DATE" "2020/10/29";
 NOTE "DEVICE" "EPM7032S";
 NOTE "FILE" "debounce_button.pof";
 NOTE "TARGET" "1";
 NOTE "IDCODE" "070320DD";
 NOTE "UES" "FFFF";
-NOTE "CHECKSUM" "0005679E";
+NOTE "CHECKSUM" "00057D10";
 NOTE "SAVE_DATA" "DEVICE_DATA";
 NOTE "SAVE_DATA_VARIABLES" "V0, A12, A13, A21, A22, A25, A43";
 NOTE "STAPL_VERSION" "JESD71";
@@ -53,26 +53,25 @@ INTEGER A13[1] = 5;
 INTEGER A25[1] = 10;
 INTEGER A43[1] = 0;
 BOOLEAN A21[20320] = @
-id000G@@VLj_hl@VzVNhrQQj_xvzQjgMhrFb1rVEdfa8g4vPWOjM@GzmQDMVUOaC
-9iMhr4lJ2w9QjMZ3LHEMhro8XYs4yu@NdlOeMlNBPAAuJWrhrQeiK443iMhrnjbu
-zQDcWMIzrxTeD4NZrQPuAK@rQ5aDmZrwV6s3UhMhHrMKh@u7oMo@lMJQU9MZ@@9S
-sOiMhDEq3NhrOfUau@hr8@x4Qj6hXMKbcDMyg1UDM@JBYDQXJrQjML0A4Sd0bMhL
-KFlpMhLQPbIfeKgldthKAAbIhoWDQ4OWMfKgwlpRfKQbaMhrI6gGrtxjrQjMMhKA
-AbwvuSAbYIfKg2GXK06Y7CWKQbIe03cpvqo381rtvSj06P4IaWaWMhLgO49I1GHR
-Y7K@TURjMfbKQjcMhVEUlMherQjoISI339KhqQrCq0jMfrL0IWqAjMNZ4aMfLNLm
-0QbMfg_ElbMfroAbMJhrV7lJhqy094AeYa1FewxzMQjMR@33g0aGy03erQbgwxys
-QbM9hLQDbM@zDHCGQjMlxzUDjMhLqAjML@TURjIhbLAjMOa4gHc0jIhLLVltIhrA
-ZbKHZW4A3mWrAjQtvTQAjIherQbMBm0MfrQ1AQHhLQDbIhrI3CKRnW_29GfqQjxY
-4n3CeRW1g@EljMfLog@@70;
+id000u@@QLj_hl@VzV@hrQQj_xvzQjgMh@Fb1rVEdfa8g4vPWOj_@e89qJiMhr4A
+dqQj67KaqOztdR@4j9un@@FVnGjUlMoKKmd0hNhrGPf886OjMhZWBnxrQC1jawht
+xGx9yUiMpmFe_hrA8R0Mhr@Ci7yMjMZljeM@nFaja@QjcWdJQDM@Jz8nVDMR_7CO
+j_xJkMY6hrQwu9QD_xprM2MhrQa6LPTZbMGR8jAgrQjg0K8uE1QjMfeUUdjMhqoQ
+bIHfKVFlNfKKAbMb1UaZd0bIfLrVdtIfqAB3gWMhqQKG2AbwvuSAbYIfKg2GXK06
+Y7CWKAbIe03cpvqo381rtvSj06P4IaWaWMhLgO49I1GHRY7K@TURjMfDeW1yUjMH
+hrQbbua66IeMfrIQbMV3Z427Q0frQjU59OjMhsTUlcIhLwA068jIhaLQbcMh@UUd
+MhbBg8FG2f0UGrtxjqQjs_76K181txzQQjIhfrQbgwxysQbM9hLQjC298jMhtzUl
+cMhrAQbMhg@EljMfroAbMBzH2r8JWMfrggltRfrQbnIgeHG2b1OmQbMTa13erQbM
+Bm0MfrQ1AWXIfrQyWDeKQjsTHYu1Img@@70;
 
 BOOLEAN A22[15328] = @
-yT000u@@@t@@@l@@tHk1y0H3040@doW@@Z@KI4L2@@@@_sHtYY4l@lZXIY@@@tuT
-IeEn@@vOeMo@@zV6nJqAXt@@@yD1@@p@XdGPE3_tV735d2ZRu@xTCkvatTqj8eG_
-@@VJaju@@zF3@GCsWWy36uz@JpCu@_TCg_Z@z@@OvI0UWVJVEP0@@FXx4@@@_nXa
-u@@tF4y4z@lZHaau@x@FvQi8DmCmt@dM4RqIcvs6KTRWuYyV@@@@__V000000000
-s0n5fVu700000000W0000000_t@V@l@@v@402y@@@x@@@pB@yUIk1BY6u@l@td_@
-lg@fArvNj_@@@zx@@x@V@M@@tl@@_ANR@@w@l_Sd@@p@@xMt@@l@@lV@x@@kggxS
-t@@tiRW@@cRz@@@k@V_z@@@xgw_pL@@F;
+yT000u@@@t@@@l@@@Gk3y0H3040@doW@@Z@KI4L2@@@@__GtZYayg8UIu@@@DKEv
+@@ECeBv@@VFtu9Qbmx@@V_cW@@v@0LeCd1@x@XXYJXnDy@z761Tox7wUiK8@@@lf
+KOi@XkdXP86RGG_13S@@fP6yV@76V@n@_@ViS90FmlfFdCmt@dwH2W7uzylJy@@t
+7fva@x@@mIIy@@V7uva@z@@SjnI68Bo0vCx4ojDews0u5n@_@@@j@@000000000i
+1mB2@mF0000000001000000yl@t@V@@p@904u@@@t@@@dN_vzaS3M4DGz@VlV@@V
+UThNgg@Ey@@@xt@@t@@_j_@lV@@zLks_@r@VzvE@@d@@tjk@@V@@V@_t@@TLLtvk
+@@lPt0@@Ftw_@@z@@yx@@@F6m00;
 
 ENDDATA;
 DATA TEMP_DATA;
@@ -1661,4 +1660,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC 1813;
+CRC 8408;

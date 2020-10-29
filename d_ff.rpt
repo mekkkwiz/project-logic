@@ -1,8 +1,8 @@
-Project Information                                  d:\work\logi\wo5\d_ff.rpt
+Project Information                              d:\work\logi\project\d_ff.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/20/2020 16:55:03
+Compiled: 10/29/2020 16:57:23
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -42,7 +42,7 @@ User Pins:                 3        1        0
 
 
 
-Project Information                                  d:\work\logi\wo5\d_ff.rpt
+Project Information                              d:\work\logi\project\d_ff.rpt
 
 ** AUTO GLOBAL SIGNALS **
 
@@ -51,7 +51,7 @@ Project Information                                  d:\work\logi\wo5\d_ff.rpt
 INFO: Signal 'clk' chosen for auto global Clock
 
 
-Device-Specific Information:                         d:\work\logi\wo5\d_ff.rpt
+Device-Specific Information:                     d:\work\logi\project\d_ff.rpt
 d_ff
 
 ***** Logic for device 'd_ff' compiled without errors.
@@ -114,7 +114,7 @@ PDn = Power Down pin.
 & = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
 
 
-Device-Specific Information:                         d:\work\logi\wo5\d_ff.rpt
+Device-Specific Information:                     d:\work\logi\project\d_ff.rpt
 d_ff
 
 ** RESOURCE USAGE **
@@ -150,7 +150,7 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:                         d:\work\logi\wo5\d_ff.rpt
+Device-Specific Information:                     d:\work\logi\project\d_ff.rpt
 d_ff
 
 ** INPUTS **
@@ -178,7 +178,7 @@ Sections of this Report File for information on which signals' fan-outs are used
 Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
-Device-Specific Information:                         d:\work\logi\wo5\d_ff.rpt
+Device-Specific Information:                     d:\work\logi\project\d_ff.rpt
 d_ff
 
 ** OUTPUTS **
@@ -199,7 +199,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                         d:\work\logi\wo5\d_ff.rpt
+Device-Specific Information:                     d:\work\logi\project\d_ff.rpt
 d_ff
 
 ** LOGIC CELL INTERCONNECTIONS **
@@ -223,7 +223,7 @@ Pin
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:                         d:\work\logi\wo5\d_ff.rpt
+Device-Specific Information:                     d:\work\logi\project\d_ff.rpt
 d_ff
 
 ** EQUATIONS **
@@ -244,7 +244,7 @@ reset    : INPUT;
 
 
 
-Project Information                                  d:\work\logi\wo5\d_ff.rpt
+Project Information                              d:\work\logi\project\d_ff.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -322,15 +322,15 @@ Compilation Times
    Compiler Netlist Extractor             00:00:00
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
-   Partitioner                            00:00:01
+   Partitioner                            00:00:00
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 4,225K
+Peak memory allocated during compilation  = 3,903K

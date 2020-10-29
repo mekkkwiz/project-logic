@@ -24,30 +24,9 @@ HIF003
 --
 FILES
 {
-	freq_div.v
+	pulsegenerator.v
 	{
-		freq_div [] [T_FF.v]
-		{
-			1 [] [];
-		}
-	}
-	T_FF.v
-	{
-		t_ff [] [D_FF.v]
-		{
-			2 [] [];
-		}
-	}
-	D_FF.v
-	{
-		d_ff [] []
-		{
-			3 [] [];
-		}
-	}
-	counter.v
-	{
-		counter [] [T_FF.v]
+		pulsegenerator [] []
 		{
 			0 [] [];
 		}
@@ -55,15 +34,5 @@ FILES
 }
 TREE
 {
-	counter::(0,0):(0): counter.v
-	{
-		t_ff:2:(7,0):(5,t0): T_FF.v
-		{
-			d_ff:3:(6,0):(6,d1): D_FF.v;
-		}
-		t_ff:2:(8,0):(6,t1): T_FF.v
-		{
-			d_ff:3:(6,0):(6,d1): D_FF.v;
-		}
-	}
+	pulsegenerator::(0,0):(0): pulsegenerator.v;
 }

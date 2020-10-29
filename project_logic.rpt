@@ -2,7 +2,7 @@ Project Information                     d:\work\logi\project\project_logic.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/28/2020 22:41:34
+Compiled: 10/29/2020 17:07:34
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -45,13 +45,6 @@ User Pins:                 10       21       0
 
 Project Information                     d:\work\logi\project\project_logic.rpt
 
-** PROJECT COMPILATION MESSAGES **
-
-Warning: Node 'led7sg3' has assignments but doesn't exist or is a primitive array -- edit the project's ACF to fix the problem
-
-
-Project Information                     d:\work\logi\project\project_logic.rpt
-
 ** AUTO GLOBAL SIGNALS **
 
 
@@ -90,11 +83,6 @@ project_logic@17                  led4
 project_logic@16                  led5
 project_logic@15                  led6
 project_logic@12                  led7
-project_logic@11 ---------        led7sg3
-project_logic@44                  o_diff1
-project_logic@45                  o_diff2
-project_logic@46                  o_diff3
-project_logic@48                  o_diff4
 project_logic@54                  reset
 
 
@@ -141,13 +129,13 @@ Project Information                     d:\work\logi\project\project_logic.rpt
 |freq_div:fd0|t_ff:t_ff017|d_ff:d1|
 |freq_div:fd0|t_ff:t_ff019|
 |freq_div:fd0|t_ff:t_ff019|d_ff:d1|
-|counter_3bit:lightcouter1|
-|counter_3bit:lightcouter1|t_ff:t0|
-|counter_3bit:lightcouter1|t_ff:t0|d_ff:d1|
-|counter_3bit:lightcouter1|t_ff:t1|
-|counter_3bit:lightcouter1|t_ff:t1|d_ff:d1|
-|counter_3bit:lightcouter1|t_ff:t2|
-|counter_3bit:lightcouter1|t_ff:t2|d_ff:d1|
+|counter_3bit:lightline1|
+|counter_3bit:lightline1|t_ff:t0|
+|counter_3bit:lightline1|t_ff:t0|d_ff:d1|
+|counter_3bit:lightline1|t_ff:t1|
+|counter_3bit:lightline1|t_ff:t1|d_ff:d1|
+|counter_3bit:lightline1|t_ff:t2|
+|counter_3bit:lightline1|t_ff:t2|d_ff:d1|
 |freq_div:fd1|
 |freq_div:fd1|t_ff:t_ff01|
 |freq_div:fd1|t_ff:t_ff01|d_ff:d1|
@@ -202,7 +190,7 @@ Project Information                     d:\work\logi\project\project_logic.rpt
 |counter_6bit:scorecouter|t_ff:t5|
 |counter_6bit:scorecouter|t_ff:t5|d_ff:d1|
 |decode_7seg:decoder1|
-|dmux3to8:demux|
+|dmux3to8:demux1|
 
 
 Device-Specific Information:            d:\work\logi\project\project_logic.rpt
@@ -222,18 +210,18 @@ Device Options:
     User Code                                  = ffff
     MultiVolt I/O                              = OFF
 
-              R  R  R  R     R  R  R                    R  R  R     R  R     
-              E  E  E  E     E  E  E                    E  E  E     E  E  o  
-              S  S  S  S     S  S  S  V                 S  S  S     S  S  _  
-              E  E  E  E     E  E  E  C                 E  E  E  V  E  E  d  
-              R  R  R  R     R  R  R  C                 R  R  R  C  R  R  i  
-              V  V  V  V  G  V  V  V  I  G  G  G  c  G  V  V  V  C  V  V  f  
-              E  E  E  E  N  E  E  E  N  N  N  N  l  N  E  E  E  I  E  E  f  
-              D  D  D  D  D  D  D  D  T  D  D  D  k  D  D  D  D  O  D  D  7  
+              R  R  R  R     R  R  R                    R                    
+              E  E  E  E     E  E  E                    E  o  o     o  o  o  
+              S  S  S  S     S  S  S  V                 S  _  _     _  _  _  
+              E  E  E  E     E  E  E  C                 E  d  d  V  d  d  d  
+              R  R  R  R     R  R  R  C                 R  i  i  C  i  i  i  
+              V  V  V  V  G  V  V  V  I  G  G  G  c  G  V  f  f  C  f  f  f  
+              E  E  E  E  N  E  E  E  N  N  N  N  l  N  E  f  f  I  f  f  f  
+              D  D  D  D  D  D  D  D  T  D  D  D  k  D  D  4  5  O  6  7  3  
             -----------------------------------------------------------------_ 
           /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
-    led7 | 12                                                              74 | o_diff6 
-   VCCIO | 13                                                              73 | o_diff5 
+    led7 | 12                                                              74 | o_diff2 
+   VCCIO | 13                                                              73 | o_diff1 
     #TDI | 14                                                              72 | GND 
     led6 | 15                                                              71 | #TDO 
     led5 | 16                                                              70 | RESERVED 
@@ -255,14 +243,14 @@ RESERVED | 31                                                              55 | 
      GND | 32                                                              54 | reset 
          |_  33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  _| 
            ------------------------------------------------------------------ 
-              l  l  l  l  l  V  l  l  R  G  V  o  o  o  G  o  R  R  R  b  V  
-              e  e  e  e  e  C  e  e  E  N  C  _  _  _  N  _  E  E  E  u  C  
-              d  d  d  d  d  C  d  d  S  D  C  d  d  d  D  d  S  S  S  t  C  
-              a  b  c  d  e  I  f  g  E     I  i  i  i     i  E  E  E  t  I  
-                             O        R     N  f  f  f     f  R  R  R  o  O  
-                                      V     T  f  f  f     f  V  V  V  n     
-                                      E        1  2  3     4  E  E  E  1     
-                                      D                       D  D  D        
+              l  l  l  l  l  V  l  l  R  G  V  R  R  R  G  R  R  R  R  b  V  
+              e  e  e  e  e  C  e  e  E  N  C  E  E  E  N  E  E  E  E  u  C  
+              d  d  d  d  d  C  d  d  S  D  C  S  S  S  D  S  S  S  S  t  C  
+              a  b  c  d  e  I  f  g  E     I  E  E  E     E  E  E  E  t  I  
+                             O        R     N  R  R  R     R  R  R  R  o  O  
+                                      V     T  V  V  V     V  V  V  V  n     
+                                      E        E  E  E     E  E  E  E  1     
+                                      D        D  D  D     D  D  D  D        
 
 
 N.C. = No Connect. This pin has no internal connection to the device.
@@ -292,10 +280,10 @@ A:     LC1 - LC16     1/16(  6%)   1/ 8( 12%)   0/16(  0%)   3/36(  8%)
 B:    LC17 - LC32    16/16(100%)   7/ 8( 87%)   1/16(  6%)  12/36( 33%) 
 C:    LC33 - LC48     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
 D:    LC49 - LC64     7/16( 43%)   7/ 8( 87%)   0/16(  0%)   4/36( 11%) 
-E:    LC65 - LC80     4/16( 25%)   5/ 8( 62%)   0/16(  0%)   4/36( 11%) 
-F:    LC81 - LC96     6/16( 37%)   8/ 8(100%)   0/16(  0%)   6/36( 16%) 
+E:    LC65 - LC80     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
+F:    LC81 - LC96    10/16( 62%)   8/ 8(100%)   0/16(  0%)  10/36( 27%) 
 G:   LC97 - LC112    16/16(100%)   2/ 8( 25%)   0/16(  0%)  16/36( 44%) 
-H:  LC113 - LC128    16/16(100%)   3/ 8( 37%)   0/16(  0%)  15/36( 41%) 
+H:  LC113 - LC128    16/16(100%)   7/ 8( 87%)   0/16(  0%)  15/36( 41%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
@@ -379,13 +367,13 @@ project_logic
   16     27    B     OUTPUT    s t        0      0   0    0    3    0    0  led5
   15     29    B     OUTPUT    s t        0      0   0    0    3    0    0  led6
   12      3    A     OUTPUT    s t        0      0   0    0    3    0    0  led7
-  44     65    E     OUTPUT      t        0      0   0    1    0    0    0  o_diff1
-  45     67    E     OUTPUT      t        0      0   0    1    0    0    0  o_diff2
-  46     69    E     OUTPUT      t        0      0   0    1    0    0    0  o_diff3
-  48     72    E     OUTPUT      t        0      0   0    1    0    0    0  o_diff4
-  73    115    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff5
-  74    117    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff6
-  75    118    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff7
+  73    115    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff1
+  74    117    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff2
+  75    118    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff3
+  80    126    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff4
+  79    125    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff5
+  77    123    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff6
+  76    120    H     OUTPUT      t        0      0   0    1    0    0    0  o_diff7
 
 
 Code:
@@ -406,51 +394,51 @@ project_logic
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (22)    17    B       TFFE      t        0      0   0    1    1    7    6  |counter_3bit:lightcouter1|T_FF:t0|D_FF:d1|:6
-   -     20    B       TFFE      t        0      0   0    1    2    7    5  |counter_3bit:lightcouter1|T_FF:t1|D_FF:d1|:6
-   -     30    B       TFFE      t        0      0   0    1    3    7    4  |counter_3bit:lightcouter1|T_FF:t2|D_FF:d1|:6
+   -     20    B       TFFE      t        0      0   0    1    1    7    6  |counter_3bit:lightline1|T_FF:t0|D_FF:d1|:6
+   -     22    B       TFFE      t        0      0   0    1    2    7    5  |counter_3bit:lightline1|T_FF:t1|D_FF:d1|:6
+   -     30    B       TFFE      t        0      0   0    1    3    7    4  |counter_3bit:lightline1|T_FF:t2|D_FF:d1|:6
    -     31    B       TFFE      t        1      1   0    1    5    7    3  |counter_6bit:scorecouter|T_FF:t0|D_FF:d1|:6
    -     18    B       TFFE      t        1      1   0    1    6    7    2  |counter_6bit:scorecouter|T_FF:t1|D_FF:d1|:6
-   -     22    B       TFFE      t        1      1   0    1    7    7    1  |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
+ (22)    17    B       TFFE      t        1      1   0    1    7    7    1  |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
    -     23    B       TFFE      t        1      1   0    1    8    7    0  |counter_6bit:scorecouter|T_FF:t3|D_FF:d1|:6
  (14)    32    B       DFFE      t        0      0   0    1    1    0    5  |Debouncing:db|D_FF:d1|:6
-   -     28    B       DFFE      t        0      0   0    0    2    0    4  |Debouncing:db|D_FF:d2|:6
-   -     26    B       TFFE   +  t        0      0   0    0    0    0    1  |freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6
+   -     26    B       DFFE      t        0      0   0    0    2    0    4  |Debouncing:db|D_FF:d2|:6
+   -     28    B       TFFE   +  t        0      0   0    0    0    0    1  |freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6
    -    121    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff02|D_FF:d1|:6
    -    122    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff03|D_FF:d1|:6
- (77)   123    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6
-   -    113    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6
-   -    116    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6
- (76)   120    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6
- (80)   126    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6
-   -    119    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6
-   -    124    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6
-   -    127    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6
- (81)   128    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6
-   -    110    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6
-   -    114    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6
-   -    111    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6
+   -    114    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6
+   -    116    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6
+   -    119    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6
+   -    124    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6
+   -    127    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6
+   -    103    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6
+ (81)   128    H       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6
+ (67)   104    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6
+   -    102    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6
+ (68)   105    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6
+   -    100    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6
+ (64)    99    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6
  (71)   112    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6
-   -    102    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6
- (68)   105    G       TFFE      t        0      0   0    0    1    0    3  |freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6
- (79)   125    H       TFFE   +  t        0      0   0    0    0    0    1  |freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6
-   -    103    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6
- (67)   104    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6
- (69)   107    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6
-   -    108    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6
- (70)   109    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6
- (64)    99    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6
-   -    100    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6
- (65)   101    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6
-   -    106    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6
-   -     98    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6
-   -     82    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6
- (63)    97    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6
+ (63)    97    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6
+ (65)   101    G       TFFE      t        0      0   0    0    1    0    3  |freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6
+   -    113    H       TFFE   +  t        0      0   0    0    0    0    1  |freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6
+   -    108    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6
+ (70)   109    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6
+   -    110    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6
+   -    111    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6
+ (69)   107    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6
+   -    106    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6
+ (57)    88    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6
+   -     98    G       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6
+   -     87    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6
+ (55)    85    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6
+ (54)    83    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6
+   -     82    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6
    -     81    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff014|D_FF:d1|:6
-   -     84    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6
-   -     92    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6
-   -     90    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6
-   -     89    F       TFFE      t        0      0   0    0    1    0    2  |freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6
+   -     90    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6
+   -     89    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6
+ (56)    86    F       TFFE      t        0      0   0    0    1    0    1  |freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6
+   -     84    F       TFFE      t        0      0   0    0    1    0    2  |freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6
 
 
 Code:
@@ -479,9 +467,9 @@ LC      | | A B C D E F G H |     Logic cells that feed LAB 'A':
 
 Pin
 83   -> - | - - - - - - - - | <-- clk
-LC17 -> * | * * - - - - - - | <-- |counter_3bit:lightcouter1|T_FF:t0|D_FF:d1|:6
-LC20 -> * | * * - - - - - - | <-- |counter_3bit:lightcouter1|T_FF:t1|D_FF:d1|:6
-LC30 -> * | * * - - - - - - | <-- |counter_3bit:lightcouter1|T_FF:t2|D_FF:d1|:6
+LC20 -> * | * * - - - - - - | <-- |counter_3bit:lightline1|T_FF:t0|D_FF:d1|:6
+LC22 -> * | * * - - - - - - | <-- |counter_3bit:lightline1|T_FF:t1|D_FF:d1|:6
+LC30 -> * | * * - - - - - - | <-- |counter_3bit:lightline1|T_FF:t2|D_FF:d1|:6
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -496,16 +484,16 @@ project_logic
 Logic Array Block 'B':
 
                                          Logic cells placed in LAB 'B'
-        +------------------------------- LC17 |counter_3bit:lightcouter1|T_FF:t0|D_FF:d1|:6
-        | +----------------------------- LC20 |counter_3bit:lightcouter1|T_FF:t1|D_FF:d1|:6
-        | | +--------------------------- LC30 |counter_3bit:lightcouter1|T_FF:t2|D_FF:d1|:6
+        +------------------------------- LC20 |counter_3bit:lightline1|T_FF:t0|D_FF:d1|:6
+        | +----------------------------- LC22 |counter_3bit:lightline1|T_FF:t1|D_FF:d1|:6
+        | | +--------------------------- LC30 |counter_3bit:lightline1|T_FF:t2|D_FF:d1|:6
         | | | +------------------------- LC31 |counter_6bit:scorecouter|T_FF:t0|D_FF:d1|:6
         | | | | +----------------------- LC18 |counter_6bit:scorecouter|T_FF:t1|D_FF:d1|:6
-        | | | | | +--------------------- LC22 |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
+        | | | | | +--------------------- LC17 |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
         | | | | | | +------------------- LC23 |counter_6bit:scorecouter|T_FF:t3|D_FF:d1|:6
         | | | | | | | +----------------- LC32 |Debouncing:db|D_FF:d1|:6
-        | | | | | | | | +--------------- LC28 |Debouncing:db|D_FF:d2|:6
-        | | | | | | | | | +------------- LC26 |freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6
+        | | | | | | | | +--------------- LC26 |Debouncing:db|D_FF:d2|:6
+        | | | | | | | | | +------------- LC28 |freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6
         | | | | | | | | | | +----------- LC19 led1
         | | | | | | | | | | | +--------- LC21 led2
         | | | | | | | | | | | | +------- LC24 led3
@@ -516,21 +504,21 @@ Logic Array Block 'B':
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'B'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
-LC17 -> * * * * * * * - - - * * * * * * | * * - - - - - - | <-- |counter_3bit:lightcouter1|T_FF:t0|D_FF:d1|:6
-LC20 -> - * * * * * * - - - * * * * * * | * * - - - - - - | <-- |counter_3bit:lightcouter1|T_FF:t1|D_FF:d1|:6
-LC30 -> - - * * * * * - - - * * * * * * | * * - - - - - - | <-- |counter_3bit:lightcouter1|T_FF:t2|D_FF:d1|:6
+LC20 -> * * * * * * * - - - * * * * * * | * * - - - - - - | <-- |counter_3bit:lightline1|T_FF:t0|D_FF:d1|:6
+LC22 -> - * * * * * * - - - * * * * * * | * * - - - - - - | <-- |counter_3bit:lightline1|T_FF:t1|D_FF:d1|:6
+LC30 -> - - * * * * * - - - * * * * * * | * * - - - - - - | <-- |counter_3bit:lightline1|T_FF:t2|D_FF:d1|:6
 LC31 -> - - - * * * * - - - - - - - - - | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t0|D_FF:d1|:6
 LC18 -> - - - - * * * - - - - - - - - - | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t1|D_FF:d1|:6
-LC22 -> - - - - - * * - - - - - - - - - | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
+LC17 -> - - - - - * * - - - - - - - - - | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
 LC32 -> - - - * * * * - * - - - - - - - | - * - - - - - - | <-- |Debouncing:db|D_FF:d1|:6
-LC28 -> - - - * * * * - - - - - - - - - | - * - - - - - - | <-- |Debouncing:db|D_FF:d2|:6
+LC26 -> - - - * * * * - - - - - - - - - | - * - - - - - - | <-- |Debouncing:db|D_FF:d2|:6
 
 Pin
 52   -> - - - - - - - * - - - - - - - - | - * - - - - - - | <-- button1
 83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
 54   -> * * * * * * * - - - - - - - - - | - * - - - - - - | <-- reset
-LC105-> * * * - - - - - - - - - - - - - | - * - - - - - - | <-- |freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6
-LC89 -> - - - - - - - * * - - - - - - - | - * - - - - - - | <-- |freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6
+LC101-> * * * - - - - - - - - - - - - - | - * - - - - - - | <-- |freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6
+LC84 -> - - - - - - - * * - - - - - - - | - * - - - - - - | <-- |freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -561,37 +549,8 @@ Pin
 83   -> - - - - - - - | - - - - - - - - | <-- clk
 LC31 -> * * * * * * * | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t0|D_FF:d1|:6
 LC18 -> * * * * * * * | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t1|D_FF:d1|:6
-LC22 -> * * * * * * * | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
+LC17 -> * * * * * * * | - * - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6
 LC23 -> * * * * * * * | - - - * - - - - | <-- |counter_6bit:scorecouter|T_FF:t3|D_FF:d1|:6
-
-
-* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
-- = The logic cell or pin is not an input to the logic cell (or LAB).
-
-
-Device-Specific Information:            d:\work\logi\project\project_logic.rpt
-project_logic
-
-** LOGIC CELL INTERCONNECTIONS **
-
-Logic Array Block 'E':
-
-                 Logic cells placed in LAB 'E'
-        +------- LC65 o_diff1
-        | +----- LC67 o_diff2
-        | | +--- LC69 o_diff3
-        | | | +- LC72 o_diff4
-        | | | | 
-        | | | |   Other LABs fed by signals
-        | | | |   that feed LAB 'E'
-LC      | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
-
-Pin
-83   -> - - - - | - - - - - - - - | <-- clk
-63   -> * - - - | - - - - * - - - | <-- diff1
-61   -> - * - - | - - - - * - - - | <-- diff2
-60   -> - - * - | - - - - * - - - | <-- diff3
-58   -> - - - * | - - - - * - - - | <-- diff4
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -605,26 +564,34 @@ project_logic
 
 Logic Array Block 'F':
 
-                     Logic cells placed in LAB 'F'
-        +----------- LC82 |freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6
-        | +--------- LC81 |freq_div:fd1|T_FF:t_ff014|D_FF:d1|:6
-        | | +------- LC84 |freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6
-        | | | +----- LC92 |freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6
-        | | | | +--- LC90 |freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6
-        | | | | | +- LC89 |freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6
-        | | | | | | 
-        | | | | | |   Other LABs fed by signals
-        | | | | | |   that feed LAB 'F'
-LC      | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
-LC81 -> - * * - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff014|D_FF:d1|:6
-LC84 -> - - * * - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6
-LC92 -> - - - * * - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6
-LC90 -> - - - - * * | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6
+                             Logic cells placed in LAB 'F'
+        +------------------- LC88 |freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6
+        | +----------------- LC87 |freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6
+        | | +--------------- LC85 |freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6
+        | | | +------------- LC83 |freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6
+        | | | | +----------- LC82 |freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6
+        | | | | | +--------- LC81 |freq_div:fd1|T_FF:t_ff014|D_FF:d1|:6
+        | | | | | | +------- LC90 |freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6
+        | | | | | | | +----- LC89 |freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6
+        | | | | | | | | +--- LC86 |freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6
+        | | | | | | | | | +- LC84 |freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6
+        | | | | | | | | | | 
+        | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
+LC87 -> - * * - - - - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6
+LC85 -> - - * * - - - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6
+LC83 -> - - - * * - - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6
+LC82 -> - - - - * * - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6
+LC81 -> - - - - - * * - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff014|D_FF:d1|:6
+LC90 -> - - - - - - * * - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6
+LC89 -> - - - - - - - * * - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6
+LC86 -> - - - - - - - - * * | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6
 
 Pin
-83   -> - - - - - - | - - - - - - - - | <-- clk
-LC98 -> * - - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6
-LC97 -> - * - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6
+83   -> - - - - - - - - - - | - - - - - - - - | <-- clk
+LC106-> * - - - - - - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6
+LC98 -> - * - - - - - - - - | - - - - - * - - | <-- |freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -639,45 +606,45 @@ project_logic
 Logic Array Block 'G':
 
                                          Logic cells placed in LAB 'G'
-        +------------------------------- LC110 |freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6
-        | +----------------------------- LC111 |freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6
-        | | +--------------------------- LC112 |freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6
-        | | | +------------------------- LC102 |freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6
-        | | | | +----------------------- LC105 |freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6
-        | | | | | +--------------------- LC103 |freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6
-        | | | | | | +------------------- LC104 |freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6
-        | | | | | | | +----------------- LC107 |freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6
-        | | | | | | | | +--------------- LC108 |freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6
-        | | | | | | | | | +------------- LC109 |freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6
-        | | | | | | | | | | +----------- LC99 |freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6
-        | | | | | | | | | | | +--------- LC100 |freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6
-        | | | | | | | | | | | | +------- LC101 |freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6
-        | | | | | | | | | | | | | +----- LC106 |freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6
-        | | | | | | | | | | | | | | +--- LC98 |freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6
-        | | | | | | | | | | | | | | | +- LC97 |freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6
+        +------------------------------- LC103 |freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6
+        | +----------------------------- LC104 |freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6
+        | | +--------------------------- LC102 |freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6
+        | | | +------------------------- LC105 |freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6
+        | | | | +----------------------- LC100 |freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6
+        | | | | | +--------------------- LC99 |freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6
+        | | | | | | +------------------- LC112 |freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6
+        | | | | | | | +----------------- LC97 |freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6
+        | | | | | | | | +--------------- LC101 |freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6
+        | | | | | | | | | +------------- LC108 |freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6
+        | | | | | | | | | | +----------- LC109 |freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6
+        | | | | | | | | | | | +--------- LC110 |freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6
+        | | | | | | | | | | | | +------- LC111 |freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6
+        | | | | | | | | | | | | | +----- LC107 |freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6
+        | | | | | | | | | | | | | | +--- LC106 |freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6
+        | | | | | | | | | | | | | | | +- LC98 |freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6
         | | | | | | | | | | | | | | | | 
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'G'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
-LC111-> - * * - - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6
-LC112-> - - * * - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6
-LC102-> - - - * * - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6
-LC103-> - - - - - * * - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6
-LC104-> - - - - - - * * - - - - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6
-LC107-> - - - - - - - * * - - - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6
-LC108-> - - - - - - - - * * - - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6
-LC109-> - - - - - - - - - * * - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6
-LC99 -> - - - - - - - - - - * * - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6
-LC100-> - - - - - - - - - - - * * - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6
-LC101-> - - - - - - - - - - - - * * - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6
-LC106-> - - - - - - - - - - - - - * * - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6
+LC104-> - * * - - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6
+LC102-> - - * * - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6
+LC105-> - - - * * - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6
+LC100-> - - - - * * - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6
+LC99 -> - - - - - * * - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6
+LC112-> - - - - - - * * - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6
+LC97 -> - - - - - - - * * - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6
+LC108-> - - - - - - - - - * * - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6
+LC109-> - - - - - - - - - - * * - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6
+LC110-> - - - - - - - - - - - * * - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6
+LC111-> - - - - - - - - - - - - * * - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6
+LC107-> - - - - - - - - - - - - - * * - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6
 
 Pin
 83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
-LC128-> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6
-LC114-> - * - - - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6
-LC125-> - - - - - * - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6
-LC82 -> - - - - - - - - - - - - - - - * | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6
+LC127-> * - - - - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6
+LC128-> - * - - - - - - - - - - - - - - | - - - - - - * - | <-- |freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6
+LC113-> - - - - - - - - - * - - - - - - | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6
+LC88 -> - - - - - - - - - - - - - - - * | - - - - - - * - | <-- |freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -694,42 +661,42 @@ Logic Array Block 'H':
                                          Logic cells placed in LAB 'H'
         +------------------------------- LC121 |freq_div:fd0|T_FF:t_ff02|D_FF:d1|:6
         | +----------------------------- LC122 |freq_div:fd0|T_FF:t_ff03|D_FF:d1|:6
-        | | +--------------------------- LC123 |freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6
-        | | | +------------------------- LC113 |freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6
-        | | | | +----------------------- LC116 |freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6
-        | | | | | +--------------------- LC120 |freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6
-        | | | | | | +------------------- LC126 |freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6
-        | | | | | | | +----------------- LC119 |freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6
-        | | | | | | | | +--------------- LC124 |freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6
-        | | | | | | | | | +------------- LC127 |freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6
-        | | | | | | | | | | +----------- LC128 |freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6
-        | | | | | | | | | | | +--------- LC114 |freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6
-        | | | | | | | | | | | | +------- LC125 |freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6
-        | | | | | | | | | | | | | +----- LC115 o_diff5
-        | | | | | | | | | | | | | | +--- LC117 o_diff6
-        | | | | | | | | | | | | | | | +- LC118 o_diff7
+        | | +--------------------------- LC114 |freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6
+        | | | +------------------------- LC116 |freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6
+        | | | | +----------------------- LC119 |freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6
+        | | | | | +--------------------- LC124 |freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6
+        | | | | | | +------------------- LC127 |freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6
+        | | | | | | | +----------------- LC128 |freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6
+        | | | | | | | | +--------------- LC113 |freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6
+        | | | | | | | | | +------------- LC115 o_diff1
+        | | | | | | | | | | +----------- LC117 o_diff2
+        | | | | | | | | | | | +--------- LC118 o_diff3
+        | | | | | | | | | | | | +------- LC126 o_diff4
+        | | | | | | | | | | | | | +----- LC125 o_diff5
+        | | | | | | | | | | | | | | +--- LC123 o_diff6
+        | | | | | | | | | | | | | | | +- LC120 o_diff7
         | | | | | | | | | | | | | | | | 
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'H'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
 LC121-> * * - - - - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff02|D_FF:d1|:6
 LC122-> - * * - - - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff03|D_FF:d1|:6
-LC123-> - - * * - - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6
-LC113-> - - - * * - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6
-LC116-> - - - - * * - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6
-LC120-> - - - - - * * - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6
-LC126-> - - - - - - * * - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6
-LC119-> - - - - - - - * * - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6
-LC124-> - - - - - - - - * * - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6
-LC127-> - - - - - - - - - * * - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6
+LC114-> - - * * - - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6
+LC116-> - - - * * - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6
+LC119-> - - - - * * - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6
+LC124-> - - - - - * * - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6
 
 Pin
 83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+63   -> - - - - - - - - - * - - - - - - | - - - - - - - * | <-- diff1
+61   -> - - - - - - - - - - * - - - - - | - - - - - - - * | <-- diff2
+60   -> - - - - - - - - - - - * - - - - | - - - - - - - * | <-- diff3
+58   -> - - - - - - - - - - - - * - - - | - - - - - - - * | <-- diff4
 57   -> - - - - - - - - - - - - - * - - | - - - - - - - * | <-- diff5
 56   -> - - - - - - - - - - - - - - * - | - - - - - - - * | <-- diff6
 55   -> - - - - - - - - - - - - - - - * | - - - - - - - * | <-- diff7
-LC26 -> * - - - - - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6
-LC110-> - - - - - - - - - - - * - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6
+LC28 -> * - - - - - - - - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6
+LC103-> - - - - - - - * - - - - - - - - | - - - - - - - * | <-- |freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -755,309 +722,309 @@ reset    : INPUT;
 -- Node name is 'leda' 
 -- Equation name is 'leda', location is LC064, type is output.
  leda    = LCELL( _EQ001 $  GND);
-  _EQ001 = !_LC018 &  _LC022 &  _LC023 &  _LC031
-         #  _LC018 & !_LC022 &  _LC023 &  _LC031
-         # !_LC018 &  _LC022 & !_LC023 & !_LC031
-         # !_LC018 & !_LC022 & !_LC023 &  _LC031;
+  _EQ001 =  _LC017 & !_LC018 &  _LC023 &  _LC031
+         # !_LC017 &  _LC018 &  _LC023 &  _LC031
+         #  _LC017 & !_LC018 & !_LC023 & !_LC031
+         # !_LC017 & !_LC018 & !_LC023 &  _LC031;
 
 -- Node name is 'ledb' 
 -- Equation name is 'ledb', location is LC061, type is output.
  ledb    = LCELL( _EQ002 $  GND);
-  _EQ002 = !_LC018 &  _LC022 & !_LC023 &  _LC031
+  _EQ002 =  _LC017 & !_LC018 & !_LC023 &  _LC031
          #  _LC018 &  _LC023 &  _LC031
-         #  _LC018 &  _LC022 & !_LC031
-         #  _LC022 &  _LC023 & !_LC031;
+         #  _LC017 &  _LC018 & !_LC031
+         #  _LC017 &  _LC023 & !_LC031;
 
 -- Node name is 'ledc' 
 -- Equation name is 'ledc', location is LC059, type is output.
  ledc    = LCELL( _EQ003 $  GND);
-  _EQ003 =  _LC018 & !_LC022 & !_LC023 & !_LC031
-         #  _LC018 &  _LC022 &  _LC023
-         #  _LC022 &  _LC023 & !_LC031;
+  _EQ003 = !_LC017 &  _LC018 & !_LC023 & !_LC031
+         #  _LC017 &  _LC018 &  _LC023
+         #  _LC017 &  _LC023 & !_LC031;
 
 -- Node name is 'ledd' 
 -- Equation name is 'ledd', location is LC057, type is output.
  ledd    = LCELL( _EQ004 $  GND);
-  _EQ004 =  _LC018 & !_LC022 &  _LC023 & !_LC031
-         # !_LC018 & !_LC022 & !_LC023 &  _LC031
-         # !_LC018 &  _LC022 & !_LC023 & !_LC031
-         #  _LC018 &  _LC022 &  _LC031;
+  _EQ004 = !_LC017 &  _LC018 &  _LC023 & !_LC031
+         # !_LC017 & !_LC018 & !_LC023 &  _LC031
+         #  _LC017 & !_LC018 & !_LC023 & !_LC031
+         #  _LC017 &  _LC018 &  _LC031;
 
 -- Node name is 'lede' 
 -- Equation name is 'lede', location is LC056, type is output.
  lede    = LCELL( _EQ005 $  GND);
-  _EQ005 = !_LC018 &  _LC022 & !_LC023
-         # !_LC018 & !_LC022 &  _LC031
+  _EQ005 =  _LC017 & !_LC018 & !_LC023
+         # !_LC017 & !_LC018 &  _LC031
          # !_LC023 &  _LC031;
 
 -- Node name is 'ledf' 
 -- Equation name is 'ledf', location is LC053, type is output.
  ledf    = LCELL( _EQ006 $  GND);
-  _EQ006 = !_LC018 &  _LC022 &  _LC023 &  _LC031
+  _EQ006 =  _LC017 & !_LC018 &  _LC023 &  _LC031
          #  _LC018 & !_LC023 &  _LC031
-         #  _LC018 & !_LC022 & !_LC023
-         # !_LC022 & !_LC023 &  _LC031;
+         # !_LC017 &  _LC018 & !_LC023
+         # !_LC017 & !_LC023 &  _LC031;
 
 -- Node name is 'ledg' 
 -- Equation name is 'ledg', location is LC051, type is output.
  ledg    = LCELL( _EQ007 $  GND);
-  _EQ007 =  _LC018 &  _LC022 & !_LC023 &  _LC031
-         # !_LC018 &  _LC022 &  _LC023 & !_LC031
-         # !_LC018 & !_LC022 & !_LC023;
+  _EQ007 =  _LC017 &  _LC018 & !_LC023 &  _LC031
+         #  _LC017 & !_LC018 &  _LC023 & !_LC031
+         # !_LC017 & !_LC018 & !_LC023;
 
--- Node name is 'led1' = '|dmux3to8:demux|~131~1' 
+-- Node name is 'led1' = '|dmux3to8:demux1|~131~1' 
 -- Equation name is 'led1', type is output 
  led1    = LCELL( _EQ008 $  GND);
-  _EQ008 =  _LC017 & !_LC020 & !_LC030;
+  _EQ008 =  _LC020 & !_LC022 & !_LC030;
 
--- Node name is 'led2' = '|dmux3to8:demux|~130~1' 
+-- Node name is 'led2' = '|dmux3to8:demux1|~130~1' 
 -- Equation name is 'led2', type is output 
  led2    = LCELL( _EQ009 $  GND);
-  _EQ009 = !_LC017 &  _LC020 & !_LC030;
+  _EQ009 = !_LC020 &  _LC022 & !_LC030;
 
--- Node name is 'led3' = '|dmux3to8:demux|~129~1' 
+-- Node name is 'led3' = '|dmux3to8:demux1|~129~1' 
 -- Equation name is 'led3', type is output 
  led3    = LCELL( _EQ010 $  GND);
-  _EQ010 =  _LC017 &  _LC020 & !_LC030;
+  _EQ010 =  _LC020 &  _LC022 & !_LC030;
 
--- Node name is 'led4' = '|dmux3to8:demux|~128~1' 
+-- Node name is 'led4' = '|dmux3to8:demux1|~128~1' 
 -- Equation name is 'led4', type is output 
  led4    = LCELL( _EQ011 $  GND);
-  _EQ011 = !_LC017 & !_LC020 &  _LC030;
+  _EQ011 = !_LC020 & !_LC022 &  _LC030;
 
--- Node name is 'led5' = '|dmux3to8:demux|~127~1' 
+-- Node name is 'led5' = '|dmux3to8:demux1|~127~1' 
 -- Equation name is 'led5', type is output 
  led5    = LCELL( _EQ012 $  GND);
-  _EQ012 =  _LC017 & !_LC020 &  _LC030;
+  _EQ012 =  _LC020 & !_LC022 &  _LC030;
 
--- Node name is 'led6' = '|dmux3to8:demux|~126~1' 
+-- Node name is 'led6' = '|dmux3to8:demux1|~126~1' 
 -- Equation name is 'led6', type is output 
  led6    = LCELL( _EQ013 $  GND);
-  _EQ013 = !_LC017 &  _LC020 &  _LC030;
+  _EQ013 = !_LC020 &  _LC022 &  _LC030;
 
--- Node name is 'led7' = '|dmux3to8:demux|~125~1' 
+-- Node name is 'led7' = '|dmux3to8:demux1|~125~1' 
 -- Equation name is 'led7', type is output 
  led7    = LCELL( _EQ014 $  GND);
-  _EQ014 =  _LC017 &  _LC020 &  _LC030;
+  _EQ014 =  _LC020 &  _LC022 &  _LC030;
 
 -- Node name is 'o_diff1' 
--- Equation name is 'o_diff1', location is LC065, type is output.
+-- Equation name is 'o_diff1', location is LC115, type is output.
  o_diff1 = LCELL( diff1 $  GND);
 
 -- Node name is 'o_diff2' 
--- Equation name is 'o_diff2', location is LC067, type is output.
+-- Equation name is 'o_diff2', location is LC117, type is output.
  o_diff2 = LCELL( diff2 $  GND);
 
 -- Node name is 'o_diff3' 
--- Equation name is 'o_diff3', location is LC069, type is output.
+-- Equation name is 'o_diff3', location is LC118, type is output.
  o_diff3 = LCELL( diff3 $  GND);
 
 -- Node name is 'o_diff4' 
--- Equation name is 'o_diff4', location is LC072, type is output.
+-- Equation name is 'o_diff4', location is LC126, type is output.
  o_diff4 = LCELL( diff4 $  GND);
 
 -- Node name is 'o_diff5' 
--- Equation name is 'o_diff5', location is LC115, type is output.
+-- Equation name is 'o_diff5', location is LC125, type is output.
  o_diff5 = LCELL( diff5 $  GND);
 
 -- Node name is 'o_diff6' 
--- Equation name is 'o_diff6', location is LC117, type is output.
+-- Equation name is 'o_diff6', location is LC123, type is output.
  o_diff6 = LCELL( diff6 $  GND);
 
 -- Node name is 'o_diff7' 
--- Equation name is 'o_diff7', location is LC118, type is output.
+-- Equation name is 'o_diff7', location is LC120, type is output.
  o_diff7 = LCELL( diff7 $  GND);
 
--- Node name is '|counter_3bit:lightcouter1|T_FF:t0|D_FF:d1|:6' 
--- Equation name is '_LC017', type is buried 
-_LC017   = TFFE( VCC, !_LC105, !reset,  VCC,  VCC);
-
--- Node name is '|counter_3bit:lightcouter1|T_FF:t1|D_FF:d1|:6' 
+-- Node name is '|counter_3bit:lightline1|T_FF:t0|D_FF:d1|:6' 
 -- Equation name is '_LC020', type is buried 
-_LC020   = TFFE( _LC017, !_LC105, !reset,  VCC,  VCC);
+_LC020   = TFFE( VCC, !_LC101, !reset,  VCC,  VCC);
 
--- Node name is '|counter_3bit:lightcouter1|T_FF:t2|D_FF:d1|:6' 
+-- Node name is '|counter_3bit:lightline1|T_FF:t1|D_FF:d1|:6' 
+-- Equation name is '_LC022', type is buried 
+_LC022   = TFFE( _LC020, !_LC101, !reset,  VCC,  VCC);
+
+-- Node name is '|counter_3bit:lightline1|T_FF:t2|D_FF:d1|:6' 
 -- Equation name is '_LC030', type is buried 
-_LC030   = TFFE( _EQ015, !_LC105, !reset,  VCC,  VCC);
-  _EQ015 =  _LC017 &  _LC020;
+_LC030   = TFFE( _EQ015, !_LC101, !reset,  VCC,  VCC);
+  _EQ015 =  _LC020 &  _LC022;
 
 -- Node name is '|counter_6bit:scorecouter|T_FF:t0|D_FF:d1|:6' 
 -- Equation name is '_LC031', type is buried 
 _LC031   = TFFE( VCC,  _EQ016, !reset,  VCC,  VCC);
   _EQ016 =  _X001;
-  _X001  = EXP(!_LC017 & !_LC020 & !_LC028 & !_LC030 &  _LC032);
+  _X001  = EXP(!_LC020 & !_LC022 & !_LC026 & !_LC030 &  _LC032);
 
 -- Node name is '|counter_6bit:scorecouter|T_FF:t1|D_FF:d1|:6' 
 -- Equation name is '_LC018', type is buried 
 _LC018   = TFFE( _LC031,  _EQ017, !reset,  VCC,  VCC);
   _EQ017 =  _X001;
-  _X001  = EXP(!_LC017 & !_LC020 & !_LC028 & !_LC030 &  _LC032);
+  _X001  = EXP(!_LC020 & !_LC022 & !_LC026 & !_LC030 &  _LC032);
 
 -- Node name is '|counter_6bit:scorecouter|T_FF:t2|D_FF:d1|:6' 
--- Equation name is '_LC022', type is buried 
-_LC022   = TFFE( _EQ018,  _EQ019, !reset,  VCC,  VCC);
+-- Equation name is '_LC017', type is buried 
+_LC017   = TFFE( _EQ018,  _EQ019, !reset,  VCC,  VCC);
   _EQ018 =  _LC018 &  _LC031;
   _EQ019 =  _X001;
-  _X001  = EXP(!_LC017 & !_LC020 & !_LC028 & !_LC030 &  _LC032);
+  _X001  = EXP(!_LC020 & !_LC022 & !_LC026 & !_LC030 &  _LC032);
 
 -- Node name is '|counter_6bit:scorecouter|T_FF:t3|D_FF:d1|:6' 
 -- Equation name is '_LC023', type is buried 
 _LC023   = TFFE( _EQ020,  _EQ021, !reset,  VCC,  VCC);
-  _EQ020 =  _LC018 &  _LC022 &  _LC031;
+  _EQ020 =  _LC017 &  _LC018 &  _LC031;
   _EQ021 =  _X001;
-  _X001  = EXP(!_LC017 & !_LC020 & !_LC028 & !_LC030 &  _LC032);
+  _X001  = EXP(!_LC020 & !_LC022 & !_LC026 & !_LC030 &  _LC032);
 
 -- Node name is '|Debouncing:db|D_FF:d1|:6' 
 -- Equation name is '_LC032', type is buried 
-_LC032   = DFFE(!button1 $  GND, !_LC089,  VCC,  VCC,  VCC);
+_LC032   = DFFE(!button1 $  GND, !_LC084,  VCC,  VCC,  VCC);
 
 -- Node name is '|Debouncing:db|D_FF:d2|:6' 
--- Equation name is '_LC028', type is buried 
-_LC028   = DFFE( _LC032 $  GND, !_LC089,  VCC,  VCC,  VCC);
+-- Equation name is '_LC026', type is buried 
+_LC026   = DFFE( _LC032 $  GND, !_LC084,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff01|D_FF:d1|:6' 
--- Equation name is '_LC026', type is buried 
-_LC026   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
+-- Equation name is '_LC028', type is buried 
+_LC028   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff02|D_FF:d1|:6' 
 -- Equation name is '_LC121', type is buried 
-_LC121   = TFFE( VCC, !_LC026,  VCC,  VCC,  VCC);
+_LC121   = TFFE( VCC, !_LC028,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff03|D_FF:d1|:6' 
 -- Equation name is '_LC122', type is buried 
 _LC122   = TFFE( VCC, !_LC121,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff04|D_FF:d1|:6' 
--- Equation name is '_LC123', type is buried 
-_LC123   = TFFE( VCC, !_LC122,  VCC,  VCC,  VCC);
+-- Equation name is '_LC114', type is buried 
+_LC114   = TFFE( VCC, !_LC122,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff05|D_FF:d1|:6' 
--- Equation name is '_LC113', type is buried 
-_LC113   = TFFE( VCC, !_LC123,  VCC,  VCC,  VCC);
+-- Equation name is '_LC116', type is buried 
+_LC116   = TFFE( VCC, !_LC114,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff06|D_FF:d1|:6' 
--- Equation name is '_LC116', type is buried 
-_LC116   = TFFE( VCC, !_LC113,  VCC,  VCC,  VCC);
+-- Equation name is '_LC119', type is buried 
+_LC119   = TFFE( VCC, !_LC116,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff07|D_FF:d1|:6' 
--- Equation name is '_LC120', type is buried 
-_LC120   = TFFE( VCC, !_LC116,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6' 
--- Equation name is '_LC126', type is buried 
-_LC126   = TFFE( VCC, !_LC120,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6' 
--- Equation name is '_LC119', type is buried 
-_LC119   = TFFE( VCC, !_LC126,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6' 
 -- Equation name is '_LC124', type is buried 
 _LC124   = TFFE( VCC, !_LC119,  VCC,  VCC,  VCC);
 
--- Node name is '|freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6' 
+-- Node name is '|freq_div:fd0|T_FF:t_ff08|D_FF:d1|:6' 
 -- Equation name is '_LC127', type is buried 
 _LC127   = TFFE( VCC, !_LC124,  VCC,  VCC,  VCC);
 
--- Node name is '|freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6' 
+-- Node name is '|freq_div:fd0|T_FF:t_ff09|D_FF:d1|:6' 
+-- Equation name is '_LC103', type is buried 
+_LC103   = TFFE( VCC, !_LC127,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff010|D_FF:d1|:6' 
 -- Equation name is '_LC128', type is buried 
-_LC128   = TFFE( VCC, !_LC127,  VCC,  VCC,  VCC);
+_LC128   = TFFE( VCC, !_LC103,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff011|D_FF:d1|:6' 
+-- Equation name is '_LC104', type is buried 
+_LC104   = TFFE( VCC, !_LC128,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff012|D_FF:d1|:6' 
+-- Equation name is '_LC102', type is buried 
+_LC102   = TFFE( VCC, !_LC104,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd0|T_FF:t_ff013|D_FF:d1|:6' 
--- Equation name is '_LC110', type is buried 
-_LC110   = TFFE( VCC, !_LC128,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6' 
--- Equation name is '_LC114', type is buried 
-_LC114   = TFFE( VCC, !_LC110,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6' 
--- Equation name is '_LC111', type is buried 
-_LC111   = TFFE( VCC, !_LC114,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6' 
--- Equation name is '_LC112', type is buried 
-_LC112   = TFFE( VCC, !_LC111,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6' 
--- Equation name is '_LC102', type is buried 
-_LC102   = TFFE( VCC, !_LC112,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6' 
 -- Equation name is '_LC105', type is buried 
 _LC105   = TFFE( VCC, !_LC102,  VCC,  VCC,  VCC);
 
+-- Node name is '|freq_div:fd0|T_FF:t_ff014|D_FF:d1|:6' 
+-- Equation name is '_LC100', type is buried 
+_LC100   = TFFE( VCC, !_LC105,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff015|D_FF:d1|:6' 
+-- Equation name is '_LC099', type is buried 
+_LC099   = TFFE( VCC, !_LC100,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff016|D_FF:d1|:6' 
+-- Equation name is '_LC112', type is buried 
+_LC112   = TFFE( VCC, !_LC099,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff017|D_FF:d1|:6' 
+-- Equation name is '_LC097', type is buried 
+_LC097   = TFFE( VCC, !_LC112,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd0|T_FF:t_ff019|D_FF:d1|:6' 
+-- Equation name is '_LC101', type is buried 
+_LC101   = TFFE( VCC, !_LC097,  VCC,  VCC,  VCC);
+
 -- Node name is '|freq_div:fd1|T_FF:t_ff01|D_FF:d1|:6' 
--- Equation name is '_LC125', type is buried 
-_LC125   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
+-- Equation name is '_LC113', type is buried 
+_LC113   = TFFE( VCC, GLOBAL(!clk),  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff02|D_FF:d1|:6' 
--- Equation name is '_LC103', type is buried 
-_LC103   = TFFE( VCC, !_LC125,  VCC,  VCC,  VCC);
+-- Equation name is '_LC108', type is buried 
+_LC108   = TFFE( VCC, !_LC113,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff03|D_FF:d1|:6' 
--- Equation name is '_LC104', type is buried 
-_LC104   = TFFE( VCC, !_LC103,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6' 
--- Equation name is '_LC107', type is buried 
-_LC107   = TFFE( VCC, !_LC104,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6' 
--- Equation name is '_LC108', type is buried 
-_LC108   = TFFE( VCC, !_LC107,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6' 
 -- Equation name is '_LC109', type is buried 
 _LC109   = TFFE( VCC, !_LC108,  VCC,  VCC,  VCC);
 
+-- Node name is '|freq_div:fd1|T_FF:t_ff04|D_FF:d1|:6' 
+-- Equation name is '_LC110', type is buried 
+_LC110   = TFFE( VCC, !_LC109,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd1|T_FF:t_ff05|D_FF:d1|:6' 
+-- Equation name is '_LC111', type is buried 
+_LC111   = TFFE( VCC, !_LC110,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd1|T_FF:t_ff06|D_FF:d1|:6' 
+-- Equation name is '_LC107', type is buried 
+_LC107   = TFFE( VCC, !_LC111,  VCC,  VCC,  VCC);
+
 -- Node name is '|freq_div:fd1|T_FF:t_ff07|D_FF:d1|:6' 
--- Equation name is '_LC099', type is buried 
-_LC099   = TFFE( VCC, !_LC109,  VCC,  VCC,  VCC);
+-- Equation name is '_LC106', type is buried 
+_LC106   = TFFE( VCC, !_LC107,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff08|D_FF:d1|:6' 
--- Equation name is '_LC100', type is buried 
-_LC100   = TFFE( VCC, !_LC099,  VCC,  VCC,  VCC);
+-- Equation name is '_LC088', type is buried 
+_LC088   = TFFE( VCC, !_LC106,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff09|D_FF:d1|:6' 
--- Equation name is '_LC101', type is buried 
-_LC101   = TFFE( VCC, !_LC100,  VCC,  VCC,  VCC);
+-- Equation name is '_LC098', type is buried 
+_LC098   = TFFE( VCC, !_LC088,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff010|D_FF:d1|:6' 
--- Equation name is '_LC106', type is buried 
-_LC106   = TFFE( VCC, !_LC101,  VCC,  VCC,  VCC);
+-- Equation name is '_LC087', type is buried 
+_LC087   = TFFE( VCC, !_LC098,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff011|D_FF:d1|:6' 
--- Equation name is '_LC098', type is buried 
-_LC098   = TFFE( VCC, !_LC106,  VCC,  VCC,  VCC);
+-- Equation name is '_LC085', type is buried 
+_LC085   = TFFE( VCC, !_LC087,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff012|D_FF:d1|:6' 
--- Equation name is '_LC082', type is buried 
-_LC082   = TFFE( VCC, !_LC098,  VCC,  VCC,  VCC);
+-- Equation name is '_LC083', type is buried 
+_LC083   = TFFE( VCC, !_LC085,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff013|D_FF:d1|:6' 
--- Equation name is '_LC097', type is buried 
-_LC097   = TFFE( VCC, !_LC082,  VCC,  VCC,  VCC);
+-- Equation name is '_LC082', type is buried 
+_LC082   = TFFE( VCC, !_LC083,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff014|D_FF:d1|:6' 
 -- Equation name is '_LC081', type is buried 
-_LC081   = TFFE( VCC, !_LC097,  VCC,  VCC,  VCC);
+_LC081   = TFFE( VCC, !_LC082,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff015|D_FF:d1|:6' 
--- Equation name is '_LC084', type is buried 
-_LC084   = TFFE( VCC, !_LC081,  VCC,  VCC,  VCC);
+-- Equation name is '_LC090', type is buried 
+_LC090   = TFFE( VCC, !_LC081,  VCC,  VCC,  VCC);
 
 -- Node name is '|freq_div:fd1|T_FF:t_ff016|D_FF:d1|:6' 
--- Equation name is '_LC092', type is buried 
-_LC092   = TFFE( VCC, !_LC084,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6' 
--- Equation name is '_LC090', type is buried 
-_LC090   = TFFE( VCC, !_LC092,  VCC,  VCC,  VCC);
-
--- Node name is '|freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6' 
 -- Equation name is '_LC089', type is buried 
 _LC089   = TFFE( VCC, !_LC090,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd1|T_FF:t_ff017|D_FF:d1|:6' 
+-- Equation name is '_LC086', type is buried 
+_LC086   = TFFE( VCC, !_LC089,  VCC,  VCC,  VCC);
+
+-- Node name is '|freq_div:fd1|T_FF:t_ff019|D_FF:d1|:6' 
+-- Equation name is '_LC084', type is buried 
+_LC084   = TFFE( VCC, !_LC086,  VCC,  VCC,  VCC);
 
 
 
@@ -1142,7 +1109,7 @@ VHDL Netlist Writer                       = off
 Compilation Times
 -----------------
 
-   Compiler Netlist Extractor             00:00:01
+   Compiler Netlist Extractor             00:00:00
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
@@ -1150,10 +1117,10 @@ Compilation Times
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 9,181K
+Peak memory allocated during compilation  = 6,555K

@@ -24,13 +24,6 @@ HIF003
 --
 FILES
 {
-	couter.v
-	{
-		couter [] []
-		{
-			0 [] [];
-		}
-	}
 }
 TREE
 {

@@ -24,25 +24,18 @@ HIF003
 --
 FILES
 {
-	D_FF.v
-	{
-		d_ff [] []
-		{
-			3 [] [];
-		}
-	}
 	T_FF.v
 	{
 		t_ff [] [D_FF.v]
 		{
-			2 [] [];
+			1 [] [];
 		}
 	}
-	freq_div.v
+	D_FF.v
 	{
-		freq_div [] [T_FF.v]
+		d_ff [] []
 		{
-			1 [] [];
+			2 [] [];
 		}
 	}
 	counter_3bit.v
@@ -57,17 +50,17 @@ TREE
 {
 	counter_3bit::(0,0):(0): counter_3bit.v
 	{
-		t_ff:2:(6,0):(7,t0): T_FF.v
+		t_ff:1:(11,0):(9,t2): T_FF.v
 		{
-			d_ff:3:(6,0):(6,d1): D_FF.v;
+			d_ff:2:(6,0):(6,d1): D_FF.v;
 		}
-		t_ff:2:(7,0):(8,t1): T_FF.v
+		t_ff:1:(7,0):(8,t1): T_FF.v
 		{
-			d_ff:3:(6,0):(6,d1): D_FF.v;
+			d_ff:2:(6,0):(6,d1): D_FF.v;
 		}
-		t_ff:2:(11,0):(9,t2): T_FF.v
+		t_ff:1:(6,0):(7,t0): T_FF.v
 		{
-			d_ff:3:(6,0):(6,d1): D_FF.v;
+			d_ff:2:(6,0):(6,d1): D_FF.v;
 		}
 	}
 }

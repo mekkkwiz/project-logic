@@ -61,13 +61,13 @@ GND                              : 30
 RESERVED                         : 31
 TCK                              : 32
 RESERVED                         : 33
-RESERVED                         : 34
+q5                               : 34
 VCC                              : 35
-RESERVED                         : 36
-q3                               : 37
+q1                               : 36
+q4                               : 37
 TDO                              : 38
 q0                               : 39
-q1                               : 40
+q3                               : 40
 q2                               : 41
 GND                              : 42
 clk                              : 43

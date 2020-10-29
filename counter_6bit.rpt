@@ -2,7 +2,7 @@ Project Information                      d:\work\logi\project\counter_6bit.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 10/28/2020 19:59:39
+Compiled: 10/29/2020 16:57:15
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -376,13 +376,13 @@ VHDL Netlist Writer                       = off
 Compilation Times
 -----------------
 
-   Compiler Netlist Extractor             00:00:00
+   Compiler Netlist Extractor             00:00:01
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
-   Assembler                              00:00:01
+   Assembler                              00:00:00
    --------------------------             --------
    Total Time                             00:00:01
 
@@ -390,4 +390,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 5,395K
+Peak memory allocated during compilation  = 3,850K

@@ -18,16 +18,16 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7032S - d:\work\logi\wo5\t_ff.pof Tue Oct 20 09:12:38 2020
+'Device #1: EPM7128S - d:\work\logi\project\lightmanager.pof Thu Oct 29 09:51:46 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
-NOTE "DATE" "2020/10/20";
-NOTE "DEVICE" "EPM7032S";
-NOTE "FILE" "t_ff.pof";
+NOTE "DATE" "2020/10/29";
+NOTE "DEVICE" "EPM7128S";
+NOTE "FILE" "lightmanager.pof";
 NOTE "TARGET" "1";
-NOTE "IDCODE" "070320DD";
+NOTE "IDCODE" "071280DD";
 NOTE "UES" "FFFF";
-NOTE "CHECKSUM" "00071CC2";
+NOTE "CHECKSUM" "001DEC28";
 NOTE "SAVE_DATA" "DEVICE_DATA";
 NOTE "SAVE_DATA_VARIABLES" "V0, A12, A13, A21, A22, A25, A43";
 NOTE "STAPL_VERSION" "JESD71";
@@ -45,24 +45,33 @@ ACTION READ_UES = L11, L15;
 DATA DEVICE_DATA;
 INTEGER V0 = 1;
 INTEGER V1 = 0;
-INTEGER A12[1] = 1;
-INTEGER A59[1] = 0;
+INTEGER A12[1] = 4;
+INTEGER A59[1] = 288;
 INTEGER A60[1] = 1;
-INTEGER A61[1] = 117645533;
+INTEGER A61[1] = 118653149;
 INTEGER A13[1] = 5;
 INTEGER A25[1] = 10;
 INTEGER A43[1] = 0;
-BOOLEAN A21[20320] = @
-id000u@@@@3q6aDm@t@VA5HH9Ke2Ae1w@Xnaz@@tcXFnr@@VQ_@am@ZI@FBcsMR6
-I1am@@VNPm9k@zUTltxvzUldtpzU5W1ktxvhpbm@tzUKW4L0Aa2GHeG2yU_tp3oX
-tpzVkn6_Vk@J_beCW4j9Um@@@d@@@V_Ft@L0Cm@_VNl2OA5cW@@V_K0KKFK2@F@x
-w@_lzt@zx_llh2G2v6a8KWAHGOG@t@VmZDY7aWt@@@226a3H5z@@@L0K8Jf1_@@x
-R4aG5W42KaJyWV0;
+BOOLEAN A21[104320] = @
+mB300u@@@@3q6aP86Zmm4CO16u06Ix@@@dmby@@Vxv@@FPka@Z@now@ZTlz@x@NI
+_@8x@Xq@@n@VWCmwE_@sp@pk_@rNIyV@@N2s9V@_@7Z@lOz@3p@FO@@@2_VlYHv@
+v@FOfFzx@@dAvI_@xlBgy@XERq@@VVmN@7cw@Vn_VNk@l5y@P9@@Lq@7YvXZTxa@
+@_lG1WAe0sy@@lhtxzsUltx205K1W2f0GHK06mxzVlCWDuzU@FYkJ150pM0jKBWM
+f5GR446m@zVlS1s2Z8A@@@z__@tzxzV7A0KJ@dPu16ux@VF1SIy@t@7509z@Bj@@
+t@G1WAe0G3KeH@t@zzu_W@t@@_@@@g@vz@xzx_l@p@zVll@xzA0K8509ytx@x@l@
+p@@VVK0UqlaJz@@V@@@FvTNBy@VO9a7R29Xby@bz@Nv@@z@Ndtx@V@@t@_@_@ztx
+zN1W2f0GnFp645W7_@l@z@zVx@@xt@V@V50Aa205_@@xzzV@7509z@di@@x@WDZg
+@@@x@@@mIitt@@l_l@@A0K850Ay@xzlgd1b1uHvy6ul@@VJD3g0GXK0am@t@zY76
+K6W7;
 
-BOOLEAN A22[15328] = @
-yT000u@@@@3q6aDm@@zVA5HH9Ke2Ae1w@XnUpkC4V39DKHQ_@um@pJ@FwZM00000
-y@@z@V0000081W000000400w0I00@@l@@xV@y@@_@d@tmDmB@zMIU2_@@VJ08m@@
-@lVfgAKLn@X09u@@@t@r@l@@@V@JLLygg@NrDm@y@F_@@ALTLL9xF43a00;
+BOOLEAN A22[65920] = @
+m0200u@@@@3q6aP86Zmm4CO16u0EJV@@@11GoZRu@@@B40Hrib0X4_w@@31G4MQP
+w_VmCsPo@ZP@@b_@Wv@3a9qhn@RT_@gr@3XEMuIO2yyVpw@Nc@Vo_@F6y@0MgBeF
+v2W2ifA@FilO3_w@OL@@Ls@Rrz@LX@FLv@Fb_@mbBAyuG2Hs0@@F000000000000
+0i2032z_XW0I8AW4618YY0410000000qA1g8SW7y@@NJw@@F408I6V3@Vjqy@V@z
+@@@x@lzF20369N5l@@@X00HG0W4806_@@wr@@@cX_O_dggGLLKfAggYNNHbgegAK
+Lr@3iNd@@l@vtDByW4OLLK5UmUDtdZ@vxEyT7VkZlxm@TyvE_k3VtTjklkRNtzrw
+_gkh0mW0zFn@@zTr_bwVkh7trpjwvkUyNFtgdxwnTztvhx_oTVTdlk_lA0C0;
 
 ENDDATA;
 DATA TEMP_DATA;
@@ -144,14 +153,14 @@ INTEGER A52[1];
 BOOLEAN A32[60];
 BOOLEAN A33[10];
 BOOLEAN A39[10];
-BOOLEAN A26[400];
+BOOLEAN A26[1600];
 BOOLEAN A27[5];
-BOOLEAN A28[237];
-BOOLEAN A31[160];
-BOOLEAN A57[160];
-BOOLEAN A45[237];
-BOOLEAN A29[237];
-BOOLEAN A30[237];
+BOOLEAN A28[273];
+BOOLEAN A31[640];
+BOOLEAN A57[640];
+BOOLEAN A45[640];
+BOOLEAN A29[640];
+BOOLEAN A30[640];
 BOOLEAN A34[50];
 BOOLEAN A35[50];
 BOOLEAN A36[50];
@@ -1651,4 +1660,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC 134F;
+CRC 0C33;
