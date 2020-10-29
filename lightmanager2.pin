@@ -27,18 +27,18 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 ----------------------------------------------------------------------------
 
-CHIP "decode_7seg" ASSIGNED TO AN EPM7032SLC44-5
+CHIP "lightmanager2" ASSIGNED TO AN EPM7032SLC44-5
 GND                              : 1
 GND                              : 2
 VCC                              : 3
-F                                : 4
-A                                : 5
-B                                : 6
+sel5                             : 4
+sel4                             : 5
+sel3                             : 6
 TDI                              : 7
-C                                : 8
-D                                : 9
+sel2                             : 8
+sel1                             : 9
 GND                              : 10
-E                                : 11
+sel0                             : 11
 RESERVED                         : 12
 TMS                              : 13
 RESERVED                         : 14
@@ -51,24 +51,24 @@ RESERVED                         : 20
 RESERVED                         : 21
 GND                              : 22
 VCC                              : 23
-ledf                             : 24
-lede                             : 25
-ledg                             : 26
+RESERVED                         : 24
+RESERVED                         : 25
+RESERVED                         : 26
 RESERVED                         : 27
-ledd                             : 28
+RESERVED                         : 28
 RESERVED                         : 29
 GND                              : 30
-ledc                             : 31
+RESERVED                         : 31
 TCK                              : 32
-ledb                             : 33
-leda                             : 34
+RESERVED                         : 33
+RESERVED                         : 34
 VCC                              : 35
 RESERVED                         : 36
 RESERVED                         : 37
 TDO                              : 38
 RESERVED                         : 39
 RESERVED                         : 40
-RESERVED                         : 41
+line2                            : 41
 GND                              : 42
 GND                              : 43
 GND                              : 44

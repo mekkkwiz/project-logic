@@ -24,112 +24,20 @@ HIF003
 --
 FILES
 {
-	LightManager.v
-	{
-		lightmanager [] []
-		{
-			1 [] [];
-		}
-	}
-	Decode_7Seg.v
-	{
-		decode_7seg [] []
-		{
-			8 [] [];
-		}
-	}
-	counter_3bit.v
-	{
-		counter_3bit [] [T_FF.v]
-		{
-			5 [] [];
-		}
-	}
-	dmux3to8.v
-	{
-		dmux3to8 [] []
-		{
-			9 [] [];
-		}
-	}
-	freq_div.v
-	{
-		freq_div [] [T_FF.v]
-		{
-			2 [] [];
-		}
-	}
-	debounce_button.v
-	{
-		debounce_button [] [D_FF.v,freq_div.v];
-	}
-	D_FF.v
-	{
-		d_ff [] []
-		{
-			4 [] [];
-		}
-	}
-	Debouncing.v
-	{
-		Debouncing [] [D_FF.v]
-		{
-			6 [] [];
-		}
-	}
-	T_FF.v
-	{
-		t_ff [] [D_FF.v]
-		{
-			3 [] [];
-		}
-	}
-	counter_6bit.v
-	{
-		counter_6bit [] [T_FF.v]
-		{
-			7 [] [];
-		}
-	}
-	project_logic.v
-	{
-		project_logic [] [Decode_7Seg.v,counter_6bit.v,Debouncing.v,freq_div.v]
-		{
-			0 [] [];
-		}
-	}
 }
 TREE
 {
-	project_logic::(0,0):(0): project_logic.v
+	mockup::(0,0):(0): mockup.gdf
 	{
-		counter_6bit:7:(37,0):(26,scorecouter): counter_6bit.v
-		{
-			t_ff:3:(7,0):(16,t0): T_FF.v
-			{
-				d_ff:4:(6,0):(6,d1): D_FF.v;
-			}
-			t_ff:3:(8,0):(17,t1): T_FF.v
-			{
-				d_ff:4:(6,0):(6,d1): D_FF.v;
-			}
-			t_ff:3:(12,0):(18,t2): T_FF.v
-			{
-				d_ff:4:(6,0):(6,d1): D_FF.v;
-			}
-			t_ff:3:(16,0):(19,t3): T_FF.v
-			{
-				d_ff:4:(6,0):(6,d1): D_FF.v;
-			}
-			t_ff:3:(20,0):(20,t4): T_FF.v
-			{
-				d_ff:4:(6,0):(6,d1): D_FF.v;
-			}
-			t_ff:3:(24,0):(21,t5): T_FF.v
-			{
-				d_ff:4:(6,0):(6,d1): D_FF.v;
-			}
-		}
-		decode_7seg:8:(47,0):(27,decoder1): Decode_7Seg.v;
+		counter_3bit::(0,0):(14): counter_3bit.v;
+		lightmanager::(0,0):(15): lightmanager.v;
+		counter_3bit::(0,0):(11): counter_3bit.v;
+		lightmanager::(0,0):(12): lightmanager.v;
+		dmux3to8::(0,0):(9): dmux3to8.v;
+		dmux3to8::(0,0):(8): dmux3to8.v;
+		dmux3to8::(0,0):(7): dmux3to8.v;
+		counter_3bit::(0,0):(5): counter_3bit.v;
+		counter_6bit::(0,0):(4): counter_6bit.v;
+		lightmanager::(0,0):(3): lightmanager.v;
 	}
 }
