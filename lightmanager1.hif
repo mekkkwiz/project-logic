@@ -24,9 +24,9 @@ HIF003
 --
 FILES
 {
-	lightmanager.v
+	lightmanager1.v
 	{
-		lightmanager [] []
+		lightmanager1 [] []
 		{
 			0 [] [];
 		}
@@ -34,5 +34,5 @@ FILES
 }
 TREE
 {
-	lightmanager::(0,0):(0): lightmanager.gdf;
+	lightmanager1::(0,0):(0): lightmanager1.v;
 }

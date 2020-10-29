@@ -24,9 +24,9 @@ HIF003
 --
 FILES
 {
-	decode_7seg.v
+	Decode_7Seg.v
 	{
-		decode_7seg [] []
+		Decode_7Seg [] []
 		{
 			0 [] [];
 		}
@@ -34,5 +34,5 @@ FILES
 }
 TREE
 {
-	decode_7seg::(0,0):(0): decode_7seg.v;
+	decode_7seg::(0,0):(0): Decode_7Seg.v;
 }

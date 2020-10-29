@@ -18,7 +18,7 @@
 ' their respective licensors.  No other licenses, including any licenses
 ' needed under any third party's intellectual property, are provided herein.
 
-'Device #1: EPM7128S - d:\work\logi\project\project_logic.pof Thu Oct 29 12:57:15 2020
+'Device #1: EPM7128S - d:\work\logi\project\project_logic.pof Thu Oct 29 15:05:45 2020
 
 NOTE "CREATOR" "Altera Jam/STAPL Composer Version 10.2 06/28/2002";
 NOTE "DATE" "2020/10/29";
@@ -27,7 +27,7 @@ NOTE "FILE" "project_logic.pof";
 NOTE "TARGET" "1";
 NOTE "IDCODE" "071280DD";
 NOTE "UES" "FFFF";
-NOTE "CHECKSUM" "001A3A89";
+NOTE "CHECKSUM" "001DF3EB";
 NOTE "SAVE_DATA" "DEVICE_DATA";
 NOTE "SAVE_DATA_VARIABLES" "V0, A12, A13, A21, A22, A25, A43";
 NOTE "STAPL_VERSION" "JESD71";
@@ -53,60 +53,24 @@ INTEGER A13[1] = 5;
 INTEGER A25[1] = 10;
 INTEGER A43[1] = 0;
 BOOLEAN A21[104320] = @
-mB300u@@@t@@@l@t@V@hz_UzV@zz_lxtx@VrWd3AQ0jMhLrQjM_@rVPjMhfrQjcM
-hrgQjMV@r@@kMh@z@lMx@@@t@@VVSCu@@bEKLKhnQ5A9Q83_@@tzloRRr@ztrxlU
-GpvrFGxzVrx__jzV@rm33rQDMXN2qOjM3l4y@l67AL4e@4ApGZ@VDKMAe4L8h5@h
-j_UzV@zz_lvtw@VWcWu@dV@@Qz_7@x3K5v@@ztVxVkh@@V@l@@Xd03PY62gYOjMh
-0ABz@Z@6MQ0iMhrmI3SDM@7aTBjt@qWs7y@@vxVzNtt@@l_t@@0KIy@@l7MwX@j@
-VzV@vc@FzT_@Q5az9jMhnGw74hrw78xXjVzT_Vj_XlR483ZL@tNVl@wXvderQiEC
-t0@@@F1jJQiMhbrw@d_@@u0K@7wRiWR9u@@rtVvlkRt@VzF@@11Bo@r@l@l@Pz@t
-_U@Vj2z9d@@V@mSU3@@wFO9aUzNZXrQj6ALbWbFe@@ytyV_l@y@_Wg5v@@bt@z@l
-pp@Vzl_@qQjMLZrQv@N@zEh11V3n@@hizVv@WgxfrQDECi7qQzNzl@VPzN@jJS5X
-IvNhrOTWs@3XFZrOjsGz6GhnQDiU8_@@tzloxRrtzDOkJ_t@hj@wl6QsjQDMh3Sh
-qggC8eF8RdmWG7VmVy@V8XymQj_E8D@yF@V7meP_@Vi2nCXAFC8WHpy@l@lpP2KU
-@N3xK5Qj6h1Hse@rOj06TrQDMRmc5vLhrAiJEjwlM7ew9_7xzzu@_76BC_@QD2sy
-@GH@FGr@3ZTRQF@h_t@Fj@x@wy@@F8Nofv_lwV@@syF@J8ry450AX2C3jIfLrQjM
-IfLQ9b_@5rj1_rwtz@zVxlt@tzV@FbIfKKAbIw@LV9bIfeKAbYIfKAAbIT@L@@kI
-f_z@lI5@D6aMhrY@cXG1Imt@hLu155A0C_@VbaIfKIAbwrh_ALCv9mQrxHzUF5bw
-zUUArxwzU@jt@zwU@tBmyAqJ@URQj_rzUQjtxzUUlt@wzV@jlMh5tWAiIh@zwlI7
-K09wzKFZMWXW2OWtxzkUltRxfKAH1WIu198bMhbqQbYMfLgG1m8uX7Y7uXm3C8eW
-48bIhfKAbYIhLgAjMzW2a8G13erldwJhrAG1CYCG2KQbIX7W4VbI9fqAjXMOGm39
-Gg@xr@_ll@xzV_ldIX70J8355ZW1XHiKS8ymAz@HzVVDb_zUVQz@RydGe0G5RoLE
-zJhfqQbgIhKoQbM9hL@lWHmmld_9hLQjW@DGjMfUu1Cu@@Vt@t@j@qQjuL2CybhG
-hrw783FMhqQPjM@xrFjEK0Cyt@@7NpC_rAj2Aeem3YAGXeqQbM7yF3QjMf3zX7Qb
-MhgrQjq@h@oQjMJhLQLGGB5aX1MhqQ3_F1@Qr@nXuHCHdG@_wFIZOx2nWO4C8Q13
-Khrg7tV2XudGK094yF3H18X@@NBfLQbiIh_TwdMHhqALjMhbqAjIMhVVg@xheL@t
-xJh_N@t@j@_l@8ICGjMfb@FzNMhLQAjMhfLQjgIhqtVr@jhqgVt@fr_l@xzz@@75
-W1XbWTuLXOjMhCyWs3ffNAbMhgrQjy@f@oAjMJfrQTePBLBW1XbmGGQ25goIXbKd
-@VzJMhKQHBOG8ICuz_@Fa@D2BP3d_hLbbPWqAjMMfVVXbaW@l@xmICWMhLgAjIBz
-@wdnSOGO964RI5HpyGmDR4znLn8OGm@6uxhrAucGYtJ5@L@@HH1SyFC4SJ2k@@@Z
-Y26@QjMHVuK8ND6@J2HDwa@@_@uLkof@QTPK6OjMhbrgtd_@@QQz@z_rw@319XMq
-Cm@d_R0K945W4HGOWMhqAQr@h_qAjiMhLoAjIBce4q@@V62Y1_l@@319Xe0CGjMf
-LWH6e@@lYMz@lFj_@uGCm@@@NuQ97SZ1UzJh3qIYmru9kX4qQbM70QKXSPW@@qwe
-5YD613YwfY8wi9GBlZAJY0U29WM@SwlM7IJ2XbaGWH9u_@@Fia42NJYmIU8Ya4iM
-fL6f63XbOWx@_@mIC8s43ywlMLPa1IhrQZD91@Qr@nca00;
+mB300u@@@@3q6aP86Zmm4CO16u0cG@l@@FGKz@x@NM@Vi3Z@@@_a@@7dXtYzVLs@
+5_@FOi5V@@@Z7@lUu@t5@lxx@ZJQ@_v@ps@Fs@@Zo9zIVPwt@@VHo@lpw@3H@lGr
+@7az@0T@@Fu@xJ_@ze@FFx@t5MYiXbp@lthxzUl50Ae205I181xzVl_t@zzVl@p@
+zUN@@xlz_lV@x@Ub1uHG1iDNm6l1OZz_lNtx@_X7mWxzVl22OxwWGqx@U@1m3X7y
+Jm3mKkGKDtQvwtB5A0Krk7I50Au@t@tzV@dt@@UV@@@_z_lz@x@w_l@FA092Ami_
+@zp@@xVe0G5K0e1AyPUn@e@@@V1W2EL@@exTr@@@k_l@R@zV@k@x@g0GXK0ImV@t
+l@@_lU0Cm@t@j@_@@e0g8F06cx@@nz@Vly@xuVIt@@Vz@pSO9Uultxt@V@VT9645
+W7XbCZx@@V@t@@lnwzf@@tB@@X3Psa@6K1W2f0mGZK6q306b1KX@l@xdYCe205I1
+W2@@@@x4PGK0Xq@VorlyyANc53_@vt@VO9mqPY1H1SIO9au@x@lpa4yz@@7R290;
 
 BOOLEAN A22[65920] = @
-m0200u@@@@3q6u@@@t@@VV93_t@@zlh@x@@@t@0m200mEyy@@XVm@@@FqJv@Wsm@
-@x@nF4A6_x@@3L51w1VFlzXYaWgYl__@WY4_@V@7b1Xd75f41wFXo9_l@@35d2AE
-56Ln@z@g@@tlaN21K3O@r04GPm@sPVWg5@Vz@1K6y@@V5QVm@V@Veb1@Rt@1AT3U
-uzePGGMcU@V@l8D88prHs72jUm@V@l@TzV@@lVk70M2QPWrV@VmOBytw@3QPm@Nx
-TuB3_@@@QXJ8yrWmX72G3q@@@UYN21oUu@lt6t@@VWyI_@kx3fFnl@@RGBd_V@@2
-BrUOEyy@l@x@h_Fus3i60M2MoWl@_@GQjm@h@Fus6_@V@MOcGOJ3y@z04Oa4@@@z
-1t_log41Gjq@@@NqM32v6Y@@@rij94oD1VzD01VPm@MVVmN6y@@t7_o3@x@tXDVW
-z0mIOO6ydt@EKD1edo@_tl@3_YX@@@zWguDGsWWlmuVKJ90w@@sI8yr@Xmvn@t@l
-z@@@0yauxh_F0lJ_tw@3DRu5@I80lCZDnW01jq@@l@zZ94Su9VLOGGQJ6HY11C_c
-@z@@vCD88oMy@@@5i9CXQAHuadKxP21MQvVb94OPcp4PG0edKAP21HcPqh94KAOS
-@@@JAbXWv_FKq@3Kz@mO@7F@@l@@VVzz@@1vgk@@lVh_@@XPhY@@FVfy@@ioQ02t
-E1@_@@_tAhZwcXG0O00eyl@100W4o@_@@@bum08r@@lqR3ytl@7tj10000I0WW80
-G00eahK0000000O10000008L00W1M300000@Fz@_FnX100000W08D0600AeB500G
-gf0GO09KA0300W@37uXHlPmqIVV80GC8k4ksAhv@@Mnw@dc@@9DfltgIj9PAG9y@
-@txx@VFsG6y@V@F9u3X00nqWCu@@@UEg7qV@VTZ_3y@_@FAtWz4JuSx4U0V3_@lN
-_t@@l7s0_@l@_lggKVrLfgggoVtNlkkgQLNr@Z7eoLrIi70CVbl1_lx_BuV0@t@@
-FYICUU8y@Rwzj@@Z@@@Fy03yVLrvlwgILNLbhw_RTLLLggg@3Xt0@t@@lh@W@h@V
-V@t@NqlHIfRuV@l@l_4Q3uaSwhON19yF@th@@vtzz@F@ltVtp@zw@_lqrNTvgkkI
-NNrb@wwFTVLVXLSY@x@xa2IuPV3yV@Vd4W4Xo7Y@x@Vzz@@PCSIN@IKHX1blwX@l
-dVtp@zy@_@zl@th@xlINNtbhwwQTzLVkglhqtLT1;
+m0200u@@@@3q6aP86Zmm4CO16u0kE@@@zn@d_@@lhf@Fpvn@@xVi@@NJlxn_l8x@
+p_@BBUYz@@@SZ@NEy@@Y@Fxz@z9y@@y@Jx@Nw@@TvCUelFzt@@F7v@@Pz@Re@tcw
+@hn_VQk@V6y@b9@@Oq@@rCUbDZ100000000ID5Mq200000000@@VG0Ia4W1L0e00
+08KfmI9r0Knd0600400080mT094C03X2yGu0Fq9_3___@310YmnbW@@xl@joQJBj
+@_t@lVfk5l@@@X00HG0W48m6_@@VpGd1zt@@VQdp@oRuVgg2LLHbgwgAMT5LgYgg
+GLL@F6Dj_@k@ZZ@am3CGLSNbggYgm3Om@ttzdrbwV_l7@tplxx@_80C0@tVbkkgB
+NrrLwwh@g0mWoqkAez7sGFjm3Cmzy@Vu1CugkkJNNtLz160;
 
 ENDDATA;
 DATA TEMP_DATA;
@@ -1695,4 +1659,4 @@ IF (j != 317) THEN V52 = j - 108;
 IF (j == 317) THEN V52 = -1;
 ENDPROC;
 ' END OF FILE
-CRC EBA9;
+CRC 562D;
